@@ -25,8 +25,8 @@ class MainController < ActionController::API
       emails.each do |user|
         next f.puts "#{user} - Invalid email format" unless user.include?("@")
 
-        domain = extract_domain(user)
-        tenant = domain_cache[domain] || fetch_tenant_name(domain)
+        domain = DomainService.extract_domain(user)
+        tenant = domain_cache[domain] || DomainService.fetch_tenant_name(domain)
 
         domain_cache[domain] = tenant unless tenant.nil?
 
@@ -38,7 +38,7 @@ class MainController < ActionController::API
       end
     end
 
-    render json: { message: "Get the results at /download/#{filename}" }
+    render json: { message: "Get the results at http://127.0.0.1:3000/download/#{filename}" }
   end
 
   # Download action
@@ -76,51 +76,6 @@ class MainController < ActionController::API
       render plain: "File not found", status: :not_found
     end
   end
-
-  private
-
-  def extract_domain(user)
-    user.split('@').last
-  end
-
-  def fetch_tenant_name(domain)
-    url = URI("https://aadinternals.azurewebsites.net/api/tenantinfo?domainName=#{URI.encode_www_form_component(domain)}")
-
-    begin
-      http = Net::HTTP.new(url.host, url.port)
-      http.use_ssl = true
-
-      request = Net::HTTP::Get.new(url)
-      request['Host'] = "aadinternals.azurewebsites.net"
-      request['User-Agent'] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0"
-      request['Accept'] = "application/json, text/javascript, */*; q=0.01"
-      request['Origin'] = "https://aadinternals.com"
-      request['Referer'] = "https://aadinternals.com/"
-      request['Content-Length'] = "6"
-      request.body = "\x0d\x0a\x0d\x0a\x0d\x0a"
-
-      response = http.request(request)
-
-      if response.code.to_i != 200
-        puts "Erro na API: HTTP #{response.code} - #{response.message}"
-        return nil
-      end
-
-      body = response.body.strip
-      return nil if body.empty?
-
-      data = JSON.parse(body) rescue nil
-      return nil if data.nil?
-
-      if data["tenantName"] && data["tenantName"].include?(".onmicrosoft.com")
-        data["tenantName"].split('.onmicrosoft.com').first
-      else
-        nil
-      end
-
-    rescue StandardError => e
-      puts "Erro ao buscar tenant: #{e.message}"
-      nil
-    end
-  end
+    
 end
+

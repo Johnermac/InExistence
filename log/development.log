@@ -717,3 +717,43 @@ Processing by MainController#health_check as HTML
 Completed 200 OK in 0ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 151)
 
 
+Started POST "/validate" for 127.0.0.1 at 2025-03-01 13:45:07 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+NameError (undefined local variable or method `user' for MainController:Class
+Did you mean?  use):
+  
+app/controllers/main_controller.rb:83:in `<class:MainController>'
+app/controllers/main_controller.rb:2:in `<main>'
+Started POST "/validate" for 127.0.0.1 at 2025-03-01 13:45:54 -0300
+  
+NameError (undefined local variable or method `user' for MainController:Class
+Did you mean?  use):
+  
+app/controllers/main_controller.rb:83:in `<class:MainController>'
+app/controllers/main_controller.rb:2:in `<main>'
+Started POST "/validate" for 127.0.0.1 at 2025-03-01 13:52:15 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f15c0d29290 @tempfile=#<Tempfile:/tmp/RackMultipart20250301-219634-dlvrvi.txt>, @content_type="text/plain", @original_filename="test.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"test.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 8382ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 3320)
+
+
+Started GET "/download/results_a5e9a8c5c257d7b2.txt" for 127.0.0.1 at 2025-03-01 13:52:39 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_a5e9a8c5c257d7b2"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 154)
+
+
+Started GET "/download/results_a5e9a8c5c257d7b2.txt" for 127.0.0.1 at 2025-03-01 13:53:06 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_a5e9a8c5c257d7b2"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 404 Not Found in 7ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 7619)
+
+
+Started GET "/results_a5e9a8c5c257d7b2.txt" for 127.0.0.1 at 2025-03-01 13:53:09 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/results_a5e9a8c5c257d7b2.txt"):
+  

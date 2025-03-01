@@ -70,4 +70,5 @@ end
 gem 'sidekiq'
 gem 'rack-attack'
 gem 'httparty'
+gem 'email_validator'
 
