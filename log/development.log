@@ -1,0 +1,719 @@
+Started GET "/" for 127.0.0.1 at 2025-02-28 17:39:48 -0300
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/3.0.0/gems/railties-7.1.5.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/3.0.0/gems/railties-7.1.5.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.6ms | Allocations: 580)
+Completed 200 OK in 19ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 10154)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-28 18:35:50 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+LoadError (cannot load such file -- /home/johnermac/projects/my_app/lib/email_worker):
+  
+app/controllers/main_controller.rb:10:in `require_relative'
+app/controllers/main_controller.rb:10:in `<class:MainController>'
+app/controllers/main_controller.rb:8:in `<main>'
+Started GET "/" for 127.0.0.1 at 2025-02-28 18:42:06 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#health_check as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 4549)
+
+
+Started GET "/validate" for 127.0.0.1 at 2025-02-28 18:42:17 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/validate"):
+  
+Started POST "/validate" for 127.0.0.1 at 2025-02-28 18:42:59 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fc2e4921338 @tempfile=#<Tempfile:/tmp/RackMultipart20250228-126439-o3or7f.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Content in 0ms (ActiveRecord: 0.0ms | Allocations: 535)
+
+
+  
+ActionController::InvalidAuthenticityToken (Can't verify CSRF token authenticity.):
+  
+actionpack (7.1.5.1) lib/action_controller/metal/request_forgery_protection.rb:293:in `handle_unverified_request'
+actionpack (7.1.5.1) lib/action_controller/metal/request_forgery_protection.rb:388:in `handle_unverified_request'
+actionpack (7.1.5.1) lib/action_controller/metal/request_forgery_protection.rb:377:in `verify_authenticity_token'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:403:in `block in make_lambda'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:202:in `block (2 levels) in halting'
+actionpack (7.1.5.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:203:in `block in halting'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:598:in `block in invoke_before'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:598:in `each'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:598:in `invoke_before'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:119:in `block in run_callbacks'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.1.5.1) lib/abstract_controller/callbacks.rb:258:in `process_action'
+actionpack (7.1.5.1) lib/action_controller/metal/rescue.rb:25:in `process_action'
+actionpack (7.1.5.1) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action'
+activesupport (7.1.5.1) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.1.5.1) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.1.5.1) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.1.5.1) lib/action_controller/metal/instrumentation.rb:73:in `process_action'
+actionpack (7.1.5.1) lib/action_controller/metal/params_wrapper.rb:261:in `process_action'
+activerecord (7.1.5.1) lib/active_record/railties/controller_runtime.rb:32:in `process_action'
+actionpack (7.1.5.1) lib/abstract_controller/base.rb:160:in `process'
+actionview (7.1.5.1) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.5.1) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.5.1) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.5.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.5.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.5.1) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.5.1) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.5.1) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.5.1) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.5.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.5.1) lib/action_dispatch/routing/route_set.rb:882:in `call'
+rack-attack (6.7.0) lib/rack/attack.rb:127:in `call'
+rack (3.1.10) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.1.10) lib/rack/etag.rb:29:in `call'
+rack (3.1.10) lib/rack/conditional_get.rb:43:in `call'
+rack (3.1.10) lib/rack/head.rb:15:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack-session (2.1.0) lib/rack/session/abstract/id.rb:274:in `context'
+rack-session (2.1.0) lib/rack/session/abstract/id.rb:268:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.5.1) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.5.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.5.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.5.1) lib/active_support/tagged_logging.rb:139:in `block in tagged'
+activesupport (7.1.5.1) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.5.1) lib/active_support/tagged_logging.rb:139:in `tagged'
+activesupport (7.1.5.1) lib/active_support/broadcast_logger.rb:241:in `method_missing'
+railties (7.1.5.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.1.10) lib/rack/method_override.rb:28:in `call'
+rack (3.1.10) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.1.10) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.5.1) lib/rails/engine.rb:536:in `call'
+puma (6.6.0) lib/puma/configuration.rb:279:in `call'
+puma (6.6.0) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.0) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.0) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.0) lib/puma/server.rb:472:in `process_client'
+puma (6.6.0) lib/puma/server.rb:254:in `block in run'
+puma (6.6.0) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+Started POST "/validate" for 127.0.0.1 at 2025-02-28 18:47:41 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f9eb8cff180 @tempfile=#<Tempfile:/tmp/RackMultipart20250228-127413-8j9nzc.txt>, @content_type="text/plain", @original_filename="test.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"test.txt\"\r\nContent-Type: text/plain\r\n">}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Content in 0ms (ActiveRecord: 0.0ms | Allocations: 671)
+
+
+  
+ActionController::InvalidAuthenticityToken (Can't verify CSRF token authenticity.):
+  
+actionpack (7.1.5.1) lib/action_controller/metal/request_forgery_protection.rb:293:in `handle_unverified_request'
+actionpack (7.1.5.1) lib/action_controller/metal/request_forgery_protection.rb:388:in `handle_unverified_request'
+actionpack (7.1.5.1) lib/action_controller/metal/request_forgery_protection.rb:377:in `verify_authenticity_token'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:403:in `block in make_lambda'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:202:in `block (2 levels) in halting'
+actionpack (7.1.5.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:203:in `block in halting'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:598:in `block in invoke_before'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:598:in `each'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:598:in `invoke_before'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:119:in `block in run_callbacks'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.1.5.1) lib/abstract_controller/callbacks.rb:258:in `process_action'
+actionpack (7.1.5.1) lib/action_controller/metal/rescue.rb:25:in `process_action'
+actionpack (7.1.5.1) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action'
+activesupport (7.1.5.1) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.1.5.1) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.1.5.1) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.1.5.1) lib/action_controller/metal/instrumentation.rb:73:in `process_action'
+actionpack (7.1.5.1) lib/action_controller/metal/params_wrapper.rb:261:in `process_action'
+activerecord (7.1.5.1) lib/active_record/railties/controller_runtime.rb:32:in `process_action'
+actionpack (7.1.5.1) lib/abstract_controller/base.rb:160:in `process'
+actionview (7.1.5.1) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.5.1) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.5.1) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.5.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.5.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.5.1) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.5.1) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.5.1) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.5.1) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.5.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.5.1) lib/action_dispatch/routing/route_set.rb:882:in `call'
+rack-attack (6.7.0) lib/rack/attack.rb:127:in `call'
+rack (3.1.10) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.1.10) lib/rack/etag.rb:29:in `call'
+rack (3.1.10) lib/rack/conditional_get.rb:43:in `call'
+rack (3.1.10) lib/rack/head.rb:15:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack-session (2.1.0) lib/rack/session/abstract/id.rb:274:in `context'
+rack-session (2.1.0) lib/rack/session/abstract/id.rb:268:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.5.1) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.5.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.5.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.5.1) lib/active_support/tagged_logging.rb:139:in `block in tagged'
+activesupport (7.1.5.1) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.5.1) lib/active_support/tagged_logging.rb:139:in `tagged'
+activesupport (7.1.5.1) lib/active_support/broadcast_logger.rb:241:in `method_missing'
+railties (7.1.5.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.1.10) lib/rack/method_override.rb:28:in `call'
+rack (3.1.10) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.1.10) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.5.1) lib/rails/engine.rb:536:in `call'
+puma (6.6.0) lib/puma/configuration.rb:279:in `call'
+puma (6.6.0) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.0) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.0) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.0) lib/puma/server.rb:472:in `process_client'
+puma (6.6.0) lib/puma/server.rb:254:in `block in run'
+puma (6.6.0) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2025-02-28 18:49:01 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#health_check as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 4482)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-02-28 18:52:18 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fec4c0ead40 @tempfile=#<Tempfile:/tmp/RackMultipart20250228-127708-gk46gf.txt>, @content_type="text/plain", @original_filename="test.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"test.txt\"\r\nContent-Type: text/plain\r\n">}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Content in 0ms (ActiveRecord: 0.0ms | Allocations: 537)
+
+
+  
+ActionController::InvalidAuthenticityToken (Can't verify CSRF token authenticity.):
+  
+actionpack (7.1.5.1) lib/action_controller/metal/request_forgery_protection.rb:293:in `handle_unverified_request'
+actionpack (7.1.5.1) lib/action_controller/metal/request_forgery_protection.rb:388:in `handle_unverified_request'
+actionpack (7.1.5.1) lib/action_controller/metal/request_forgery_protection.rb:377:in `verify_authenticity_token'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:403:in `block in make_lambda'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:202:in `block (2 levels) in halting'
+actionpack (7.1.5.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:203:in `block in halting'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:598:in `block in invoke_before'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:598:in `each'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:598:in `invoke_before'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:119:in `block in run_callbacks'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.1.5.1) lib/abstract_controller/callbacks.rb:258:in `process_action'
+actionpack (7.1.5.1) lib/action_controller/metal/rescue.rb:25:in `process_action'
+actionpack (7.1.5.1) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action'
+activesupport (7.1.5.1) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.1.5.1) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.1.5.1) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.1.5.1) lib/action_controller/metal/instrumentation.rb:73:in `process_action'
+actionpack (7.1.5.1) lib/action_controller/metal/params_wrapper.rb:261:in `process_action'
+activerecord (7.1.5.1) lib/active_record/railties/controller_runtime.rb:32:in `process_action'
+actionpack (7.1.5.1) lib/abstract_controller/base.rb:160:in `process'
+actionview (7.1.5.1) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.5.1) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.5.1) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.5.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.5.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.5.1) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.5.1) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.5.1) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.5.1) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.5.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.5.1) lib/action_dispatch/routing/route_set.rb:882:in `call'
+rack-attack (6.7.0) lib/rack/attack.rb:127:in `call'
+rack (3.1.10) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.1.10) lib/rack/etag.rb:29:in `call'
+rack (3.1.10) lib/rack/conditional_get.rb:43:in `call'
+rack (3.1.10) lib/rack/head.rb:15:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack-session (2.1.0) lib/rack/session/abstract/id.rb:274:in `context'
+rack-session (2.1.0) lib/rack/session/abstract/id.rb:268:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.5.1) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.5.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.5.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.5.1) lib/active_support/tagged_logging.rb:139:in `block in tagged'
+activesupport (7.1.5.1) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.5.1) lib/active_support/tagged_logging.rb:139:in `tagged'
+activesupport (7.1.5.1) lib/active_support/broadcast_logger.rb:241:in `method_missing'
+railties (7.1.5.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.1.10) lib/rack/method_override.rb:28:in `call'
+rack (3.1.10) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.1.10) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.5.1) lib/rails/engine.rb:536:in `call'
+puma (6.6.0) lib/puma/configuration.rb:279:in `call'
+puma (6.6.0) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.0) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.0) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.0) lib/puma/server.rb:472:in `process_client'
+puma (6.6.0) lib/puma/server.rb:254:in `block in run'
+puma (6.6.0) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+Started POST "/validate" for 127.0.0.1 at 2025-02-28 18:53:01 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fec5882de70 @tempfile=#<Tempfile:/tmp/RackMultipart20250228-127708-v7b9zb.txt>, @content_type="text/plain", @original_filename="test.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"test.txt\"\r\nContent-Type: text/plain\r\n">}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Content in 0ms (ActiveRecord: 0.0ms | Allocations: 478)
+
+
+  
+ActionController::InvalidAuthenticityToken (Can't verify CSRF token authenticity.):
+  
+actionpack (7.1.5.1) lib/action_controller/metal/request_forgery_protection.rb:293:in `handle_unverified_request'
+actionpack (7.1.5.1) lib/action_controller/metal/request_forgery_protection.rb:388:in `handle_unverified_request'
+actionpack (7.1.5.1) lib/action_controller/metal/request_forgery_protection.rb:377:in `verify_authenticity_token'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:403:in `block in make_lambda'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:202:in `block (2 levels) in halting'
+actionpack (7.1.5.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:203:in `block in halting'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:598:in `block in invoke_before'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:598:in `each'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:598:in `invoke_before'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:119:in `block in run_callbacks'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.1.5.1) lib/abstract_controller/callbacks.rb:258:in `process_action'
+actionpack (7.1.5.1) lib/action_controller/metal/rescue.rb:25:in `process_action'
+actionpack (7.1.5.1) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action'
+activesupport (7.1.5.1) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.1.5.1) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.1.5.1) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.1.5.1) lib/action_controller/metal/instrumentation.rb:73:in `process_action'
+actionpack (7.1.5.1) lib/action_controller/metal/params_wrapper.rb:261:in `process_action'
+activerecord (7.1.5.1) lib/active_record/railties/controller_runtime.rb:32:in `process_action'
+actionpack (7.1.5.1) lib/abstract_controller/base.rb:160:in `process'
+actionview (7.1.5.1) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.5.1) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.5.1) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.5.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.5.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.5.1) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.5.1) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.5.1) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.5.1) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.5.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.5.1) lib/action_dispatch/routing/route_set.rb:882:in `call'
+rack-attack (6.7.0) lib/rack/attack.rb:127:in `call'
+rack (3.1.10) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.1.10) lib/rack/etag.rb:29:in `call'
+rack (3.1.10) lib/rack/conditional_get.rb:43:in `call'
+rack (3.1.10) lib/rack/head.rb:15:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack-session (2.1.0) lib/rack/session/abstract/id.rb:274:in `context'
+rack-session (2.1.0) lib/rack/session/abstract/id.rb:268:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.5.1) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.5.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.5.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.5.1) lib/active_support/tagged_logging.rb:139:in `block in tagged'
+activesupport (7.1.5.1) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.5.1) lib/active_support/tagged_logging.rb:139:in `tagged'
+activesupport (7.1.5.1) lib/active_support/broadcast_logger.rb:241:in `method_missing'
+railties (7.1.5.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.1.10) lib/rack/method_override.rb:28:in `call'
+rack (3.1.10) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.1.10) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.5.1) lib/rails/engine.rb:536:in `call'
+puma (6.6.0) lib/puma/configuration.rb:279:in `call'
+puma (6.6.0) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.0) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.0) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.0) lib/puma/server.rb:472:in `process_client'
+puma (6.6.0) lib/puma/server.rb:254:in `block in run'
+puma (6.6.0) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2025-02-28 18:59:00 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/api_controller.rb:2:in `<class:ApiController>'
+app/controllers/api_controller.rb:1:in `<main>'
+app/controllers/main_controller.rb:8:in `<main>'
+Started GET "/" for 127.0.0.1 at 2025-02-28 19:01:17 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/api_controller.rb:5:in `<class:ApiController>'
+app/controllers/api_controller.rb:1:in `<main>'
+app/controllers/main_controller.rb:8:in `<main>'
+Started GET "/" for 127.0.0.1 at 2025-02-28 19:19:47 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/main_controller.rb:2:in `<class:MainController>'
+app/controllers/main_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2025-02-28 19:23:38 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/main_controller.rb:2:in `<class:MainController>'
+app/controllers/main_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2025-02-28 19:25:45 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#health_check as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 2ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 2711)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-02-28 19:26:05 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007ff8ac07fda8 @tempfile=#<Tempfile:/tmp/RackMultipart20250228-134451-9hlgcm.txt>, @content_type="text/plain", @original_filename="test.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"test.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2482)
+
+
+Started GET "/download/results_3a39d602ae94bd57.txt" for 127.0.0.1 at 2025-02-28 19:27:00 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_3a39d602ae94bd57"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 239)
+
+
+Started GET "/download/resulpublic/results_3a39d602ae94bd57.txt" for 127.0.0.1 at 2025-02-28 19:27:23 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/download/resulpublic/results_3a39d602ae94bd57.txt"):
+  
+Started GET "/download/results_3a39d602ae94bd57.txt" for 127.0.0.1 at 2025-02-28 19:27:42 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_3a39d602ae94bd57"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 264)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-02-28 19:35:53 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f3160ce5890 @tempfile=#<Tempfile:/tmp/RackMultipart20250228-136340-v7ufe0.txt>, @content_type="text/plain", @original_filename="test.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"test.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2652)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-02-28 19:39:23 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f3154032e10 @tempfile=#<Tempfile:/tmp/RackMultipart20250228-136340-21axgg.txt>, @content_type="text/plain", @original_filename="test.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"test.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2353)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-28 19:48:37 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#health_check as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 2714)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-02-28 19:48:54 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fd0985367e8 @tempfile=#<Tempfile:/tmp/RackMultipart20250228-138868-bshfu8.txt>, @content_type="text/plain", @original_filename="test.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"test.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 7990ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2935)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-02-28 19:51:13 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fd0985a48d8 @tempfile=#<Tempfile:/tmp/RackMultipart20250228-138868-e3apgy.txt>, @content_type="text/plain", @original_filename="test.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"test.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 7393ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1446)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-02-28 19:53:09 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fd0986571b8 @tempfile=#<Tempfile:/tmp/RackMultipart20250228-138868-j9h9c2.txt>, @content_type="text/plain", @original_filename="test.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"test.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 8853ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1327)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-02-28 19:57:16 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fd0989fbe90 @tempfile=#<Tempfile:/tmp/RackMultipart20250228-138868-tavjs2.txt>, @content_type="text/plain", @original_filename="test.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"test.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 7459ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2047)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-02-28 19:59:12 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fd098d16418 @tempfile=#<Tempfile:/tmp/RackMultipart20250228-138868-lokm25.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 24922ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 4185)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-02-28 20:00:39 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fd098587c38 @tempfile=#<Tempfile:/tmp/RackMultipart20250228-138868-rx5ptr.txt>, @content_type="text/plain", @original_filename="test.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"test.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 7008ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2047)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-02-28 20:01:46 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fd0988c58f0 @tempfile=#<Tempfile:/tmp/RackMultipart20250228-138868-twvyo0.txt>, @content_type="text/plain", @original_filename="test.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"test.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 9419ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2051)
+
+
+Started GET "/download/results_b9ba15f1a00f3283.txt" for 127.0.0.1 at 2025-02-28 20:02:30 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_b9ba15f1a00f3283"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 755)
+
+
+Started GET "/download/resulpublic/results_b9ba15f1a00f3283.txt" for 127.0.0.1 at 2025-02-28 20:02:44 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/download/resulpublic/results_b9ba15f1a00f3283.txt"):
+  
+Started GET "/" for 127.0.0.1 at 2025-02-28 20:02:55 -0300
+Processing by MainController#health_check as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 182)
+
+
+Started GET "/download/results_b9ba15f1a00f3283.txt" for 127.0.0.1 at 2025-02-28 20:03:09 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_b9ba15f1a00f3283"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 230)
+
+
+Started GET "/download/results_b9ba15f1a00f3283.txt" for 127.0.0.1 at 2025-02-28 20:12:33 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_b9ba15f1a00f3283"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 404 Not Found in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 2813)
+
+
+Started GET "/download/results_b9ba15f1a00f3283.txt" for 127.0.0.1 at 2025-02-28 20:12:51 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_b9ba15f1a00f3283"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 282)
+
+
+Started GET "/download/results_b9ba15f1a00f3283.txt" for 127.0.0.1 at 2025-02-28 21:23:56 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_b9ba15f1a00f3283"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 404 Not Found in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 2813)
+
+
+Started GET "/download/results_b9ba15f1a00f3283.txt" for 127.0.0.1 at 2025-02-28 21:24:12 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_b9ba15f1a00f3283"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 281)
+
+
+Started GET "/download/results_b9ba15f1a00f3283.txt" for 127.0.0.1 at 2025-02-28 21:24:27 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_b9ba15f1a00f3283"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 220)
+
+
+Started GET "/download/results_b9ba15f1a00f3283.txt" for 127.0.0.1 at 2025-02-28 21:28:52 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_b9ba15f1a00f3283"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 807)
+
+
+Started GET "/download/results_b9ba15f1a00f3283.txt" for 127.0.0.1 at 2025-02-28 21:30:08 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_b9ba15f1a00f3283"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 400 Bad Request in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 2738)
+
+
+Started GET "/download/results_b9ba15f1a00f3283.txt" for 127.0.0.1 at 2025-02-28 21:32:14 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_b9ba15f1a00f3283"}
+Sent file /home/johnermac/projects/my_app/public/results_b9ba15f1a00f3283.txt (1.0ms)
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 1230)
+
+
+Started GET "/download/results_b9ba15f1a00f3283.txt" for 127.0.0.1 at 2025-02-28 21:33:05 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_b9ba15f1a00f3283"}
+Sent file /home/johnermac/projects/my_app/public/results_b9ba15f1a00f3283.txt (0.9ms)
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 1235)
+
+
+Started GET "/results_b9ba15f1a00f3283.txt" for 127.0.0.1 at 2025-02-28 21:33:41 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/results_b9ba15f1a00f3283.txt"):
+  
+Started GET "/download/results_b9ba15f1a00f3283.txt" for 127.0.0.1 at 2025-02-28 21:33:49 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_b9ba15f1a00f3283"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 404 Not Found in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 1046)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-02-28 21:40:09 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f12fccf8080 @tempfile=#<Tempfile:/tmp/RackMultipart20250228-158315-cgg20g.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 24261ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 5236)
+
+
+Started GET "/download/results_5c4280cf2046b7c6.txt" for 127.0.0.1 at 2025-02-28 21:41:35 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_5c4280cf2046b7c6"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 2431)
+
+
+  
+NoMethodError (undefined method `stream' for #<MainController:0x0000000000b310>):
+  
+app/controllers/main_controller.rb:61:in `download'
+Started GET "/download/results_5c4280cf2046b7c6.txt" for 127.0.0.1 at 2025-02-28 21:41:49 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_5c4280cf2046b7c6"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 2355)
+
+
+  
+NoMethodError (undefined method `stream' for #<MainController:0x0000000000b720>):
+  
+app/controllers/main_controller.rb:61:in `download'
+Started GET "/download/results_5c4280cf2046b7c6.txt" for 127.0.0.1 at 2025-02-28 21:42:10 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_5c4280cf2046b7c6"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2317)
+
+
+  
+NoMethodError (undefined method `stream' for #<MainController:0x0000000000ba90>):
+  
+app/controllers/main_controller.rb:61:in `download'
+Started GET "/download/results_5c4280cf2046b7c6.txt" for 127.0.0.1 at 2025-02-28 21:47:06 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_5c4280cf2046b7c6"}
+Completed 200 OK in 0ms (ActiveRecord: 0.0ms | Allocations: 277)
+
+
+Started GET "/download/results_5c4280cf2046b7c6.txt" for 127.0.0.1 at 2025-02-28 21:47:11 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_5c4280cf2046b7c6"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 404 Not Found in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 2703)
+
+
+Started GET "/download/results_5c4280cf2046b7c6.txt" for 127.0.0.1 at 2025-02-28 21:47:14 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_5c4280cf2046b7c6"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 260)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-28 21:48:08 -0300
+Processing by MainController#health_check as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 200 OK in 0ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 151)
+
+
