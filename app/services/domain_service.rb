@@ -1,44 +1,47 @@
-# app/services/domain_service.rb
+require 'httparty'
+
 class DomainService
+  include HTTParty
+  base_uri 'https://aadinternals.azurewebsites.net'
+
   def self.extract_domain(user)
     user.split('@').last
   end
 
   def self.fetch_tenant_name(domain)
-    url = URI("https://aadinternals.azurewebsites.net/api/tenantinfo?domainName=#{URI.encode_www_form_component(domain)}")
+    # Return nil for invalid or empty domains
+    return nil if domain.nil? || domain.strip.empty?
 
+    # Construct the URL with query parameter
+    endpoint = "/api/tenantinfo"
+    query = { domainName: domain }
+
+    # Headers for the request
+    headers = {
+      'Host' => "aadinternals.azurewebsites.net",
+      'User-Agent' => "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0",
+      'Accept' => "application/json, text/javascript, */*; q=0.01",
+      'Origin' => "https://aadinternals.com",
+      'Referer' => "https://aadinternals.com/"
+    }
+
+    # Perform the GET request using HTTParty
     begin
-      http = Net::HTTP.new(url.host, url.port)
-      http.use_ssl = true
+      response = get(endpoint, query: query, headers: headers)
 
-      request = Net::HTTP::Get.new(url)
-      request['Host'] = "aadinternals.azurewebsites.net"
-      request['User-Agent'] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0"
-      request['Accept'] = "application/json, text/javascript, */*; q=0.01"
-      request['Origin'] = "https://aadinternals.com"
-      request['Referer'] = "https://aadinternals.com/"
-      request['Content-Length'] = "6"
-      request.body = "\x0d\x0a\x0d\x0a\x0d\x0a"
-
-      response = http.request(request)
-
-      if response.code.to_i != 200
-        puts "Erro na API: HTTP #{response.code} - #{response.message}"
+      if response.code != 200
+        Rails.logger.error "API Error: HTTP #{response.code} - #{response.message} for domain #{domain}"
         return nil
       end
 
       body = response.body.strip
       return nil if body.empty?
 
-      data = JSON.parse(body) rescue nil
-      return nil if data.nil?
-
-      if data["tenantName"] && data["tenantName"].include?(".onmicrosoft.com")
-        data["tenantName"].split('.onmicrosoft.com').first
-      else
-        nil
-      end
-
+      data = JSON.parse(body)
+      data["tenantName"]&.split('.onmicrosoft.com')&.first
+    rescue JSON::ParserError => e
+      Rails.logger.error "JSON parsing error for domain #{domain}: #{e.message}"
+      nil
     rescue StandardError => e
       Rails.logger.error "Error fetching tenant for domain #{domain}: #{e.message}"
       nil

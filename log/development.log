@@ -757,3 +757,300 @@ Started GET "/results_a5e9a8c5c257d7b2.txt" for 127.0.0.1 at 2025-03-01 13:53:09
   
 ActionController::RoutingError (No route matches [GET] "/results_a5e9a8c5c257d7b2.txt"):
   
+Started POST "/validate" for 127.0.0.1 at 2025-03-02 00:01:12 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f1cd46b62a8 @tempfile=#<Tempfile:/tmp/RackMultipart20250302-253726-jeik0p.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 82209ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 8928)
+
+
+Started GET "/download/results_87956b1432a804c0.json" for 127.0.0.1 at 2025-03-02 00:02:39 -0300
+Processing by MainController#download as JSON
+  Parameters: {"filename"=>"results_87956b1432a804c0"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 404 Not Found in 3ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 2627)
+
+
+Started GET "/download/results_87956b1432a804c0.json" for 127.0.0.1 at 2025-03-02 00:02:51 -0300
+Processing by MainController#download as JSON
+  Parameters: {"filename"=>"results_87956b1432a804c0"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 257)
+
+
+Started GET "/download/results_87956b1432a804c0.json" for 127.0.0.1 at 2025-03-02 00:03:29 -0300
+Processing by MainController#download as JSON
+  Parameters: {"filename"=>"results_87956b1432a804c0"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/download/results_87956b1432a804c0.json" for 127.0.0.1 at 2025-03-02 00:07:41 -0300
+Processing by MainController#download as JSON
+  Parameters: {"filename"=>"results_87956b1432a804c0"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 805)
+
+
+Started GET "/download/results_87956b1432a804c0.txt" for 127.0.0.1 at 2025-03-02 00:07:48 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_87956b1432a804c0"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 245)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-02 00:20:15 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000556811944a20 @tempfile=#<Tempfile:/tmp/RackMultipart20250302-257286-2p3krd.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 20724ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 7247)
+
+
+Started GET "/download/results_d5c32fa658262575.json" for 127.0.0.1 at 2025-03-02 00:20:42 -0300
+Processing by MainController#download as JSON
+  Parameters: {"filename"=>"results_d5c32fa658262575"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 404 Not Found in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 2628)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-02 00:31:17 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ArgumentError (Before process_action callback :verify_authenticity_token has not been defined):
+  
+app/controllers/main_controller.rb:2:in `<class:MainController>'
+app/controllers/main_controller.rb:1:in `<main>'
+Started POST "/validate" for 127.0.0.1 at 2025-03-02 00:32:20 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000055eb09170490 @tempfile=#<Tempfile:/tmp/RackMultipart20250302-259651-jvnr83.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Error processing joao.g.silveira@bradesco.com.br: undefined local variable or method `domain' for #<MainController:0x0000000000b298>
+Error processing joao.asoiso@bradesco.com.br: undefined local variable or method `domain' for #<MainController:0x0000000000b298>
+Error processing leonardo.teodoro@grupopan.com: undefined local variable or method `domain' for #<MainController:0x0000000000b298>
+Error processing rafael.david@bradesco.com.br: undefined local variable or method `domain' for #<MainController:0x0000000000b298>
+Error processing luigi.polidorio@itsafeinc.com.br: undefined local variable or method `domain' for #<MainController:0x0000000000b298>
+Error processing asd@45654: undefined local variable or method `domain' for #<MainController:0x0000000000b298>
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 14468)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-02 00:41:17 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007faf78d238c0 @tempfile=#<Tempfile:/tmp/RackMultipart20250302-261360-s2zch7.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Domain extracted: bradesco.com.br
+Domain extracted: bradesco.com.br
+Domain extracted: grupopan.com
+Domain extracted: bradesco.com.br
+Domain extracted: itsafeinc.com.br
+Tenant for domain itsafeinc.com.br: None found
+Domain extracted: 45654
+Tenant for domain 45654: None found
+Processing email: 3asd-45*
+Completed 200 OK in 16047ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 7114)
+
+
+Started GET "/download/results_d2ca3e81ad558f49.json" for 127.0.0.1 at 2025-03-02 00:41:57 -0300
+Processing by MainController#download as JSON
+  Parameters: {"filename"=>"results_d2ca3e81ad558f49"}
+Completed 200 OK in 0ms (ActiveRecord: 0.0ms | Allocations: 155)
+
+
+Started GET "/download/results_d2ca3e81ad558f49.json" for 127.0.0.1 at 2025-03-02 00:42:05 -0300
+Processing by MainController#download as JSON
+  Parameters: {"filename"=>"results_d2ca3e81ad558f49"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 404 Not Found in 7ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 7640)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-02 00:51:05 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00005616f691c6f8 @tempfile=#<Tempfile:/tmp/RackMultipart20250302-263205-o4j8mg.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Processing email: joao.g.silveira@bradesco.com.br
+Domain extracted: bradesco.com.br
+Processing email: joao.asoiso@bradesco.com.br
+Domain extracted: bradesco.com.br
+Processing email: leonardo.teodoro@grupopan.com
+Domain extracted: grupopan.com
+Processing email: rafael.david@bradesco.com.br
+Domain extracted: bradesco.com.br
+Processing email: luigi.polidorio@itsafeinc.com.br
+Domain extracted: itsafeinc.com.br
+Tenant for domain itsafeinc.com.br: None found
+Processing email: asd@45654
+Domain extracted: 45654
+Tenant for domain 45654: None found
+Processing email: 3asd-45*
+Completed 200 OK in 18529ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 7311)
+
+
+Started GET "/download/results_3e79933cca48db28.json" for 127.0.0.1 at 2025-03-02 00:52:22 -0300
+Processing by MainController#download as JSON
+  Parameters: {"filename"=>"results_3e79933cca48db28"}
+Completed 200 OK in 0ms (ActiveRecord: 0.0ms | Allocations: 155)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-02 00:58:03 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00005606e0560d78 @tempfile=#<Tempfile:/tmp/RackMultipart20250302-264503-tvkwro.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 17723ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 6970)
+
+
+Started GET "/download/results_2db582a51ee8c2f9.json" for 127.0.0.1 at 2025-03-02 00:58:29 -0300
+Processing by MainController#download as JSON
+  Parameters: {"filename"=>"results_2db582a51ee8c2f9"}
+Completed 200 OK in 0ms (ActiveRecord: 0.0ms | Allocations: 155)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-02 00:59:17 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fd4d06e73a8 @tempfile=#<Tempfile:/tmp/RackMultipart20250302-264503-tno17p.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 18784ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 5809)
+
+
+Started GET "/download/results_f128b265cf84bb0b.json" for 127.0.0.1 at 2025-03-02 01:00:14 -0300
+Processing by MainController#download as JSON
+  Parameters: {"filename"=>"results_f128b265cf84bb0b"}
+Completed 200 OK in 0ms (ActiveRecord: 0.0ms | Allocations: 136)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-02 01:06:55 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000055e7c34001e0 @tempfile=#<Tempfile:/tmp/RackMultipart20250302-266196-bkldju.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 16479ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 7131)
+
+
+Started GET "/download/results_7e6c5cd1ff5d05a3.json" for 127.0.0.1 at 2025-03-02 01:07:48 -0300
+Processing by MainController#download as JSON
+  Parameters: {"filename"=>"results_7e6c5cd1ff5d05a3"}
+Completed 200 OK in 0ms (ActiveRecord: 0.0ms | Allocations: 155)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-02 01:13:10 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000055f110da3340 @tempfile=#<Tempfile:/tmp/RackMultipart20250302-267377-xandl9.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 15650ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 7030)
+
+
+Started GET "/download/results_e19bb123e3ec880b.txt" for 127.0.0.1 at 2025-03-02 01:13:29 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_e19bb123e3ec880b"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 404 Not Found in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 2627)
+
+
+Started GET "/download/results_e19bb123e3ec880b.json" for 127.0.0.1 at 2025-03-02 01:13:38 -0300
+Processing by MainController#download as JSON
+  Parameters: {"filename"=>"results_e19bb123e3ec880b"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 257)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-02 01:15:50 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000562af1c50b30 @tempfile=#<Tempfile:/tmp/RackMultipart20250302-267871-6tptbi.txt>, @content_type="text/plain", @original_filename="test.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"test.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 7540ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 3767)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-02 12:16:17 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00005648eb4efec8 @tempfile=#<Tempfile:/tmp/RackMultipart20250302-276450-cnjglo.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 82144ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 9082)
+
+
+Started GET "/download/results_7573156257e657ef.json" for 127.0.0.1 at 2025-03-02 12:18:57 -0300
+Processing by MainController#download as JSON
+  Parameters: {"filename"=>"results_7573156257e657ef"}
+Completed 200 OK in 0ms (ActiveRecord: 0.0ms | Allocations: 155)
+
+
+Started GET "/download/results_7573156257e657ef.json" for 127.0.0.1 at 2025-03-02 12:19:42 -0300
+Processing by MainController#download as JSON
+  Parameters: {"filename"=>"results_7573156257e657ef"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 404 Not Found in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 7634)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-02 12:33:16 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000055702c4687b8 @tempfile=#<Tempfile:/tmp/RackMultipart20250302-279400-bddl2n.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Completed 200 OK in 16421ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 7034)
+
+
+Started GET "/download/results_0b346682b6dd53cb.txt" for 127.0.0.1 at 2025-03-02 12:33:50 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_0b346682b6dd53cb"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 404 Not Found in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 2627)
+
+
+Started GET "/download/results_0b346682b6dd53cb.txt" for 127.0.0.1 at 2025-03-02 12:33:59 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_0b346682b6dd53cb"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 256)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-02 12:36:21 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f35206eddc0 @tempfile=#<Tempfile:/tmp/RackMultipart20250302-279953-ehmr01.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Completed 200 OK in 15699ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 11519)
+
+
+Started GET "/download/results_7d85636bccc768f4.txt" for 127.0.0.1 at 2025-03-02 12:36:48 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_7d85636bccc768f4"}
+Completed 200 OK in 0ms (ActiveRecord: 0.0ms | Allocations: 155)
+
+
+Started GET "/download/results_7d85636bccc768f4.txt" for 127.0.0.1 at 2025-03-02 12:37:04 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_7d85636bccc768f4"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 404 Not Found in 6ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 7632)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-02 13:33:29 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000556c1bb12678 @tempfile=#<Tempfile:/tmp/RackMultipart20250302-289662-7jquy7.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Completed 200 OK in 17938ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 7073)
+
+
+Started GET "/download/results_8c8659303f4e88d6.txt" for 127.0.0.1 at 2025-03-02 13:35:38 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_8c8659303f4e88d6"}
+Completed 200 OK in 0ms (ActiveRecord: 0.0ms | Allocations: 155)
+
+
+Started GET "/download/results_8c8659303f4e88d6.txt" for 127.0.0.1 at 2025-03-02 13:35:48 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_8c8659303f4e88d6"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 404 Not Found in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 7639)
+
+

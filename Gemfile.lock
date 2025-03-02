@@ -105,6 +105,8 @@ GEM
       irb (~> 1.10)
       reline (>= 0.3.8)
     drb (2.2.1)
+    email_validator (2.2.4)
+      activemodel
     erubi (1.13.1)
     globalid (1.2.1)
       activesupport (>= 6.1)
@@ -219,6 +221,7 @@ GEM
     regexp_parser (2.10.0)
     reline (0.6.0)
       io-console (~> 0.5)
+    resolv (0.6.0)
     rexml (3.4.1)
     rubyzip (2.4.1)
     securerandom (0.3.2)
@@ -279,12 +282,14 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
+  email_validator
   httparty
   importmap-rails
   jbuilder
   puma (>= 5.0)
   rack-attack
   rails (~> 7.1.5, >= 7.1.5.1)
+  resolv
   selenium-webdriver
   sidekiq
   sprockets-rails
