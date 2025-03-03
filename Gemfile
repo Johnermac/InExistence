@@ -66,7 +66,7 @@ group :test do
   gem "selenium-webdriver"
 end
 
-
+gem "redis", ">= 4.0.1"
 gem 'sidekiq'
 gem 'rack-attack'
 gem 'httparty'

@@ -2,41 +2,33 @@ require 'httparty'
 
 class EmailWorker
   include Sidekiq::Worker
-  sidekiq_options queue: :default, retry: 3
-
-  # Initialize a persistent cache at the worker class level
-  @domain_cache = {}
-
-  class << self
-    attr_accessor :domain_cache
-  end
+  sidekiq_options queue: :default, retry: 3  
 
   def perform(email, filepath) 
 
     return unless email.present?    
     
     return unless EmailValidator.valid?(email)
-    puts "\n\n => email => #{email}"
+    puts "\n\n => EMAIL: #{email}"
 
     # Extract and validate domain
     domain = extract_domain(email)   
-    puts "\n => DOMAIN => #{domain}" 
+    puts "\n => DOMAIN: #{domain}" 
 
-    # Fetch tenant from the cache or fetch it remotely
-    tenant = self.class.domain_cache[domain] || DomainService.fetch_tenant_name(domain)
-    if tenant
-      # Cache the tenant for future use
-      self.class.domain_cache[domain] = tenant
-      puts "\n => CACHE: #{self.class.domain_cache}"
+    # Fetch tenant from cache or API
+    tenant = DomainService.fetch_tenant_name(domain)
+    # Fetch tenant from cache or API
+    tenant = DomainService.fetch_tenant_name(domain)
+    if tenant.nil?
+      Rails.logger.error "Tenant could not be fetched for domain: #{domain}. Skipping email: #{email}"
+      return
+    end
 
-      puts "\n => TENANT => #{tenant}\n" 
+  puts "\n => TENANT: #{tenant}"
 
-      # Construct verification URL and verify email
-      url = construct_url(tenant, email)
-      fetch_url(url, filepath, email) if url.present?
-    else
-      puts "\n => Tenant not found for domain: #{domain}"
-    end    
+    # Construct verification URL and verify email
+    url = construct_url(tenant, email)
+    fetch_url(url, filepath, email) if url.present?    
   end
 
 

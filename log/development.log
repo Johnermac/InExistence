@@ -1725,3 +1725,124 @@ Processing by MainController#validate as */*
 Completed 422 Unprocessable Content in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 4605)
 
 
+Started POST "/validate" for 127.0.0.1 at 2025-03-03 11:49:30 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f2b642e9a50 @tempfile=#<Tempfile:/tmp/RackMultipart20250303-450962-tn7g2d.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 7586)
+
+
+Error fetching tenant for domain grupopan.com: Net::ReadTimeout with #<TCPSocket:(closed)>
+Error fetching tenant for domain bradesco.com.br: Net::ReadTimeout with #<TCPSocket:(closed)>
+Error fetching tenant for domain bradesco.com.br: Net::ReadTimeout with #<TCPSocket:(closed)>
+Error fetching tenant for domain bradesco.com.br: Net::ReadTimeout with #<TCPSocket:(closed)>
+Error fetching tenant for domain csod.com: Net::ReadTimeout with #<TCPSocket:(closed)>
+Error fetching tenant for domain bradesco.com.br: Net::ReadTimeout with #<TCPSocket:(closed)>
+Error fetching tenant for domain bradesco.com.br: Net::ReadTimeout with #<TCPSocket:(closed)>
+Error fetching tenant for domain csod.com: Net::ReadTimeout with #<TCPSocket:(closed)>
+Started GET "/download/results_2cca84f975e99f18.txt" for 127.0.0.1 at 2025-03-03 11:50:46 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_2cca84f975e99f18"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 404 Not Found in 11ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 7663)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-03 12:00:26 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000055c870b2d9d0 @tempfile=#<Tempfile:/tmp/RackMultipart20250303-452973-d0vl2g.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 7601)
+
+
+HTTP request failed for https://-my.sharepoint.com/personal/luigi_polidorio_itsafeinc_com_br/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to -my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://-my.sharepoint.com/personal/asd_45654/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to -my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://-my.sharepoint.com/personal/leonardo_teodoro_grupopan_com/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to -my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://-my.sharepoint.com/personal/rafael_david_bradesco_com_br/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to -my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://-my.sharepoint.com/personal/joao_g_silveira_bradesco_com_br/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to -my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://-my.sharepoint.com/personal/joao_asoiso_bradesco_com_br/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to -my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://-my.sharepoint.com/personal/Leamnucci_gmail_com/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to -my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://-my.sharepoint.com/personal/jvivekanandan_csod_com/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to -my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://-my.sharepoint.com/personal/4240_valdirene_bradesco_com_br/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to -my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://-my.sharepoint.com/personal/csodsoapadmin_csod_com/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to -my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://-my.sharepoint.com/personal/thaisr_lima_bradesco_com_br/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to -my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+Started POST "/validate" for 127.0.0.1 at 2025-03-03 12:10:42 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fe4248bf050 @tempfile=#<Tempfile:/tmp/RackMultipart20250303-452973-jqsdpo.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 6835)
+
+
+Error extracting domain for joao.asoiso@bradesco.com.br: uninitialized constant EmailWorker::DomainService
+Error extracting domain for joao.g.silveira@bradesco.com.br: uninitialized constant EmailWorker::DomainService
+Error extracting domain for leonardo.teodoro@grupopan.com: uninitialized constant EmailWorker::DomainService
+Error extracting domain for rafael.david@bradesco.com.br: uninitialized constant EmailWorker::DomainService
+Error extracting domain for joao.g.silveira@bradesco.com.br: uninitialized constant EmailWorker::DomainService
+Error extracting domain for csodsoapadmin@csod.com: uninitialized constant EmailWorker::DomainService
+Error extracting domain for joao.asoiso@bradesco.com.br: uninitialized constant EmailWorker::DomainService
+Error extracting domain for asd@45654: uninitialized constant EmailWorker::DomainService
+Error extracting domain for jvivekanandan@csod.com: uninitialized constant EmailWorker::DomainService
+Error extracting domain for asd@45654: uninitialized constant EmailWorker::DomainService
+Started POST "/validate" for 127.0.0.1 at 2025-03-03 12:19:10 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fe434c1e588 @tempfile=#<Tempfile:/tmp/RackMultipart20250303-452973-udbots.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 6650)
+
+
+HTTP request failed for https://unknown-tenant-my.sharepoint.com/personal/luigi_polidorio_itsafeinc_com_br/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to unknown-tenant-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://unknown-tenant-my.sharepoint.com/personal/asd_45654/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to unknown-tenant-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+HTTP request failed for https://unknown-tenant-my.sharepoint.com/personal/Leamnucci_gmail_com/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to unknown-tenant-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+Error fetching tenant for domain bradesco.com.br: Net::ReadTimeout with #<TCPSocket:(closed)>
+Error fetching tenant for domain bradesco.com.br: Net::ReadTimeout with #<TCPSocket:(closed)>
+Error fetching tenant for domain bradesco.com.br: Net::ReadTimeout with #<TCPSocket:(closed)>
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Error fetching tenant for domain bradesco.com.br: Net::ReadTimeout with #<TCPSocket:(closed)>
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Started POST "/validate" for 127.0.0.1 at 2025-03-03 13:07:35 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f5d5c6e6098 @tempfile=#<Tempfile:/tmp/RackMultipart20250303-464943-86h0bl.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 7420)
+
+
+Cache miss for domain: grupopan.com. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Invalid tenant data for domain: itsafeinc.com.br
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Tenant could not be fetched for domain: itsafeinc.com.br. Skipping email: luigi.polidorio@itsafeinc.com.br
+Cache miss for domain: 45654. Fetching from API...
+Invalid tenant data for domain: 45654
+Cache miss for domain: 45654. Fetching from API...
+Tenant could not be fetched for domain: 45654. Skipping email: asd@45654
+Cache miss for domain: csod.com. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: csod.com. Fetching from API...
+Cache miss for domain: gmail.com. Fetching from API...
+Invalid tenant data for domain: gmail.com
+Cache miss for domain: gmail.com. Fetching from API...
+Tenant could not be fetched for domain: gmail.com. Skipping email: Leamnucci@gmail.com
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+Started GET "/download/results_9d8a532518cbea9a.txt" for 127.0.0.1 at 2025-03-03 13:08:19 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_9d8a532518cbea9a"}
+Completed 200 OK in 7ms (ActiveRecord: 0.0ms | Allocations: 5065)
+
+
+Successfully deleted file: /home/johnermac/projects/project_app/public/results_9d8a532518cbea9a.txt
+Started GET "/download/results_9d8a532518cbea9a.txt" for 127.0.0.1 at 2025-03-03 13:08:27 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_9d8a532518cbea9a"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 404 Not Found in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 2624)
+
+
