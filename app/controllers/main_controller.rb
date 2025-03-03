@@ -12,8 +12,17 @@ class MainController < ActionController::API
 
   # Validate action
   def validate
+    
     unless params[:file].present?
-      render json: { error: "Missing file upload" }, status: :bad_request
+      render json: { error: "No file uploaded." }, status: :bad_request
+      return
+    end
+
+    uploaded_file = params[:file]
+    validation_result = CheckUploadedFileService.new(uploaded_file).validate
+
+    unless validation_result[:valid]
+      render json: { error: validation_result[:error] }, status: :unprocessable_entity
       return
     end
   

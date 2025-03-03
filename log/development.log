@@ -1648,3 +1648,80 @@ Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 191)
 
 
 Successfully deleted file: /home/johnermac/projects/project_app/public/results_cd01f8a2f126459f.txt
+Started POST "/validate" for 127.0.0.1 at 2025-03-03 10:00:10 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000055765baac8b0 @tempfile=#<Tempfile:/tmp/RackMultipart20250303-431725-mxweg2.pdf>, @content_type="application/pdf", @original_filename="pdf.pdf", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"pdf.pdf\"\r\nContent-Type: application/pdf\r\n">}
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1992)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-03 10:02:29 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f50e07c5dc0 @tempfile=#<Tempfile:/tmp/RackMultipart20250303-431725-2dx657.pdf>, @content_type="application/pdf", @original_filename="pdf.pdf", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"pdf.pdf\"\r\nContent-Type: application/pdf\r\n">}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1289)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-03 10:04:29 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f50e0a46248 @tempfile=#<Tempfile:/tmp/RackMultipart20250303-431725-a6uq8g.pdf>, @content_type="application/pdf", @original_filename="pdf.pdf", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"pdf.pdf\"\r\nContent-Type: application/pdf\r\n">}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1301)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-03 10:06:14 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f50dcc93a68 @tempfile=#<Tempfile:/tmp/RackMultipart20250303-431725-k9oxbh.pdf>, @content_type="application/pdf", @original_filename="pdf.pdf", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"pdf.pdf\"\r\nContent-Type: application/pdf\r\n">}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1295)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-03 10:11:59 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f50e067f7b8 @tempfile=#<Tempfile:/tmp/RackMultipart20250303-431725-8sdb3t.pdf>, @content_type="application/pdf", @original_filename="pdf.pdf", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"pdf.pdf\"\r\nContent-Type: application/pdf\r\n">}
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 5956)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-03 10:22:57 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00005555b25879d0 @tempfile=#<Tempfile:/tmp/RackMultipart20250303-435910-qi6cgz.pdf>, @content_type="application/pdf", @original_filename="pdf.pdf", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"pdf.pdf\"\r\nContent-Type: application/pdf\r\n">}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2051)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-03 10:29:33 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f1320719078 @tempfile=#<Tempfile:/tmp/RackMultipart20250303-435910-xm5l37.pdf>, @content_type="application/pdf", @original_filename="pdf.pdf", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"pdf.pdf\"\r\nContent-Type: application/pdf\r\n">}
+Completed 422 Unprocessable Content in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 590)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-03 10:31:16 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f13248c4e78 @tempfile=#<Tempfile:/tmp/RackMultipart20250303-435910-3jt2pr.txt>, @content_type="text/plain", @original_filename="pdf.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"pdf.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 422 Unprocessable Content in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 102)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-03 10:31:39 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f13248ee070 @tempfile=#<Tempfile:/tmp/RackMultipart20250303-435910-5q73sx.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 6413)
+
+
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+Started POST "/validate" for 127.0.0.1 at 2025-03-03 10:37:59 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f1320b34ef0 @tempfile=#<Tempfile:/tmp/RackMultipart20250303-435910-h6b7k2.exe>, @content_type="application/octet-stream", @original_filename="pdf.exe", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"pdf.exe\"\r\nContent-Type: application/octet-stream\r\n">}
+Completed 422 Unprocessable Content in 3ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 5199)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-03 10:38:35 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f1324c6e420 @tempfile=#<Tempfile:/tmp/RackMultipart20250303-435910-gs9njh.pdf>, @content_type="application/pdf", @original_filename="pdf.pdf", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"pdf.pdf\"\r\nContent-Type: application/pdf\r\n">}
+Completed 422 Unprocessable Content in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 4588)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-03 10:38:52 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f1324d14ca8 @tempfile=#<Tempfile:/tmp/RackMultipart20250303-435910-b1qkqr.txt>, @content_type="text/plain", @original_filename="pdf.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"pdf.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 422 Unprocessable Content in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 4605)
+
+
