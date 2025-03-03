@@ -24,44 +24,34 @@ class MainController < ActionController::API
     filename = "results_#{SecureRandom.hex(8)}.txt"
     filepath = Rails.root.join("public", filename)
   
-    domain_cache = {}
+    # Ensure the 'public' directory exists
+    FileUtils.mkdir_p(Rails.root.join("public")) unless Dir.exist?(Rails.root.join("public"))
   
-    emails.each do |user|
-      begin
-        # Validate email format
-        next unless EmailValidator.valid?(user)
-  
-        # Extract and validate domain
-        domain = DomainService.extract_domain(user)
-  
-        # Fetch tenant
-        tenant = domain_cache[domain] || DomainService.fetch_tenant_name(domain)
-        next if tenant.nil?
-  
-        # Cache the domain and trigger the EmailWorker
-        domain_cache[domain] = tenant
-        EmailWorker.perform_async(tenant, user, filepath.to_s)
-      rescue StandardError => e
-        Rails.logger.error "Error processing #{user}: #{e.message}"
+    # Chunk the emails into batches of 100 and enqueue workers
+    emails.each_slice(100).each do |batch|
+      batch.each do |email|
+        EmailWorker.perform_async(email, filepath.to_s)
       end
     end
   
-    render json: { message: "Verified emails will be saved at http://127.0.0.1:3000/download/#{filename}" }
-  end  
-   
+    render json: { 
+      message: "Results at http://127.0.0.1:3000/download/#{filename}" 
+    }
+  end
+  
 
   # Download action
   def download
     filename = params[:filename]
     filename += ".txt" unless filename.end_with?(".txt") # Adjusted for JSON files
   
-    # Validate filename to prevent directory traversal attacks
-    if filename.match?(/\A[a-zA-Z0-9_\-\.]+\z/)
-      filepath = Rails.root.join("public", filename)
-    else
+    # Validate filename against the stricter regex
+    unless filename.match?(/\Aresults_[a-f0-9]{16}\.txt\z/)
       render plain: "Invalid filename", status: :bad_request
       return
     end
+
+    filepath = Rails.root.join("public", filename)
   
     if File.exist?(filepath)
       begin
@@ -78,14 +68,12 @@ class MainController < ActionController::API
         end
       ensure
         # Ensure the file is deleted and the stream is closed
-        File.delete(filepath) if File.exist?(filepath)
+        CleanupWorker.perform_async(filepath.to_s) if File.exist?(filepath)
         response.stream.close
       end
     else
       render plain: "File not found", status: :not_found
     end
-  end
-  
-    
+  end  
 end
 

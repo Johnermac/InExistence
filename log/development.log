@@ -1054,3 +1054,597 @@ Processing by MainController#download as TEXT
 Completed 404 Not Found in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 7639)
 
 
+Started POST "/validate" for 127.0.0.1 at 2025-03-02 17:22:59 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00005648dfcdd1f0 @tempfile=#<Tempfile:/tmp/RackMultipart20250302-327772-i5d0d9.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Completed 200 OK in 17342ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 6957)
+
+
+Started GET "/download/results_8fef9f53db15587b.txt" for 127.0.0.1 at 2025-03-02 17:23:34 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_8fef9f53db15587b"}
+Completed 200 OK in 0ms (ActiveRecord: 0.0ms | Allocations: 155)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-02 17:23:58 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f3a586761e8 @tempfile=#<Tempfile:/tmp/RackMultipart20250302-327772-6hao39.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Completed 200 OK in 17967ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 4955)
+
+
+Started GET "/Gemfile" for 127.0.0.1 at 2025-03-02 17:24:58 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/Gemfile"):
+  
+Started GET "/" for 127.0.0.1 at 2025-03-02 17:25:05 -0300
+Processing by MainController#health_check as */*
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 894)
+
+
+Started GET "/" for 127.0.0.1 at 2025-03-02 17:25:13 -0300
+Processing by MainController#health_check as */*
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 200 OK in 0ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 177)
+
+
+Started GET "/etc/passwd" for 127.0.0.1 at 2025-03-02 17:25:21 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/etc/passwd"):
+  
+Started GET "/etc/passwd" for 127.0.0.1 at 2025-03-02 17:25:36 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/etc/passwd"):
+  
+Started GET "/download/asdasd.txt" for 127.0.0.1 at 2025-03-02 17:25:44 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"asdasd"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 400 Bad Request in 0ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 167)
+
+
+Started GET "/etc/passwd" for 127.0.0.1 at 2025-03-02 17:26:22 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/etc/passwd"):
+  
+Started GET "/config.ru" for 127.0.0.1 at 2025-03-02 17:26:31 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/config.ru"):
+  
+Started GET "/download/file.pdf" for 127.0.0.1 at 2025-03-02 17:26:36 -0300
+Processing by MainController#download as PDF
+  Parameters: {"filename"=>"file"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 400 Bad Request in 0ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 157)
+
+
+Started GET "/etc/passwd" for 127.0.0.1 at 2025-03-02 17:26:52 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/etc/passwd"):
+  
+Started GET "/download/results_8fef9f53db15587b.txt" for 127.0.0.1 at 2025-03-02 17:27:01 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_8fef9f53db15587b"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 0ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 224)
+
+
+Started GET "/download/resulresults_3b8f2be842fb9e18sssss.txt" for 127.0.0.1 at 2025-03-02 17:27:32 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"resulresults_3b8f2be842fb9e18sssss"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 400 Bad Request in 0ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 156)
+
+
+Started GET "/download/resulresults_3b8f2be842fb9e10.txt" for 127.0.0.1 at 2025-03-02 17:27:38 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"resulresults_3b8f2be842fb9e10"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 400 Bad Request in 0ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 156)
+
+
+Started GET "/download/resulresults_3b8f2be842fb9e00.txt" for 127.0.0.1 at 2025-03-02 17:27:43 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"resulresults_3b8f2be842fb9e00"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 400 Bad Request in 0ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 156)
+
+
+Started GET "/download/resulresults_3b8f2be842fb9e18.txt" for 127.0.0.1 at 2025-03-02 17:27:54 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"resulresults_3b8f2be842fb9e18"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 400 Bad Request in 0ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 156)
+
+
+Started GET "/download/results_3b8f2be842fb9e17.txt" for 127.0.0.1 at 2025-03-02 17:28:07 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_3b8f2be842fb9e17"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 215)
+
+
+Started GET "/download/results_3b8f2be842fb9e118.txt" for 127.0.0.1 at 2025-03-02 17:28:14 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_3b8f2be842fb9e118"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 400 Bad Request in 0ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 156)
+
+
+Started GET "/download/results_3b8f2be842fb9e08.txt" for 127.0.0.1 at 2025-03-02 17:28:20 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_3b8f2be842fb9e08"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 0ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 215)
+
+
+Started GET "/download/results_3b8f2be842fb9e18.txt" for 127.0.0.1 at 2025-03-02 17:28:24 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_3b8f2be842fb9e18"}
+Completed 200 OK in 0ms (ActiveRecord: 0.0ms | Allocations: 116)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-02 18:53:07 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fce703ce7e0 @tempfile=#<Tempfile:/tmp/RackMultipart20250302-342668-iiwp2v.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+Completed 200 OK in 31163ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 9546)
+
+
+Started GET "/download/results_f793c651ab536bcc.txt" for 127.0.0.1 at 2025-03-02 18:54:30 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_f793c651ab536bcc"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 5403)
+
+
+  
+ArgumentError (Job arguments to CleanupWorker must be native JSON types, but #<Pathname:/home/johnermac/projects/project_app/public/results_f793c651ab536bcc.txt> is a Pathname.
+See https://github.com/sidekiq/sidekiq/wiki/Best-Practices
+To disable this error, add `Sidekiq.strict_args!(false)` to your initializer.
+):
+  
+app/controllers/main_controller.rb:81:in `download'
+Started GET "/download/results_f793c651ab536bcc.txt" for 127.0.0.1 at 2025-03-02 18:54:55 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_f793c651ab536bcc"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 637)
+
+
+  
+ArgumentError (Job arguments to CleanupWorker must be native JSON types, but #<Pathname:/home/johnermac/projects/project_app/public/results_f793c651ab536bcc.txt> is a Pathname.
+See https://github.com/sidekiq/sidekiq/wiki/Best-Practices
+To disable this error, add `Sidekiq.strict_args!(false)` to your initializer.
+):
+  
+app/controllers/main_controller.rb:81:in `download'
+Started GET "/download/results_f793c651ab536bcc.txt" for 127.0.0.1 at 2025-03-02 18:54:57 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_f793c651ab536bcc"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms | Allocations: 575)
+
+
+  
+ArgumentError (Job arguments to CleanupWorker must be native JSON types, but #<Pathname:/home/johnermac/projects/project_app/public/results_f793c651ab536bcc.txt> is a Pathname.
+See https://github.com/sidekiq/sidekiq/wiki/Best-Practices
+To disable this error, add `Sidekiq.strict_args!(false)` to your initializer.
+):
+  
+app/controllers/main_controller.rb:81:in `download'
+Started GET "/download/results_f793c651ab536bcc.txt" for 127.0.0.1 at 2025-03-02 18:55:04 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_f793c651ab536bcc"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 575)
+
+
+  
+ArgumentError (Job arguments to CleanupWorker must be native JSON types, but #<Pathname:/home/johnermac/projects/project_app/public/results_f793c651ab536bcc.txt> is a Pathname.
+See https://github.com/sidekiq/sidekiq/wiki/Best-Practices
+To disable this error, add `Sidekiq.strict_args!(false)` to your initializer.
+):
+  
+app/controllers/main_controller.rb:81:in `download'
+Started GET "/download/results_f793c651ab536bcc.txt" for 127.0.0.1 at 2025-03-02 18:57:13 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_f793c651ab536bcc"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 633)
+
+
+Successfully deleted file: /home/johnermac/projects/project_app/public/results_f793c651ab536bcc.txt
+Started GET "/download/results_f793c651ab536bcc.txt" for 127.0.0.1 at 2025-03-02 18:57:21 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_f793c651ab536bcc"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 404 Not Found in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 999)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-02 20:11:55 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fce70a19438 @tempfile=#<Tempfile:/tmp/RackMultipart20250302-342668-c6zqeg.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2391)
+
+
+  
+NameError (uninitialized constant MainController::BatchProcessingWorker
+Did you mean?  BatchprocessingWorker):
+  
+app/controllers/main_controller.rb:32:in `block in validate'
+app/controllers/main_controller.rb:31:in `each'
+app/controllers/main_controller.rb:31:in `validate'
+Started POST "/validate" for 127.0.0.1 at 2025-03-02 20:13:04 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000556516b47d98 @tempfile=#<Tempfile:/tmp/RackMultipart20250302-356802-t0a3qy.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2551)
+
+
+  
+NameError (uninitialized constant MainController::BatchProcessingWorker
+Did you mean?  BatchprocessingWorker):
+  
+app/controllers/main_controller.rb:32:in `block in validate'
+app/controllers/main_controller.rb:31:in `each'
+app/controllers/main_controller.rb:31:in `validate'
+Started POST "/validate" for 127.0.0.1 at 2025-03-02 20:16:58 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f56c8c54bc8 @tempfile=#<Tempfile:/tmp/RackMultipart20250302-356802-uayx4e.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2365)
+
+
+  
+NameError (uninitialized constant MainController::BatchProcessingWorker
+Did you mean?  BatchprocessingWorker):
+  
+app/controllers/main_controller.rb:32:in `block in validate'
+app/controllers/main_controller.rb:31:in `each'
+app/controllers/main_controller.rb:31:in `validate'
+Started POST "/validate" for 127.0.0.1 at 2025-03-02 20:17:55 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000560f505acb38 @tempfile=#<Tempfile:/tmp/RackMultipart20250302-357675-w0no19.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1539)
+
+
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Started GET "/download/results_fbc801034eeec30b.txt" for 127.0.0.1 at 2025-03-02 20:18:15 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_fbc801034eeec30b"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 634)
+
+
+Successfully deleted file: /home/johnermac/projects/project_app/public/results_fbc801034eeec30b.txt
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+Started GET "/download/results_fbc801034eeec30b.txt" for 127.0.0.1 at 2025-03-02 20:18:32 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_fbc801034eeec30b"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 222)
+
+
+Successfully deleted file: /home/johnermac/projects/project_app/public/results_fbc801034eeec30b.txt
+Started GET "/download/results_fbc801034eeec30b.txt" for 127.0.0.1 at 2025-03-02 20:18:44 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_fbc801034eeec30b"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 404 Not Found in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 7640)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-02 20:26:47 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f72248f7940 @tempfile=#<Tempfile:/tmp/RackMultipart20250302-357675-cs0pg1.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 925)
+
+
+Started GET "/download/results_8ba4dc2201a445e9.txt" for 127.0.0.1 at 2025-03-02 20:27:38 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_8ba4dc2201a445e9"}
+Completed 200 OK in 5ms (ActiveRecord: 0.0ms | Allocations: 5036)
+
+
+Successfully deleted file: /home/johnermac/projects/project_app/public/results_8ba4dc2201a445e9.txt
+Started POST "/validate" for 127.0.0.1 at 2025-03-02 20:33:24 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f644c385cb8 @tempfile=#<Tempfile:/tmp/RackMultipart20250302-359536-79w1jc.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1506)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-02 20:39:08 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f644c839cc8 @tempfile=#<Tempfile:/tmp/RackMultipart20250302-359536-bccab0.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 935)
+
+
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+Started POST "/validate" for 127.0.0.1 at 2025-03-02 21:38:04 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000055a3919c1c08 @tempfile=#<Tempfile:/tmp/RackMultipart20250302-371110-6p4e0.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2907)
+
+
+Started GET "/download/results_0a991c16ad5f2f01.txt" for 127.0.0.1 at 2025-03-02 21:39:34 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_0a991c16ad5f2f01"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 404 Not Found in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 7663)
+
+
+Started GET "/download/results_0a991c16ad5f2f01.txt" for 127.0.0.1 at 2025-03-02 21:39:37 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_0a991c16ad5f2f01"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 256)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-02 21:47:01 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000055d68b464008 @tempfile=#<Tempfile:/tmp/RackMultipart20250302-372724-th1vpd.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2970)
+
+
+HTTP request failed for https://bradesco.com.br-my.sharepoint.com/personal/joao_g_silveira_bradesco_com_br/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to bradesco.com.br-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://bradesco.com.br-my.sharepoint.com/personal/joao_asoiso_bradesco_com_br/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to bradesco.com.br-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://bradesco.com.br-my.sharepoint.com/personal/rafael_david_bradesco_com_br/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to bradesco.com.br-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://grupopan.com-my.sharepoint.com/personal/leonardo_teodoro_grupopan_com/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to grupopan.com-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://itsafeinc.com.br-my.sharepoint.com/personal/luigi_polidorio_itsafeinc_com_br/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to itsafeinc.com.br-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://3asd-45*-my.sharepoint.com/personal/3asd_45_/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to 3asd-45*-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://bradesco.com.br-my.sharepoint.com/personal/4240_valdirene_bradesco_com_br/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to bradesco.com.br-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://bradesco.com.br-my.sharepoint.com/personal/thaisr_lima_bradesco_com_br/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to bradesco.com.br-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://csod.com-my.sharepoint.com/personal/csodsoapadmin_csod_com/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to csod.com-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://csod.com-my.sharepoint.com/personal/jvivekanandan_csod_com/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to csod.com-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://45654-my.sharepoint.com/personal/asd_45654/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to 45654-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://gmail.com-my.sharepoint.com/personal/Leamnucci_gmail_com/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to gmail.com-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://3asd-45*-my.sharepoint.com/personal/3asd_45_/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to 3asd-45*-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://csod.com-my.sharepoint.com/personal/csodsoapadmin_csod_com/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to csod.com-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://bradesco.com.br-my.sharepoint.com/personal/4240_valdirene_bradesco_com_br/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to bradesco.com.br-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://bradesco.com.br-my.sharepoint.com/personal/joao_g_silveira_bradesco_com_br/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to bradesco.com.br-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://grupopan.com-my.sharepoint.com/personal/leonardo_teodoro_grupopan_com/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to grupopan.com-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+Started GET "/download/results_79b20a79ac83dce6.txt" for 127.0.0.1 at 2025-03-02 21:47:38 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_79b20a79ac83dce6"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 404 Not Found in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 7663)
+
+
+Started GET "/download/results_79b20a79ac83dce6.txt" for 127.0.0.1 at 2025-03-02 21:47:48 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_79b20a79ac83dce6"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 256)
+
+
+Started GET "/download/results_79b20a79ac83dce6.txt" for 127.0.0.1 at 2025-03-02 21:59:57 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_79b20a79ac83dce6"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 215)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-02 22:01:29 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f04e09fd530 @tempfile=#<Tempfile:/tmp/RackMultipart20250302-372724-d8jes0.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2248)
+
+
+HTTP request failed for https://itsafeinc.com.br-my.sharepoint.com/personal/luigi_polidorio_itsafeinc_com_br/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to itsafeinc.com.br-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://bradesco.com.br-my.sharepoint.com/personal/joao_g_silveira_bradesco_com_br/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to bradesco.com.br-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://grupopan.com-my.sharepoint.com/personal/leonardo_teodoro_grupopan_com/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to grupopan.com-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://bradesco.com.br-my.sharepoint.com/personal/joao_asoiso_bradesco_com_br/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to bradesco.com.br-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://bradesco.com.br-my.sharepoint.com/personal/rafael_david_bradesco_com_br/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to bradesco.com.br-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://45654-my.sharepoint.com/personal/asd_45654/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to 45654-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://3asd-45*-my.sharepoint.com/personal/3asd_45_/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to 3asd-45*-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://bradesco.com.br-my.sharepoint.com/personal/4240_valdirene_bradesco_com_br/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to bradesco.com.br-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://bradesco.com.br-my.sharepoint.com/personal/thaisr_lima_bradesco_com_br/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to bradesco.com.br-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://csod.com-my.sharepoint.com/personal/csodsoapadmin_csod_com/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to csod.com-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://csod.com-my.sharepoint.com/personal/jvivekanandan_csod_com/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to csod.com-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://gmail.com-my.sharepoint.com/personal/Leamnucci_gmail_com/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to gmail.com-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+Started POST "/validate" for 127.0.0.1 at 2025-03-02 22:05:13 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f04e0ce03d8 @tempfile=#<Tempfile:/tmp/RackMultipart20250302-372724-qgywy9.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 2270)
+
+
+HTTP request failed for https://bradesco.com.br-my.sharepoint.com/personal/rafael_david_bradesco_com_br/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to bradesco.com.br-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://bradesco.com.br-my.sharepoint.com/personal/joao_g_silveira_bradesco_com_br/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to bradesco.com.br-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://bradesco.com.br-my.sharepoint.com/personal/joao_asoiso_bradesco_com_br/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to bradesco.com.br-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://grupopan.com-my.sharepoint.com/personal/leonardo_teodoro_grupopan_com/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to grupopan.com-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://itsafeinc.com.br-my.sharepoint.com/personal/luigi_polidorio_itsafeinc_com_br/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to itsafeinc.com.br-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://3asd-45*-my.sharepoint.com/personal/3asd_45_/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to 3asd-45*-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://csod.com-my.sharepoint.com/personal/jvivekanandan_csod_com/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to csod.com-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://45654-my.sharepoint.com/personal/asd_45654/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to 45654-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://bradesco.com.br-my.sharepoint.com/personal/4240_valdirene_bradesco_com_br/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to bradesco.com.br-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://csod.com-my.sharepoint.com/personal/csodsoapadmin_csod_com/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to csod.com-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://gmail.com-my.sharepoint.com/personal/Leamnucci_gmail_com/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to gmail.com-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://bradesco.com.br-my.sharepoint.com/personal/thaisr_lima_bradesco_com_br/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to bradesco.com.br-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+Started POST "/validate" for 127.0.0.1 at 2025-03-02 22:06:24 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f04dc0df8f8 @tempfile=#<Tempfile:/tmp/RackMultipart20250302-372724-oyqs3r.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2296)
+
+
+HTTP request failed for https://bradesco.com.br-my.sharepoint.com/personal/joao_g_silveira_bradesco_com_br/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to bradesco.com.br-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://bradesco.com.br-my.sharepoint.com/personal/joao_asoiso_bradesco_com_br/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to bradesco.com.br-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://bradesco.com.br-my.sharepoint.com/personal/rafael_david_bradesco_com_br/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to bradesco.com.br-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://grupopan.com-my.sharepoint.com/personal/leonardo_teodoro_grupopan_com/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to grupopan.com-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://itsafeinc.com.br-my.sharepoint.com/personal/luigi_polidorio_itsafeinc_com_br/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to itsafeinc.com.br-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://3asd-45*-my.sharepoint.com/personal/3asd_45_/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to 3asd-45*-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://csod.com-my.sharepoint.com/personal/csodsoapadmin_csod_com/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to csod.com-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://csod.com-my.sharepoint.com/personal/jvivekanandan_csod_com/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to csod.com-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://bradesco.com.br-my.sharepoint.com/personal/4240_valdirene_bradesco_com_br/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to bradesco.com.br-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://45654-my.sharepoint.com/personal/asd_45654/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to 45654-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://gmail.com-my.sharepoint.com/personal/Leamnucci_gmail_com/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to gmail.com-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+HTTP request failed for https://bradesco.com.br-my.sharepoint.com/personal/thaisr_lima_bradesco_com_br/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to bradesco.com.br-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+Started POST "/validate" for 127.0.0.1 at 2025-03-02 22:08:57 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00005655553fbc80 @tempfile=#<Tempfile:/tmp/RackMultipart20250302-376703-i1c09b.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+API Error: HTTP 500 - Internal Server Error for domain bradesco.com.br
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+Completed 200 OK in 84095ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 16726)
+
+
+Started GET "/download/results_e0b237ba72e08850.txt" for 127.0.0.1 at 2025-03-02 22:10:29 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_e0b237ba72e08850"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 627)
+
+
+Successfully deleted file: /home/johnermac/projects/project_app/public/results_e0b237ba72e08850.txt
+Started GET "/download/results_e0b237ba72e08850.txt" for 127.0.0.1 at 2025-03-02 22:10:51 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_e0b237ba72e08850"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 404 Not Found in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 2624)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-02 22:24:32 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000055bd63664768 @tempfile=#<Tempfile:/tmp/RackMultipart20250302-379628-o0y6dg.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2860)
+
+
+  
+NameError (undefined local variable or method `domain' for #<MainController:0x0000000000b298>):
+  
+app/controllers/main_controller.rb:42:in `block (2 levels) in validate'
+app/controllers/main_controller.rb:38:in `each'
+app/controllers/main_controller.rb:38:in `block in validate'
+app/controllers/main_controller.rb:36:in `each'
+app/controllers/main_controller.rb:36:in `validate'
+Started POST "/validate" for 127.0.0.1 at 2025-03-02 22:28:44 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f5b046f9788 @tempfile=#<Tempfile:/tmp/RackMultipart20250302-379628-2w3b4m.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+Completed 200 OK in 32693ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 9758)
+
+
+Started GET "/download/results_840e6c77cfc1a8dc.txt" for 127.0.0.1 at 2025-03-02 22:29:37 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_840e6c77cfc1a8dc"}
+Completed 200 OK in 6ms (ActiveRecord: 0.0ms | Allocations: 5054)
+
+
+Successfully deleted file: /home/johnermac/projects/project_app/public/results_840e6c77cfc1a8dc.txt
+Started POST "/validate" for 127.0.0.1 at 2025-03-02 22:54:20 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00005577d193e5d8 @tempfile=#<Tempfile:/tmp/RackMultipart20250302-385214-tqorx.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2748)
+
+
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+Started POST "/validate" for 127.0.0.1 at 2025-03-02 22:58:25 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f91447c3788 @tempfile=#<Tempfile:/tmp/RackMultipart20250302-385214-4effjj.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2050)
+
+
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+Started GET "/download/results_77574f6186fb375b.txt" for 127.0.0.1 at 2025-03-02 22:59:01 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_77574f6186fb375b"}
+Completed 200 OK in 6ms (ActiveRecord: 0.0ms | Allocations: 5056)
+
+
+Successfully deleted file: /home/johnermac/projects/project_app/public/results_77574f6186fb375b.txt
+Started GET "/download/results_77574f6186fb375b.txt" for 127.0.0.1 at 2025-03-02 22:59:16 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_77574f6186fb375b"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 404 Not Found in 4ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 2625)
+
+
+Started GET "/download/results_77574f6186fb375b.txt" for 127.0.0.1 at 2025-03-02 23:01:21 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_77574f6186fb375b"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 256)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-02 23:01:48 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000055ccb4f90340 @tempfile=#<Tempfile:/tmp/RackMultipart20250302-386665-yqkme.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2562)
+
+
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+Started GET "/download/results_6d02f3276958b103.txt" for 127.0.0.1 at 2025-03-02 23:02:24 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_6d02f3276958b103"}
+Completed 200 OK in 7ms (ActiveRecord: 0.0ms | Allocations: 5058)
+
+
+Successfully deleted file: /home/johnermac/projects/project_app/public/results_6d02f3276958b103.txt
+Started GET "/download/results_6d02f3276958b103.txt" for 127.0.0.1 at 2025-03-02 23:02:36 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_6d02f3276958b103"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 404 Not Found in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 2626)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-02 23:02:54 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f247c5693f0 @tempfile=#<Tempfile:/tmp/RackMultipart20250302-386665-ro95ha.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1303)
+
+
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+Started GET "/download/results_cd01f8a2f126459f.txt" for 127.0.0.1 at 2025-03-02 23:02:56 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_cd01f8a2f126459f"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 199)
+
+
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+Successfully deleted file: /home/johnermac/projects/project_app/public/results_cd01f8a2f126459f.txt
+Started GET "/download/results_cd01f8a2f126459f.txt" for 127.0.0.1 at 2025-03-02 23:03:10 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_cd01f8a2f126459f"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Successfully deleted file: /home/johnermac/projects/project_app/public/results_cd01f8a2f126459f.txt
