@@ -168,10 +168,15 @@
             const reader = new FileReader();
             reader.onload = function(event) {
                 const emailList = event.target.result.split("\n");
+                
+                // Show the message about the file length first
                 document.getElementById("result").innerText = `File loaded with ${emailList.length} emails. Ready for validation.`;
 
-                // Now send the email list for validation
-                sendEmailListForValidation(emailList);
+                // Wait for 3 seconds before proceeding with validation
+                setTimeout(() => {
+                    // Now send the email list for validation
+                    sendEmailListForValidation(emailList);
+                }, 3000);
             };
             reader.readAsText(file);
         }

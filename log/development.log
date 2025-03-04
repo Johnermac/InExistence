@@ -2621,3 +2621,101 @@ Processing by MainController#index as HTML
 Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 294)
 
 
+Started GET "/" for 172.29.240.1 at 2025-03-04 19:01:45 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.6ms | Allocations: 752)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 2055)
+
+
+Started POST "/validate" for 172.29.240.1 at 2025-03-04 19:01:53 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fd6b0585320 @tempfile=#<Tempfile:/tmp/RackMultipart20250304-655864-7tt7i2.txt>, @content_type="text/plain", @original_filename="emails.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"emails.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 6764)
+
+
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Tenant could not be fetched for domain: itsafeinc.com.br. Skipping email: luigi.polidorio@itsafeinc.com.br
+Cache miss for domain: 45654. Fetching from API...
+Cache miss for domain: 45654. Fetching from API...
+Tenant could not be fetched for domain: 45654. Skipping email: asd@45654
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Cache miss for domain: gmail.com. Fetching from API...
+Cache miss for domain: gmail.com. Fetching from API...
+Tenant could not be fetched for domain: gmail.com. Skipping email: Leamnucci@gmail.com
+HTTP request failed for https://truelogicsoft-my.sharepoint.com/personal/kcabrera_truelogic_io/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to truelogicsoft-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+Started GET "/download/results_026177cfe0c0ee20.txt" for 172.29.240.1 at 2025-03-04 19:01:56 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_026177cfe0c0ee20"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 660)
+
+
+Successfully deleted file: /home/johnermac/projects/project_app/public/results_026177cfe0c0ee20.txt
+Started GET "/download/results_026177cfe0c0ee20.txt" for 172.29.240.1 at 2025-03-04 19:02:07 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_026177cfe0c0ee20"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 345)
+
+
+Started GET "/download/results_026177cfe0c0ee20.txt" for 172.29.240.1 at 2025-03-04 19:02:10 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_026177cfe0c0ee20"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 7ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 283)
+
+
+Started GET "/" for 172.29.240.1 at 2025-03-04 19:02:16 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.0ms | Allocations: 12)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 313)
+
+
+Started POST "/validate" for 172.29.240.1 at 2025-03-04 19:03:30 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00005645f7ec1a88 @tempfile=#<Tempfile:/tmp/RackMultipart20250304-655864-s4gui6.txt>, @content_type="text/plain", @original_filename="emails.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"emails.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 5923)
+
+
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Tenant could not be fetched for domain: itsafeinc.com.br. Skipping email: luigi.polidorio@itsafeinc.com.br
+Cache miss for domain: 45654. Fetching from API...
+Cache miss for domain: 45654. Fetching from API...
+Tenant could not be fetched for domain: 45654. Skipping email: asd@45654
+Cache miss for domain: gmail.com. Fetching from API...
+Cache miss for domain: gmail.com. Fetching from API...
+Tenant could not be fetched for domain: gmail.com. Skipping email: Leamnucci@gmail.com
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+HTTP request failed for https://truelogicsoft-my.sharepoint.com/personal/kcabrera_truelogic_io/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to truelogicsoft-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+Started GET "/download/results_2d934e09ebffe286.txt" for 172.29.240.1 at 2025-03-04 19:03:32 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_2d934e09ebffe286"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 241)
+
+
+Successfully deleted file: /home/johnermac/projects/project_app/public/results_2d934e09ebffe286.txt
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+Started GET "/" for 172.29.240.1 at 2025-03-04 19:12:09 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.1ms | Allocations: 7)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
