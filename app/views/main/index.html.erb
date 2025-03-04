@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validator</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .input-container {
+            position: relative;
+        }
+        input {
+            padding: 12px 40px 12px 12px; /* Added padding for icon */
+            font-size: 16px;
+            width: 300px;
+            border: 1px solid #333;
+            border-radius: 6px;
+            outline: none;
+            background-color: #1e1e1e;
+            color: white;
+            text-align: center;
+        }
+        input::placeholder {
+            color: #bbb;
+            text-align: center;
+        }
+        .magnifying-glass {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            fill: #bbb;
+            width: 20px;
+            height: 20px;
+        }
+        .magnifying-glass:hover {
+            fill: white;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        a {
+            color: #1DB954;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        /* Styles for drop zone */
+        .drop-zone {
+            width: 300px;
+            height: 100px;
+            border: 2px dashed #bbb;
+            border-radius: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #bbb;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .drop-zone.hover {
+            border-color: #1DB954;
+            color: #1DB954;
+        }
+    </style>
+</head>
+<body>
+    <h1>Email Validator</h1>
+    
+    <div class="input-container">
+        <input type="text" id="emailInput" placeholder="Enter email" onkeypress="checkEnter(event)">
+        <svg class="magnifying-glass" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" onclick="validateEmail()">
+            <path d="M21 19l-4.35-4.35a8.9 8.9 0 1 0-1.41 1.41L19 21l2 2 2-2-2-2zM10 15a5 5 0 1 1 5-5 5 5 0 0 1-5 5z"/>
+        </svg>
+    </div>
+    
+    <div class="drop-zone" id="dropZone">
+        Drop your .txt file here
+    </div>
+
+    <p id="result"></p>
+
+    <script>
+        function validateEmail() {
+            let emailInput = document.getElementById("emailInput");
+            let email = emailInput.value.trim();
+
+            if (!email) {
+                document.getElementById("result").innerText = "Please enter an email.";
+                return;
+            }
+
+            let formData = new FormData();
+            let blob = new Blob([email], { type: "text/plain" });
+            formData.append("file", blob, "email.txt");
+
+            fetch("/validate", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    document.getElementById("result").innerText = "Error: " + data.error;
+                } else {
+                    document.getElementById("result").innerHTML = `✅ Success! <a href="${data.message}" download>Download results</a>`;
+                }
+                // Clear the input field after submission
+                emailInput.value = "";
+            })
+            .catch(error => {
+                document.getElementById("result").innerText = "Something went wrong.";
+                console.error(error);
+            });
+        }
+
+        function checkEnter(event) {
+            if (event.key === 'Enter') {
+                validateEmail();
+            }
+        }
+
+        // Handle drag and drop
+        const dropZone = document.getElementById("dropZone");
+
+        dropZone.addEventListener("dragover", (event) => {
+            event.preventDefault();
+            dropZone.classList.add("hover");
+        });
+
+        dropZone.addEventListener("dragleave", () => {
+            dropZone.classList.remove("hover");
+        });
+
+        dropZone.addEventListener("drop", (event) => {
+            event.preventDefault();
+            dropZone.classList.remove("hover");
+
+            const file = event.dataTransfer.files[0];
+
+            // Check if the file is a .txt file
+            if (file && file.type === "text/plain") {
+                handleFileUpload(file);
+            } else {
+                document.getElementById("result").innerText = "Please upload a valid .txt file.";
+            }
+        });
+
+        function handleFileUpload(file) {
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                const emailList = event.target.result.split("\n");
+                document.getElementById("result").innerText = `File loaded with ${emailList.length} emails. Ready for validation.`;
+
+                // Now send the email list for validation
+                sendEmailListForValidation(emailList);
+            };
+            reader.readAsText(file);
+        }
+
+        function sendEmailListForValidation(emailList) {
+            let formData = new FormData();
+            formData.append("file", new Blob([emailList.join("\n")], { type: "text/plain" }), "emails.txt");
+
+            fetch("/validate", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    document.getElementById("result").innerText = "Error: " + data.error;
+                } else {
+                    document.getElementById("result").innerHTML = `✅ Success! <a href="${data.message}" download>Download results</a>`;
+                }
+            })
+            .catch(error => {
+                document.getElementById("result").innerText = "Something went wrong.";
+                console.error(error);
+            });
+        }
+    </script>
+</body>
+</html>

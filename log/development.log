@@ -1846,3 +1846,778 @@ Processing by MainController#download as TEXT
 Completed 404 Not Found in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 2624)
 
 
+Started POST "/validate" for 127.0.0.1 at 2025-03-03 16:29:07 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f8b44696168 @tempfile=#<Tempfile:/tmp/RackMultipart20250303-495043-kvow3t.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 7420)
+
+
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: grupopan.com. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Invalid tenant data for domain: itsafeinc.com.br
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Tenant could not be fetched for domain: itsafeinc.com.br. Skipping email: luigi.polidorio@itsafeinc.com.br
+Cache miss for domain: 45654. Fetching from API...
+Invalid tenant data for domain: 45654
+Cache miss for domain: 45654. Fetching from API...
+Tenant could not be fetched for domain: 45654. Skipping email: asd@45654
+Cache miss for domain: csod.com. Fetching from API...
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Cache miss for domain: csod.com. Fetching from API...
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+Cache miss for domain: gmail.com. Fetching from API...
+Invalid tenant data for domain: gmail.com
+Cache miss for domain: gmail.com. Fetching from API...
+Tenant could not be fetched for domain: gmail.com. Skipping email: Leamnucci@gmail.com
+API Error: HTTP 500 - Internal Server Error for domain csod.com
+Cache miss for domain: csod.com. Fetching from API...
+Tenant could not be fetched for domain: csod.com. Skipping email: csodsoapadmin@csod.com
+Started GET "/download/results_c8c6d367f34c2bf6.txt" for 127.0.0.1 at 2025-03-03 16:30:07 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_c8c6d367f34c2bf6"}
+Completed 200 OK in 5ms (ActiveRecord: 0.0ms | Allocations: 5065)
+
+
+Successfully deleted file: /home/johnermac/projects/project_app/public/results_c8c6d367f34c2bf6.txt
+Started GET "/download/results_c8c6d367f34c2bf6.txt" for 127.0.0.1 at 2025-03-03 16:30:12 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_c8c6d367f34c2bf6"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 404 Not Found in 3ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 2624)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-04 10:59:16 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fba4c587998 @tempfile=#<Tempfile:/tmp/RackMultipart20250304-592400-qw53md.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 7505)
+
+
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Cache miss for domain: grupopan.com. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Invalid tenant data for domain: itsafeinc.com.br
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Tenant could not be fetched for domain: itsafeinc.com.br. Skipping email: luigi.polidorio@itsafeinc.com.br
+Cache miss for domain: 45654. Fetching from API...
+Invalid tenant data for domain: 45654
+Cache miss for domain: 45654. Fetching from API...
+Tenant could not be fetched for domain: 45654. Skipping email: asd@45654
+Cache miss for domain: csod.com. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Cache miss for domain: csod.com. Fetching from API...
+Cache miss for domain: gmail.com. Fetching from API...
+Invalid tenant data for domain: gmail.com
+Cache miss for domain: gmail.com. Fetching from API...
+Tenant could not be fetched for domain: gmail.com. Skipping email: Leamnucci@gmail.com
+Cache miss for domain: truelogic.io. Fetching from API...
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+HTTP request failed for https://truelogicsoft-my.sharepoint.com/personal/kcabrera_truelogic_io/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to truelogicsoft-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+Started POST "/validate" for 127.0.0.1 at 2025-03-04 17:14:02 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f420458cc10 @tempfile=#<Tempfile:/tmp/RackMultipart20250304-649043-3hlq7d.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 7508)
+
+
+Cache miss for domain: grupopan.com. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Invalid tenant data for domain: itsafeinc.com.br
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Tenant could not be fetched for domain: itsafeinc.com.br. Skipping email: luigi.polidorio@itsafeinc.com.br
+Cache miss for domain: 45654. Fetching from API...
+Invalid tenant data for domain: 45654
+Cache miss for domain: 45654. Fetching from API...
+Tenant could not be fetched for domain: 45654. Skipping email: asd@45654
+Cache miss for domain: csod.com. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: csod.com. Fetching from API...
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Cache miss for domain: gmail.com. Fetching from API...
+Cache miss for domain: truelogic.io. Fetching from API...
+Invalid tenant data for domain: gmail.com
+Cache miss for domain: gmail.com. Fetching from API...
+Tenant could not be fetched for domain: gmail.com. Skipping email: Leamnucci@gmail.com
+HTTP request failed for https://truelogicsoft-my.sharepoint.com/personal/kcabrera_truelogic_io/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to truelogicsoft-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+Started GET "/" for 127.0.0.1 at 2025-03-04 17:42:59 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as */*
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.3ms | Allocations: 424)
+Completed 200 OK in 14ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 7361)
+
+
+Started GET "/" for 172.29.240.1 at 2025-03-04 17:51:52 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.3ms | Allocations: 424)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 7273)
+
+
+Started POST "/validate" for 172.29.240.1 at 2025-03-04 17:52:32 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fd6bc7fdec0 @tempfile=#<Tempfile:/tmp/RackMultipart20250304-655864-lfgz52.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Content in 0ms (ActiveRecord: 0.0ms | Allocations: 611)
+
+
+  
+ActionController::InvalidAuthenticityToken (Can't verify CSRF token authenticity.):
+  
+actionpack (7.1.5.1) lib/action_controller/metal/request_forgery_protection.rb:293:in `handle_unverified_request'
+actionpack (7.1.5.1) lib/action_controller/metal/request_forgery_protection.rb:388:in `handle_unverified_request'
+actionpack (7.1.5.1) lib/action_controller/metal/request_forgery_protection.rb:377:in `verify_authenticity_token'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:403:in `block in make_lambda'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:202:in `block (2 levels) in halting'
+actionpack (7.1.5.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:203:in `block in halting'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:598:in `block in invoke_before'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:598:in `each'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:598:in `invoke_before'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:119:in `block in run_callbacks'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.1.5.1) lib/abstract_controller/callbacks.rb:258:in `process_action'
+actionpack (7.1.5.1) lib/action_controller/metal/rescue.rb:25:in `process_action'
+actionpack (7.1.5.1) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action'
+activesupport (7.1.5.1) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.1.5.1) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.1.5.1) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.1.5.1) lib/action_controller/metal/instrumentation.rb:73:in `process_action'
+actionpack (7.1.5.1) lib/action_controller/metal/params_wrapper.rb:261:in `process_action'
+activerecord (7.1.5.1) lib/active_record/railties/controller_runtime.rb:32:in `process_action'
+actionpack (7.1.5.1) lib/abstract_controller/base.rb:160:in `process'
+actionview (7.1.5.1) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.5.1) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.5.1) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.5.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.5.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.5.1) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.5.1) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.5.1) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.5.1) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.5.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.5.1) lib/action_dispatch/routing/route_set.rb:882:in `call'
+rack-attack (6.7.0) lib/rack/attack.rb:127:in `call'
+rack (3.1.10) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.1.10) lib/rack/etag.rb:29:in `call'
+rack (3.1.10) lib/rack/conditional_get.rb:43:in `call'
+rack (3.1.10) lib/rack/head.rb:15:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack-session (2.1.0) lib/rack/session/abstract/id.rb:274:in `context'
+rack-session (2.1.0) lib/rack/session/abstract/id.rb:268:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.5.1) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.5.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.5.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.5.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.5.1) lib/active_support/tagged_logging.rb:139:in `block in tagged'
+activesupport (7.1.5.1) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.5.1) lib/active_support/tagged_logging.rb:139:in `tagged'
+activesupport (7.1.5.1) lib/active_support/broadcast_logger.rb:241:in `method_missing'
+railties (7.1.5.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.1.10) lib/rack/method_override.rb:28:in `call'
+rack (3.1.10) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.1.10) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.5.1) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.5.1) lib/rails/engine.rb:536:in `call'
+puma (6.6.0) lib/puma/configuration.rb:279:in `call'
+puma (6.6.0) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.0) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.0) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.0) lib/puma/server.rb:472:in `process_client'
+puma (6.6.0) lib/puma/server.rb:254:in `block in run'
+puma (6.6.0) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+Started POST "/validate" for 172.29.240.1 at 2025-03-04 17:54:27 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fd6b0292078 @tempfile=#<Tempfile:/tmp/RackMultipart20250304-655864-o1bb45.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 6435)
+
+
+Started GET "/Results%20at%20http://127.0.0.1:3000/download/results_2b19099692b220b6.txt" for 172.29.240.1 at 2025-03-04 17:54:43 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/Results%20at%20http:/127.0.0.1:3000/download/results_2b19099692b220b6.txt"):
+  
+Started GET "/download/results_2b19099692b220b6.txt" for 172.29.240.1 at 2025-03-04 17:55:15 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_2b19099692b220b6"}
+Completed 200 OK in 6ms (ActiveRecord: 0.0ms | Allocations: 5233)
+
+
+Successfully deleted file: /home/johnermac/projects/project_app/public/results_2b19099692b220b6.txt
+Started GET "/download/results_2b19099692b220b6.txt" for 172.29.240.1 at 2025-03-04 17:55:25 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_2b19099692b220b6"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 404 Not Found in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 996)
+
+
+Started POST "/validate" for 172.29.240.1 at 2025-03-04 17:57:15 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fd6acc43be8 @tempfile=#<Tempfile:/tmp/RackMultipart20250304-655864-g5a0nx.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 5811)
+
+
+Started GET "/Results%20at%20http://172.29.243.192:3000/download/results_dfa999aaed16e89d.txt" for 172.29.240.1 at 2025-03-04 17:57:27 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/Results%20at%20http:/172.29.243.192:3000/download/results_dfa999aaed16e89d.txt"):
+  
+Started GET "/download/results_dfa999aaed16e89d.txt" for 172.29.240.1 at 2025-03-04 17:57:40 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_dfa999aaed16e89d"}
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 644)
+
+
+Successfully deleted file: /home/johnermac/projects/project_app/public/results_dfa999aaed16e89d.txt
+Started GET "/download/results_dfa999aaed16e89d.txt" for 172.29.240.1 at 2025-03-04 17:57:43 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_dfa999aaed16e89d"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 833)
+
+
+Started GET "/" for 172.29.240.1 at 2025-03-04 18:01:09 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.3ms | Allocations: 352)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1658)
+
+
+Started POST "/validate" for 172.29.240.1 at 2025-03-04 18:01:16 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fd6b87fb430 @tempfile=#<Tempfile:/tmp/RackMultipart20250304-655864-ki7v31.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 5740)
+
+
+Started GET "/download/results_26a2c131aa793b37.txt" for 172.29.240.1 at 2025-03-04 18:01:20 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_26a2c131aa793b37"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 659)
+
+
+Successfully deleted file: /home/johnermac/projects/project_app/public/results_26a2c131aa793b37.txt
+Started GET "/download/results_26a2c131aa793b37.txt" for 172.29.240.1 at 2025-03-04 18:01:40 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_26a2c131aa793b37"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 345)
+
+
+Started GET "/download/results_26a2c131aa793b37.txt" for 172.29.240.1 at 2025-03-04 18:01:43 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_26a2c131aa793b37"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 281)
+
+
+Started GET "/" for 172.29.240.1 at 2025-03-04 18:06:23 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.0ms | Allocations: 12)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 314)
+
+
+Started GET "/" for 172.29.240.1 at 2025-03-04 18:06:47 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.4ms | Allocations: 361)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 1664)
+
+
+Started POST "/validate" for 172.29.240.1 at 2025-03-04 18:07:00 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fd6ac82c5f0 @tempfile=#<Tempfile:/tmp/RackMultipart20250304-655864-3b72hx.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 5738)
+
+
+Email not verified: joao.g.asdasdira@bradesco.com.br, Response Code: 404
+Started GET "/download/results_2293e9539f801b19.txt" for 172.29.240.1 at 2025-03-04 18:07:02 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_2293e9539f801b19"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 323)
+
+
+Started GET "/download/results_2293e9539f801b19.txt" for 172.29.240.1 at 2025-03-04 18:07:05 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_2293e9539f801b19"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 282)
+
+
+Started POST "/validate" for 172.29.240.1 at 2025-03-04 18:07:16 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fd6ac922c20 @tempfile=#<Tempfile:/tmp/RackMultipart20250304-655864-26i3ia.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 4880)
+
+
+Started POST "/validate" for 172.29.240.1 at 2025-03-04 18:07:25 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fd6b002d800 @tempfile=#<Tempfile:/tmp/RackMultipart20250304-655864-ib1toa.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 4852)
+
+
+Started GET "/" for 172.29.240.1 at 2025-03-04 18:07:28 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.0ms | Allocations: 12)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 310)
+
+
+Started POST "/validate" for 172.29.240.1 at 2025-03-04 18:07:37 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fd6b00c9930 @tempfile=#<Tempfile:/tmp/RackMultipart20250304-655864-r6k9jv.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 4852)
+
+
+Started GET "/download/results_aa5f154435ccca40.txt" for 172.29.240.1 at 2025-03-04 18:07:40 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_aa5f154435ccca40"}
+Completed 200 OK in 5ms (ActiveRecord: 0.0ms | Allocations: 5193)
+
+
+Successfully deleted file: /home/johnermac/projects/project_app/public/results_aa5f154435ccca40.txt
+Started POST "/validate" for 172.29.240.1 at 2025-03-04 18:07:59 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fd6a41233d8 @tempfile=#<Tempfile:/tmp/RackMultipart20250304-655864-461d4s.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 5812)
+
+
+Started POST "/validate" for 172.29.240.1 at 2025-03-04 18:08:01 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fd6a41f50e0 @tempfile=#<Tempfile:/tmp/RackMultipart20250304-655864-iq7ysn.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 4898)
+
+
+Started POST "/validate" for 172.29.240.1 at 2025-03-04 18:08:17 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fd6a42d40d8 @tempfile=#<Tempfile:/tmp/RackMultipart20250304-655864-2b7dq8.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 4852)
+
+
+Started GET "/download/results_75d4aed707164050.txt" for 172.29.240.1 at 2025-03-04 18:08:19 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_75d4aed707164050"}
+Completed 200 OK in 4ms (ActiveRecord: 0.0ms | Allocations: 5195)
+
+
+Successfully deleted file: /home/johnermac/projects/project_app/public/results_75d4aed707164050.txt
+Started GET "/" for 172.29.240.1 at 2025-03-04 18:08:53 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 2005)
+
+
+  
+ActionView::MissingTemplate (Missing template main/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/johnermac/projects/project_app/app/views"
+  * "/var/lib/gems/3.0.0/gems/turbo-rails-2.0.11/app/views"
+  * "/var/lib/gems/3.0.0/gems/actiontext-7.1.5.1/app/views"
+  * "/var/lib/gems/3.0.0/gems/actionmailbox-7.1.5.1/app/views"
+
+Did you mean?  rails/conductor/action_mailbox/inbound_emails/index
+               rails/conductor/action_mailbox/inbound_emails/new
+               layouts/mailer
+               rails/conductor/action_mailbox/inbound_emails/sources/new
+               layouts/rails/conductor
+               layouts/turbo_rails/frame):
+  
+app/controllers/main_controller.rb:9:in `index'
+Started GET "/" for 172.29.240.1 at 2025-03-04 18:11:21 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.3ms | Allocations: 356)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 1660)
+
+
+Started GET "/" for 172.29.240.1 at 2025-03-04 18:13:02 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.5ms | Allocations: 444)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 1748)
+
+
+Started POST "/validate" for 172.29.240.1 at 2025-03-04 18:13:17 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fd6acc68948 @tempfile=#<Tempfile:/tmp/RackMultipart20250304-655864-4sjnug.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 5740)
+
+
+Started GET "/download/results_637c10de94b20965.txt" for 172.29.240.1 at 2025-03-04 18:13:20 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_637c10de94b20965"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 660)
+
+
+Successfully deleted file: /home/johnermac/projects/project_app/public/results_637c10de94b20965.txt
+Started GET "/download/results_637c10de94b20965.txt" for 172.29.240.1 at 2025-03-04 18:13:26 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_637c10de94b20965"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 345)
+
+
+Started GET "/download/results_637c10de94b20965.txt" for 172.29.240.1 at 2025-03-04 18:13:28 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_637c10de94b20965"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 281)
+
+
+Started GET "/" for 172.29.240.1 at 2025-03-04 18:13:34 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.0ms | Allocations: 12)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 313)
+
+
+Started GET "/" for 172.29.240.1 at 2025-03-04 18:16:30 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.3ms | Allocations: 458)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 1761)
+
+
+Started POST "/validate" for 172.29.240.1 at 2025-03-04 18:17:19 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fd6b07aa808 @tempfile=#<Tempfile:/tmp/RackMultipart20250304-655864-qo6gon.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 10296)
+
+
+Started GET "/download/results_abc6126505a50adb.txt" for 172.29.240.1 at 2025-03-04 18:17:22 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_abc6126505a50adb"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 660)
+
+
+Successfully deleted file: /home/johnermac/projects/project_app/public/results_abc6126505a50adb.txt
+Started GET "/" for 172.29.240.1 at 2025-03-04 18:17:48 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.0ms | Allocations: 12)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 360)
+
+
+Started GET "/" for 172.29.240.1 at 2025-03-04 18:31:34 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.3ms | Allocations: 505)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 1811)
+
+
+Started GET "/" for 172.29.240.1 at 2025-03-04 18:31:43 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 313)
+
+
+Started GET "/" for 172.29.240.1 at 2025-03-04 18:32:56 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.3ms | Allocations: 509)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 1812)
+
+
+Started GET "/" for 172.29.240.1 at 2025-03-04 18:32:59 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 313)
+
+
+Started GET "/" for 172.29.240.1 at 2025-03-04 18:33:01 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 294)
+
+
+Started GET "/" for 172.29.240.1 at 2025-03-04 18:34:47 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.3ms | Allocations: 502)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1805)
+
+
+Started GET "/" for 172.29.240.1 at 2025-03-04 18:34:51 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 313)
+
+
+Started GET "/" for 172.29.240.1 at 2025-03-04 18:34:55 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 294)
+
+
+Started GET "/" for 172.29.240.1 at 2025-03-04 18:35:19 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.3ms | Allocations: 503)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1810)
+
+
+Started GET "/" for 172.29.240.1 at 2025-03-04 18:35:58 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.4ms | Allocations: 506)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1810)
+
+
+Started GET "/" for 172.29.240.1 at 2025-03-04 18:35:59 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 313)
+
+
+Started GET "/" for 172.29.240.1 at 2025-03-04 18:36:53 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.3ms | Allocations: 457)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1760)
+
+
+Started GET "/" for 172.29.240.1 at 2025-03-04 18:39:09 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.4ms | Allocations: 480)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 1783)
+
+
+Started POST "/validate" for 172.29.240.1 at 2025-03-04 18:39:16 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00005645f7ac1078 @tempfile=#<Tempfile:/tmp/RackMultipart20250304-655864-k2m2ia.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 5741)
+
+
+Started GET "/download/results_b7b4d9d56cf126c1.txt" for 172.29.240.1 at 2025-03-04 18:39:20 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_b7b4d9d56cf126c1"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 660)
+
+
+Successfully deleted file: /home/johnermac/projects/project_app/public/results_b7b4d9d56cf126c1.txt
+Started GET "/" for 172.29.240.1 at 2025-03-04 18:39:35 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.0ms | Allocations: 12)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 361)
+
+
+Started POST "/validate" for 172.29.240.1 at 2025-03-04 18:39:45 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fd6b844ef80 @tempfile=#<Tempfile:/tmp/RackMultipart20250304-655864-8klnr.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 4908)
+
+
+Started GET "/download/results_e512d2b5bebb8859.txt" for 172.29.240.1 at 2025-03-04 18:40:02 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_e512d2b5bebb8859"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 286)
+
+
+Started GET "/" for 172.29.240.1 at 2025-03-04 18:41:27 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 294)
+
+
+Started GET "/" for 172.29.240.1 at 2025-03-04 18:48:26 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 1.1ms | Allocations: 668)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 1974)
+
+
+Started GET "/" for 172.29.240.1 at 2025-03-04 18:52:15 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.4ms | Allocations: 736)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 2039)
+
+
+Started POST "/validateEmails" for 172.29.240.1 at 2025-03-04 18:52:34 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [POST] "/validateEmails"):
+  
+Started GET "/" for 172.29.240.1 at 2025-03-04 18:55:37 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.4ms | Allocations: 737)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 2044)
+
+
+Started POST "/validate" for 172.29.240.1 at 2025-03-04 18:55:40 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fd6a4577448 @tempfile=#<Tempfile:/tmp/RackMultipart20250304-655864-fsl7od.txt>, @content_type="text/plain", @original_filename="emails.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"emails.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 6766)
+
+
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Tenant could not be fetched for domain: itsafeinc.com.br. Skipping email: luigi.polidorio@itsafeinc.com.br
+Cache miss for domain: 45654. Fetching from API...
+Cache miss for domain: 45654. Fetching from API...
+Tenant could not be fetched for domain: 45654. Skipping email: asd@45654
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Cache miss for domain: gmail.com. Fetching from API...
+Cache miss for domain: gmail.com. Fetching from API...
+Tenant could not be fetched for domain: gmail.com. Skipping email: Leamnucci@gmail.com
+HTTP request failed for https://truelogicsoft-my.sharepoint.com/personal/kcabrera_truelogic_io/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to truelogicsoft-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+Started GET "/" for 172.29.240.1 at 2025-03-04 18:56:02 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.0ms | Allocations: 12)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 335)
+
+
+Started POST "/validate" for 172.29.240.1 at 2025-03-04 18:57:02 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fd6ac9ff300 @tempfile=#<Tempfile:/tmp/RackMultipart20250304-655864-ivwa98.txt>, @content_type="text/plain", @original_filename="emails.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"emails.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 422 Unprocessable Content in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 716)
+
+
+Started GET "/" for 172.29.240.1 at 2025-03-04 18:57:20 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 294)
+
+
+Started GET "/" for 172.29.240.1 at 2025-03-04 18:57:26 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 294)
+
+
+Started GET "/" for 172.29.240.1 at 2025-03-04 18:57:55 -0300
+Cannot render console from 172.29.240.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 294)
+
+

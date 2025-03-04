@@ -1,13 +1,13 @@
-class MainController < ActionController::API
-  #skip_before_action :verify_authenticity_token
+class MainController < ActionController::Base
+  skip_before_action :verify_authenticity_token
 
   require 'email_validator' 
   require 'json'
   
   # Health check action
-  def health_check
-    render plain: "API is running"
-  end  
+  def index
+    render :index
+  end    
 
 
   # Validate action
@@ -44,7 +44,7 @@ class MainController < ActionController::API
     end
   
     render json: { 
-      message: "Results at http://127.0.0.1:3000/download/#{filename}" 
+      message: "http://172.29.243.192:3000/download/#{filename}" 
     }
   end
   
