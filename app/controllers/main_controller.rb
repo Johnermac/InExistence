@@ -28,23 +28,27 @@ class MainController < ActionController::Base
   
     file = params[:file].tempfile
     emails = file.readlines.map(&:strip).reject(&:empty?)
-  
+
     # Generate a .txt file for storing verified emails
     filename = "results_#{SecureRandom.hex(8)}.txt"
     filepath = Rails.root.join("public", filename)
   
     # Ensure the 'public' directory exists
     FileUtils.mkdir_p(Rails.root.join("public")) unless Dir.exist?(Rails.root.join("public"))
+
+    # Store the total count in Redis
+    redis_key = "email_validation:#{filename}"
+    Sidekiq.redis { |conn| conn.set(redis_key, emails.size) }
   
     # Chunk the emails into batches of 100 and enqueue workers
     emails.each_slice(100).each do |batch|
       batch.each do |email|
-        EmailWorker.perform_async(email, filepath.to_s)
+        EmailWorker.perform_async(email, filepath.to_s, redis_key)        
       end
     end
   
     render json: { 
-      message: "http://172.29.243.192:3000/download/#{filename}" 
+      message: "http://127.0.0.1:3000/download/#{filename}" 
     }
   end
   

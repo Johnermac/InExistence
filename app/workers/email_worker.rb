@@ -4,11 +4,20 @@ class EmailWorker
   include Sidekiq::Worker
   sidekiq_options queue: :default, retry: 3  
 
-  def perform(email, filepath) 
-
-    return unless email.present?    
+  def perform(email, filepath, redis_key) 
     
-    return unless EmailValidator.valid?(email)
+    unless email.present?
+      Rails.logger.info "Email not present: #{email}. Skipping."
+      decrement_counter(redis_key, filepath) # Ensure counter is decremented even if email is invalid
+      return
+    end
+
+    unless EmailValidator.valid?(email)
+      Rails.logger.info "Invalid email format: #{email}. Skipping."
+      decrement_counter(redis_key, filepath) # Ensure counter is decremented even if email is invalid
+      return
+    end
+
     puts "\n\n => EMAIL: #{email}"
 
     # Extract and validate domain
@@ -17,18 +26,21 @@ class EmailWorker
 
     # Fetch tenant from cache or API
     tenant = DomainService.fetch_tenant_name(domain)
-    # Fetch tenant from cache or API
-    tenant = DomainService.fetch_tenant_name(domain)
     if tenant.nil?
       Rails.logger.error "Tenant could not be fetched for domain: #{domain}. Skipping email: #{email}"
+      decrement_counter(redis_key, filepath) # Decrement even if we skip the email
       return
     end
 
-  puts "\n => TENANT: #{tenant}"
+    puts "\n => TENANT: #{tenant}"
 
     # Construct verification URL and verify email
     url = construct_url(tenant, email)
     fetch_url(url, filepath, email) if url.present?    
+
+    # Decrement counter in Redis
+    decrement_counter(redis_key, filepath)
+    
   end
 
 
@@ -78,5 +90,22 @@ class EmailWorker
     end
   rescue StandardError => e
     Rails.logger.error "Failed to write to file #{filepath}: #{e.message}"
+  end
+
+  def decrement_counter(redis_key, filepath)
+    begin
+      redis = Redis.new # Cria uma nova conexão com Redis
+      remaining = redis.decr(redis_key).to_i
+  
+      if remaining <= 0
+        Rails.logger.info "\n\n => Email validation completed for: #{redis_key}"
+        redis.del(redis_key) # Limpa a chave no Redis
+        CleanupWorker.schedule_cleanup(filepath, 30)
+      end
+    rescue => e
+      Rails.logger.error "Error decrementing counter: #{e.message}"
+    ensure
+      redis.close if redis
+    end
   end
 end

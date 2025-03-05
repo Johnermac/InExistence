@@ -18,4 +18,9 @@ class CleanupWorker
   rescue StandardError => e
     Rails.logger.error "Error while trying to delete file: #{filepath}. Error: #{e.message}"
   end
+
+  def self.schedule_cleanup(filepath, delay_in_seconds)
+    Rails.logger.info "\n\n => Deletion will happen in #{delay_in_seconds} Seconds: #{filepath}"
+    perform_in(delay_in_seconds, filepath)    
+  end
 end

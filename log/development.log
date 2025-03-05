@@ -2719,3 +2719,505 @@ Processing by MainController#index as HTML
 Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 296)
 
 
+Started GET "/" for 127.0.0.1 at 2025-03-04 22:47:19 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.4ms | Allocations: 827)
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 7633)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-04 22:47:43 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f07d875d320 @tempfile=#<Tempfile:/tmp/RackMultipart20250304-701356-m5ia8h.txt>, @content_type="text/plain", @original_filename="emails.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"emails.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 6952)
+
+
+  
+Encoding::UndefinedConversionError ("\xC3" from ASCII-8BIT to UTF-8):
+  
+app/controllers/main_controller.rb:42:in `block (2 levels) in validate'
+app/controllers/main_controller.rb:41:in `each'
+app/controllers/main_controller.rb:41:in `block in validate'
+app/controllers/main_controller.rb:40:in `each'
+app/controllers/main_controller.rb:40:in `each_slice'
+app/controllers/main_controller.rb:40:in `each'
+app/controllers/main_controller.rb:40:in `validate'
+Started GET "/" for 127.0.0.1 at 2025-03-04 22:48:19 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 338)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-04 22:48:47 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f07c0029cd8 @tempfile=#<Tempfile:/tmp/RackMultipart20250304-701356-obvkbh.txt>, @content_type="text/plain", @original_filename="emails.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"emails.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 4995)
+
+
+Started GET "/" for 127.0.0.1 at 2025-03-04 22:49:11 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 298)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-04 22:49:18 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f07d4700de0 @tempfile=#<Tempfile:/tmp/RackMultipart20250304-701356-4ers5f.txt>, @content_type="text/plain", @original_filename="emails.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"emails.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 5878)
+
+
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: grupopan.com. Fetching from API...
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Invalid tenant data for domain: itsafeinc.com.br
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Tenant could not be fetched for domain: itsafeinc.com.br. Skipping email: luigi.polidorio@itsafeinc.com.br
+Cache miss for domain: 45654. Fetching from API...
+Invalid tenant data for domain: 45654
+Cache miss for domain: 45654. Fetching from API...
+Tenant could not be fetched for domain: 45654. Skipping email: asd@45654
+Cache miss for domain: csod.com. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: csod.com. Fetching from API...
+Cache miss for domain: gmail.com. Fetching from API...
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Cache miss for domain: truelogic.io. Fetching from API...
+Invalid tenant data for domain: gmail.com
+Cache miss for domain: gmail.com. Fetching from API...
+Tenant could not be fetched for domain: gmail.com. Skipping email: Leamnucci@gmail.com
+HTTP request failed for https://truelogicsoft-my.sharepoint.com/personal/kcabrera_truelogic_io/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to truelogicsoft-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+Started GET "/" for 127.0.0.1 at 2025-03-05 15:29:32 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.5ms | Allocations: 827)
+Completed 200 OK in 16ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 7633)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-05 15:29:48 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f64c47a2580 @tempfile=#<Tempfile:/tmp/RackMultipart20250305-727739-80ndft.txt>, @content_type="text/plain", @original_filename="emails.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"emails.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 7766)
+
+
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: grupopan.com. Fetching from API...
+Invalid tenant data for domain: itsafeinc.com.br
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Tenant could not be fetched for domain: itsafeinc.com.br. Skipping email: luigi.polidorio@itsafeinc.com.br
+Cache miss for domain: 45654. Fetching from API...
+Invalid tenant data for domain: 45654
+Cache miss for domain: 45654. Fetching from API...
+Tenant could not be fetched for domain: 45654. Skipping email: asd@45654
+Cache miss for domain: csod.com. Fetching from API...
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+Cache miss for domain: csod.com. Fetching from API...
+Cache miss for domain: gmail.com. Fetching from API...
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Invalid tenant data for domain: gmail.com
+Cache miss for domain: gmail.com. Fetching from API...
+Tenant could not be fetched for domain: gmail.com. Skipping email: Leamnucci@gmail.com
+Cache miss for domain: appgate.com. Fetching from API...
+Cache miss for domain: truelogic.io. Fetching from API...
+Cache miss for domain: appgate.com. Fetching from API...
+Cache miss for domain: appgate.com. Fetching from API...
+HTTP request failed for https://truelogicsoft-my.sharepoint.com/personal/kcabrera_truelogic_io/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to truelogicsoft-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+Cache miss for domain: appgate.com. Fetching from API...
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+Started GET "/download/results_929e1866fddcb9f7.txt" for 127.0.0.1 at 2025-03-05 15:30:31 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_929e1866fddcb9f7"}
+Completed 200 OK in 6ms (ActiveRecord: 0.0ms | Allocations: 5307)
+
+
+Successfully deleted file: /home/johnermac/projects/project_app/public/results_929e1866fddcb9f7.txt
+Started GET "/download/results_929e1866fddcb9f7.txt" for 127.0.0.1 at 2025-03-05 15:30:34 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_929e1866fddcb9f7"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 404 Not Found in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 557)
+
+
+Started GET "/download/results_929e1866fddcb9f7.txt" for 127.0.0.1 at 2025-03-05 15:30:36 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_929e1866fddcb9f7"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 323)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-05 15:56:54 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f07b46b90a0 @tempfile=#<Tempfile:/tmp/RackMultipart20250305-728814-x8dnz7.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 7884)
+
+
+  
+NoMethodError (undefined method `message' for #<ActiveSupport::BroadcastLogger:0x000056393475a8f0 @broadcasts=[#<ActiveSupport::Logger:0x000056393475b3e0 @level=0, @progname=nil, @default_formatter=#<Logger::Formatter:0x00005639347b15b0 @datetime_format=nil>, @formatter=#<ActiveSupport::Logger::SimpleFormatter:0x000056393475b228 @datetime_format=nil, @thread_key="activesupport_tagged_logging_tags:16400">, @logdev=#<Logger::LogDevice:0x00005639347b1038 @shift_period_suffix="%Y%m%d", @shift_size=104857600, @shift_age=1, @filename="/home/johnermac/projects/project_app/log/development.log", @dev=#<File:/home/johnermac/projects/project_app/log/development.log>, @binmode=false, @reraise_write_errors=[], @mon_data=#<Monitor:0x00005639347b0fe8>, @mon_data_owner_object_id=4940>, @level_override={}, @local_level_key=:logger_thread_safe_level_15980>, #<ActiveSupport::Logger:0x00005639361b7d88 @level=0, @progname=nil, @default_formatter=#<Logger::Formatter:0x00005639361b7bd0 @datetime_format=nil>, @formatter=#<ActiveSupport::Logger::SimpleFormatter:0x000056393475b228 @datetime_format=nil, @thread_key="activesupport_tagged_logging_tags:16400">, @logdev=#<Logger::LogDevice:0x00005639361b7b08 @shift_period_suffix=nil, @shift_size=nil, @shift_age=nil, @filename=nil, @dev=#<IO:<STDOUT>>, @binmode=false, @reraise_write_errors=[], @mon_data=#<Monitor:0x00005639361b7ab8>, @mon_data_owner_object_id=15960>, @level_override={}, @local_level_key=:logger_thread_safe_level_16440>], @progname="Broadcast", @formatter=#<ActiveSupport::Logger::SimpleFormatter:0x000056393475b228 @datetime_format=nil, @thread_key="activesupport_tagged_logging_tags:16400">>):
+  
+app/controllers/main_controller.rb:32:in `validate'
+Started POST "/validate" for 127.0.0.1 at 2025-03-05 15:57:40 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f07a421baf8 @tempfile=#<Tempfile:/tmp/RackMultipart20250305-728814-re6f9p.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 7468)
+
+
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Tenant could not be fetched for domain: itsafeinc.com.br. Skipping email: luigi.polidorio@itsafeinc.com.br
+Cache miss for domain: 45654. Fetching from API...
+Cache miss for domain: 45654. Fetching from API...
+Tenant could not be fetched for domain: 45654. Skipping email: asd@45654
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Cache miss for domain: gmail.com. Fetching from API...
+Cache miss for domain: gmail.com. Fetching from API...
+Tenant could not be fetched for domain: gmail.com. Skipping email: Leamnucci@gmail.com
+HTTP request failed for https://truelogicsoft-my.sharepoint.com/personal/kcabrera_truelogic_io/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to truelogicsoft-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+Started POST "/validate" for 127.0.0.1 at 2025-03-05 16:00:52 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f07a82896f8 @tempfile=#<Tempfile:/tmp/RackMultipart20250305-728814-cjpmqt.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 7061)
+
+
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Tenant could not be fetched for domain: itsafeinc.com.br. Skipping email: luigi.polidorio@itsafeinc.com.br
+Cache miss for domain: 45654. Fetching from API...
+Cache miss for domain: 45654. Fetching from API...
+Tenant could not be fetched for domain: 45654. Skipping email: asd@45654
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Cache miss for domain: gmail.com. Fetching from API...
+Cache miss for domain: gmail.com. Fetching from API...
+Tenant could not be fetched for domain: gmail.com. Skipping email: Leamnucci@gmail.com
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+HTTP request failed for https://truelogicsoft-my.sharepoint.com/personal/kcabrera_truelogic_io/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to truelogicsoft-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+Started POST "/validate" for 127.0.0.1 at 2025-03-05 16:02:17 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f079c24c750 @tempfile=#<Tempfile:/tmp/RackMultipart20250305-728814-mn47pp.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 6877)
+
+
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Tenant could not be fetched for domain: itsafeinc.com.br. Skipping email: luigi.polidorio@itsafeinc.com.br
+Cache miss for domain: 45654. Fetching from API...
+Cache miss for domain: 45654. Fetching from API...
+Tenant could not be fetched for domain: 45654. Skipping email: asd@45654
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Cache miss for domain: gmail.com. Fetching from API...
+Cache miss for domain: gmail.com. Fetching from API...
+Tenant could not be fetched for domain: gmail.com. Skipping email: Leamnucci@gmail.com
+HTTP request failed for https://truelogicsoft-my.sharepoint.com/personal/kcabrera_truelogic_io/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to truelogicsoft-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+Started POST "/validate" for 127.0.0.1 at 2025-03-05 17:18:54 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fb5f8633d68 @tempfile=#<Tempfile:/tmp/RackMultipart20250305-732095-opbbhl.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 9592)
+
+
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Tenant could not be fetched for domain: itsafeinc.com.br. Skipping email: luigi.polidorio@itsafeinc.com.br
+Cache miss for domain: 45654. Fetching from API...
+Tenant could not be fetched for domain: 45654. Skipping email: asd@45654
+Invalid email format: 3asd-45*. Skipping.
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Cache miss for domain: gmail.com. Fetching from API...
+Tenant could not be fetched for domain: gmail.com. Skipping email: Leamnucci@gmail.com
+HTTP request failed for https://truelogicsoft-my.sharepoint.com/personal/kcabrera_truelogic_io/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to truelogicsoft-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+Email validation completed for: email_validation:results_36da5963d1631f07.txt
+Email validation completed for: email_validation:results_36da5963d1631f07.txt
+Email validation completed for: email_validation:results_36da5963d1631f07.txt
+Email validation completed for: email_validation:results_36da5963d1631f07.txt
+Started POST "/validate" for 127.0.0.1 at 2025-03-05 17:22:47 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fe8d867ca78 @tempfile=#<Tempfile:/tmp/RackMultipart20250305-732272-lpm86k.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 8711)
+
+
+  
+SyntaxError (/home/johnermac/projects/project_app/app/workers/email_worker.rb:110: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/workers/email_worker.rb:110: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/main_controller.rb:46:in `block (2 levels) in validate'
+app/controllers/main_controller.rb:45:in `each'
+app/controllers/main_controller.rb:45:in `block in validate'
+app/controllers/main_controller.rb:44:in `each'
+app/controllers/main_controller.rb:44:in `each_slice'
+app/controllers/main_controller.rb:44:in `each'
+app/controllers/main_controller.rb:44:in `validate'
+Started GET "/" for 127.0.0.1 at 2025-03-05 17:22:50 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.5ms | Allocations: 756)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 2090)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-05 17:23:23 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000055f96882ec88 @tempfile=#<Tempfile:/tmp/RackMultipart20250305-732272-eqebm3.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 7328)
+
+
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Tenant could not be fetched for domain: itsafeinc.com.br. Skipping email: luigi.polidorio@itsafeinc.com.br
+Cache miss for domain: 45654. Fetching from API...
+Tenant could not be fetched for domain: 45654. Skipping email: asd@45654
+Invalid email format: 3asd-45*. Skipping.
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Cache miss for domain: gmail.com. Fetching from API...
+Tenant could not be fetched for domain: gmail.com. Skipping email: Leamnucci@gmail.com
+HTTP request failed for https://truelogicsoft-my.sharepoint.com/personal/kcabrera_truelogic_io/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to truelogicsoft-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+Email validation completed for: email_validation:results_4076f4c5a2d7208d.txt
+Error decrementing counter: undefined local variable or method `filepath' for #<EmailWorker:0x00007f52a01c2510 @jid="00add82660ca2a8b70a854aa", @_context=#<Sidekiq::Processor @capsule=#<Sidekiq::Capsule:0x00005578a2a6c7a8>, @config=#<Sidekiq::Capsule:0x00005578a2a6c7a8>, @callback=#<Proc:0x00005578a57dab40 (lambda)>, @down=false, @done=false, @job=#<struct Sidekiq::BasicFetch::UnitOfWork queue="queue:default", job="{\"retry\":3,\"queue\":\"default\",\"args\":[\"jvivekanandan@csod.com\",\"/home/johnermac/projects/project_app/public/results_4076f4c5a2d7208d.txt\",\"email_validation:results_4076f4c5a2d7208d.txt\"],\"class\":\"EmailWorker\",\"jid\":\"00add82660ca2a8b70a854aa\",\"created_at\":1741206203.327397,\"enqueued_at\":1741206203.3274093}", config=#<Sidekiq::Capsule @name="default", @config=#<Sidekiq::Config:0x00005578a2c25a40>, @queues=["default"], @weights={"default"=>0}, @concurrency=5, @mode=:strict, @redis=#<ConnectionPool:0x00005578a57dbdb0 @size=5, @timeout=1, @auto_reload_after_fork=true, @available=#<ConnectionPool::TimedStack:0x00005578a57dbd10 @create_block=#<Proc:0x00005578a57dbd60 /var/lib/gems/3.0.0/gems/sidekiq-7.3.9/lib/sidekiq/redis_connection.rb:34>, @created=5, @que=[[#<Sidekiq::RedisClientAdapter::CompatClient:0x00007f52b8394b78 @client=#<RedisClient redis://localhost:6379>, @_pipeline_class=Sidekiq::RedisClientAdapter::CompatClient::Pipeline>, 252596.537822262]], @max=5, @mutex=#<Thread::Mutex:0x00005578a57dbcc0>, @resource=#<Thread::ConditionVariable:0x00005578a57dbc98>, @shutdown_block=nil>, @key=:"pool-16340", @key_count=:"pool-16340-count">, @fetcher=#<Sidekiq::BasicFetch:0x00007f52b8396428>, @server_chain=#<Sidekiq::Middleware::Chain:0x00007f52ac16dc70 @config=#<Sidekiq::Capsule @name="default", @config=#<Sidekiq::Config:0x00005578a2c25a40>, @queues=["default"], @weights={"default"=>0}, @concurrency=5, @mode=:strict, @redis=#<ConnectionPool:0x00005578a57dbdb0 @size=5, @timeout=1, @auto_reload_after_fork=true, @available=#<ConnectionPool::TimedStack:0x00005578a57dbd10 @create_block=#<Proc:0x00005578a57dbd60 /var/lib/gems/3.0.0/gems/sidekiq-7.3.9/lib/sidekiq/redis_connection.rb:34>, @created=5, @que=[[#<Sidekiq::RedisClientAdapter::CompatClient:0x00007f52b8394b78 @client=#<RedisClient redis://localhost:6379>, @_pipeline_class=Sidekiq::RedisClientAdapter::CompatClient::Pipeline>, 252596.537822262]], @max=5, @mutex=#<Thread::Mutex:0x00005578a57dbcc0>, @resource=#<Thread::ConditionVariable:0x00005578a57dbc98>, @shutdown_block=nil>, @key=:"pool-16340", @key_count=:"pool-16340-count">, @fetcher=#<Sidekiq::BasicFetch:0x00007f52b8396428>, @server_chain=#<Sidekiq::Middleware::Chain:0x00007f52ac16dc70 ...>>, @entries=[#<Sidekiq::Middleware::Entry:0x00005578a2c25360 @config=#<Sidekiq::Config @options={:labels=>#<Set: {}>, :require=>".", :environment=>"development", :concurrency=>5, :timeout=>25, :poll_interval_average=>nil, :average_scheduled_poll_interval=>5, :on_complex_arguments=>:raise, :iteration=>{:max_job_runtime=>nil, :retry_backoff=>0}, :dead_max_jobs=>10000, :dead_timeout_in_seconds=>15552000, :backtrace_cleaner=>#<Proc:0x00005578a5239f88 /var/lib/gems/3.0.0/gems/sidekiq-7.3.9/lib/sidekiq/rails.rb:60 (lambda)>, :queues=>["default"], :tag=>"project_app", :identity=>"Ermac-PC:732289:9ed19bdafbad"}>, @klass=Sidekiq::Metrics::Middleware, @args=[#<Sidekiq::Metrics::ExecutionTracker @config=#<Sidekiq::Config:0x00005578a2c25a40>, @jobs={"EmailWorker|ms"=>4052, "EmailWorker|p"=>12}, @totals={"ms"=>4052, "p"=>12}, @grams={"EmailWorker"=>#<Sidekiq::Metrics::Histogram:0x00007f52a0198120 @klass="EmailWorker", @buckets=[#<Sidekiq::Metrics::Counter:0x00007f52a01a3f98 @value=5, @lock=#<Thread::Mutex:0x00007f52a01a3f20>>, #<Sidekiq::Metrics::Counter:0x00007f52a01a3ef8 @value=0, @lock=#<Thread::Mutex:0x00007f52a01a3ed0>>, #<Sidekiq::Metrics::Counter:0x00007f52a01a3ea8 @value=0, @lock=#<Thread::Mutex:0x00007f52a01a3e80>>, #<Sidekiq::Metrics::Counter:0x00007f52a01a3e58 @value=0, @lock=#<Thread::Mutex:0x00007f52a01a3e30>>, #<Sidekiq::Metrics::Counter:0x00007f52a01a3e08 @value=0, @lock=#<Thread::Mutex:0x00007f52a01a3de0>>, #<Sidekiq::Metrics::Counter:0x00007f52a01a3db8 @value=0, @lock=#<Thread::Mutex:0x00007f52a01a3d90>>, #<Sidekiq::Metrics::Counter:0x00007f52a01a3d68 @value=0, @lock=#<Thread::Mutex:0x00007f52a01a3d40>>, #<Sidekiq::Metrics::Counter:0x00007f52a01a3d18 @value=0, @lock=#<Thread::Mutex:0x00007f52a01a3cf0>>, #<Sidekiq::Metrics::Counter:0x00007f52a01a3cc8 @value=1, @lock=#<Thread::Mutex:0x00007f52a01a3ca0>>, #<Sidekiq::Metrics::Counter:0x00007f52a01a3c78 @value=6, @lock=#<Thread::Mutex:0x00007f52a01a3c50>>, #<Sidekiq::Metrics::Counter:0x00007f52a01a3c28 @value=0, @lock=#<Thread::Mutex:0x00007f52a01a3c00>>, #<Sidekiq::Metrics::Counter:0x00007f52a01a3bd8 @value=0, @lock=#<Thread::Mutex:0x00007f52a01a3bb0>>, #<Sidekiq::Metrics::Counter:0x00007f52a01a3b88 @value=0, @lock=#<Thread::Mutex:0x00007f52a01a3b60>>, #<Sidekiq::Metrics::Counter:0x00007f52a01a3b38 @value=0, @lock=#<Thread::Mutex:0x00007f52a01a3b10>>, #<Sidekiq::Metrics::Counter:0x00007f52a01a3ae8 @value=0, @lock=#<Thread::Mutex:0x00007f52a01a3ac0>>, #<Sidekiq::Metrics::Counter:0x00007f52a01a3a98 @value=0, @lock=#<Thread::Mutex:0x00007f52a01a3a70>>, #<Sidekiq::Metrics::Counter:0x00007f52a01a3a48 @value=0, @lock=#<Thread::Mutex:0x00007f52a01a3a20>>, #<Sidekiq::Metrics::Counter:0x00007f52a01a39f8 @value=0, @lock=#<Thread::Mutex:0x00007f52a01a39d0>>, #<Sidekiq::Metrics::Counter:0x00007f52a01a39a8 @value=0, @lock=#<Thread::Mutex:0x00007f52a01a3980>>, #<Sidekiq::Metrics::Counter:0x00007f52a01a3958 @value=0, @lock=#<Thread::Mutex:0x00007f52a01a3930>>, #<Sidekiq::Metrics::Counter:0x00007f52a01a3908 @value=0, @lock=#<Thread::Mutex:0x00007f52a01a38e0>>, #<Sidekiq::Metrics::Counter:0x00007f52a01a38b8 @value=0, @lock=#<Thread::Mutex:0x00007f52a01a3890>>, #<Sidekiq::Metrics::Counter:0x00007f52a01a3868 @value=0, @lock=#<Thread::Mutex:0x00007f52a01a3840>>, #<Sidekiq::Metrics::Counter:0x00007f52a01a3818 @value=0, @lock=#<Thread::Mutex:0x00007f52a01a37f0>>, #<Sidekiq::Metrics::Counter:0x00007f52a01a37c8 @value=0, @lock=#<Thread::Mutex:0x00007f52a01a37a0>>, #<Sidekiq::Metrics::Counter:0x00007f52a01a3778 @value=0, @lock=#<Thread::Mutex:0x00007f52a01a3750>>]>}, @lock=#<Thread::Mutex:0x00005578a2c25658>>]>, #<Sidekiq::Middleware::Entry:0x00005578a2c241e0 @config=#<Sidekiq::Config @options={:labels=>#<Set: {}>, :require=>".", :environment=>"development", :concurrency=>5, :timeout=>25, :poll_interval_average=>nil, :average_scheduled_poll_interval=>5, :on_complex_arguments=>:raise, :iteration=>{:max_job_runtime=>nil, :retry_backoff=>0}, :dead_max_jobs=>10000, :dead_timeout_in_seconds=>15552000, :backtrace_cleaner=>#<Proc:0x00005578a5239f88 /var/lib/gems/3.0.0/gems/sidekiq-7.3.9/lib/sidekiq/rails.rb:60 (lambda)>, :queues=>["default"], :tag=>"project_app", :identity=>"Ermac-PC:732289:9ed19bdafbad"}>, @klass=Sidekiq::Job::InterruptHandler, @args=[]>]>>>, @thread=#<Thread:0x00005578a57d9628@sidekiq.default/processor /var/lib/gems/3.0.0/gems/sidekiq-7.3.9/lib/sidekiq/component.rb:17 run>, @reloader=#<Sidekiq::Rails::Reloader @app=MyApp::Application>, @job_logger=#<Sidekiq::JobLogger:0x00005578a57daa50 @config=#<Sidekiq::Config @options={:labels=>#<Set: {}>, :require=>".", :environment=>"development", :concurrency=>5, :timeout=>25, :poll_interval_average=>nil, :average_scheduled_poll_interval=>5, :on_complex_arguments=>:raise, :iteration=>{:max_job_runtime=>nil, :retry_backoff=>0}, :dead_max_jobs=>10000, :dead_timeout_in_seconds=>15552000, :backtrace_cleaner=>#<Proc:0x00005578a5239f88 /var/lib/gems/3.0.0/gems/sidekiq-7.3.9/lib/sidekiq/rails.rb:60 (lambda)>, :queues=>["default"], :tag=>"project_app", :identity=>"Ermac-PC:732289:9ed19bdafbad"}>, @logger=#<Sidekiq::Logger:0x00005578a3b85940 @level=1, @progname=nil, @default_formatter=#<Logger::Formatter:0x00005578a3b85788 @datetime_format=nil>, @formatter=#<Sidekiq::Logger::Formatters::Pretty:0x00005578a3b85468 @datetime_format=nil>, @logdev=#<Logger::LogDevice:0x00005578a3b85670 @shift_period_suffix=nil, @shift_size=nil, @shift_age=nil, @filename=nil, @dev=#<IO:<STDOUT>>, @binmode=false, @reraise_write_errors=[], @mon_data=#<Monitor:0x00005578a3b85620>, @mon_data_owner_object_id=15940>, @level_override={}>, @skip=false>, @retrier=#<Sidekiq::JobRetry:0x00005578a57daa00>>>
+Started POST "/validate" for 127.0.0.1 at 2025-03-05 17:27:31 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f1cf865be60 @tempfile=#<Tempfile:/tmp/RackMultipart20250305-732550-htaay.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 9615)
+
+
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Tenant could not be fetched for domain: itsafeinc.com.br. Skipping email: luigi.polidorio@itsafeinc.com.br
+Cache miss for domain: 45654. Fetching from API...
+Tenant could not be fetched for domain: 45654. Skipping email: asd@45654
+Invalid email format: 3asd-45*. Skipping.
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Cache miss for domain: gmail.com. Fetching from API...
+Tenant could not be fetched for domain: gmail.com. Skipping email: Leamnucci@gmail.com
+HTTP request failed for https://truelogicsoft-my.sharepoint.com/personal/kcabrera_truelogic_io/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to truelogicsoft-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Tenant could not be fetched for domain: itsafeinc.com.br. Skipping email: luigi.polidorio@itsafeinc.com.br
+Cache miss for domain: 45654. Fetching from API...
+Tenant could not be fetched for domain: 45654. Skipping email: asd@45654
+Cache miss for domain: gmail.com. Fetching from API...
+Tenant could not be fetched for domain: gmail.com. Skipping email: Leamnucci@gmail.com
+Invalid email format: 3asd-45*. Skipping.
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Cache miss for domain: 45654. Fetching from API...
+Tenant could not be fetched for domain: itsafeinc.com.br. Skipping email: luigi.polidorio@itsafeinc.com.br
+Tenant could not be fetched for domain: 45654. Skipping email: asd@45654
+Cache miss for domain: gmail.com. Fetching from API...
+Tenant could not be fetched for domain: gmail.com. Skipping email: Leamnucci@gmail.com
+Invalid email format: 3asd-45*. Skipping.
+Cache miss for domain: gmail.com. Fetching from API...
+Tenant could not be fetched for domain: gmail.com. Skipping email: Leamnucci@gmail.com
+Cache miss for domain: 45654. Fetching from API...
+Tenant could not be fetched for domain: 45654. Skipping email: asd@45654
+Invalid email format: 3asd-45*. Skipping.
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Tenant could not be fetched for domain: itsafeinc.com.br. Skipping email: luigi.polidorio@itsafeinc.com.br
+Email validation completed for: email_validation:results_490c2712741d985d.txt
+Started POST "/validate" for 127.0.0.1 at 2025-03-05 17:29:48 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f1cf4997b28 @tempfile=#<Tempfile:/tmp/RackMultipart20250305-732550-cqc3q5.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 6965)
+
+
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Tenant could not be fetched for domain: itsafeinc.com.br. Skipping email: luigi.polidorio@itsafeinc.com.br
+Cache miss for domain: 45654. Fetching from API...
+Tenant could not be fetched for domain: 45654. Skipping email: asd@45654
+Invalid email format: 3asd-45*. Skipping.
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Cache miss for domain: gmail.com. Fetching from API...
+Tenant could not be fetched for domain: gmail.com. Skipping email: Leamnucci@gmail.com
+HTTP request failed for https://truelogicsoft-my.sharepoint.com/personal/kcabrera_truelogic_io/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to truelogicsoft-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+Email validation completed for: email_validation:results_5123c76da4f373f6.txt
+Started POST "/validate" for 127.0.0.1 at 2025-03-05 17:39:59 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f6fc04fc158 @tempfile=#<Tempfile:/tmp/RackMultipart20250305-733191-eq9xjx.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 9615)
+
+
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: grupopan.com. Fetching from API...
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Invalid tenant data for domain: itsafeinc.com.br
+Tenant could not be fetched for domain: itsafeinc.com.br. Skipping email: luigi.polidorio@itsafeinc.com.br
+Cache miss for domain: 45654. Fetching from API...
+Invalid tenant data for domain: 45654
+Tenant could not be fetched for domain: 45654. Skipping email: asd@45654
+Invalid email format: 3asd-45*. Skipping.
+Cache miss for domain: csod.com. Fetching from API...
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Cache miss for domain: csod.com. Fetching from API...
+Cache miss for domain: gmail.com. Fetching from API...
+Cache miss for domain: truelogic.io. Fetching from API...
+Invalid tenant data for domain: gmail.com
+Tenant could not be fetched for domain: gmail.com. Skipping email: Leamnucci@gmail.com
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+HTTP request failed for https://truelogicsoft-my.sharepoint.com/personal/kcabrera_truelogic_io/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to truelogicsoft-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+Email not verified: jvivekanandan@csod.com, Response Code: 503
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+Email validation completed for: email_validation:results_2e6b531c2fdd450a.txt
+Started POST "/validate" for 127.0.0.1 at 2025-03-05 17:44:13 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fe144508638 @tempfile=#<Tempfile:/tmp/RackMultipart20250305-733401-pajd9e.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 9615)
+
+
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Tenant could not be fetched for domain: itsafeinc.com.br. Skipping email: luigi.polidorio@itsafeinc.com.br
+Cache miss for domain: 45654. Fetching from API...
+Tenant could not be fetched for domain: 45654. Skipping email: asd@45654
+Invalid email format: 3asd-45*. Skipping.
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Cache miss for domain: gmail.com. Fetching from API...
+Tenant could not be fetched for domain: gmail.com. Skipping email: Leamnucci@gmail.com
+HTTP request failed for https://truelogicsoft-my.sharepoint.com/personal/kcabrera_truelogic_io/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to truelogicsoft-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+
+
+ => Email validation completed for: email_validation:results_f16ef83b2eea303d.txt
+Started POST "/validate" for 127.0.0.1 at 2025-03-05 17:47:16 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fe1449bb9c8 @tempfile=#<Tempfile:/tmp/RackMultipart20250305-733401-u210h1.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 6965)
+
+
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Tenant could not be fetched for domain: itsafeinc.com.br. Skipping email: luigi.polidorio@itsafeinc.com.br
+Cache miss for domain: 45654. Fetching from API...
+Tenant could not be fetched for domain: 45654. Skipping email: asd@45654
+Invalid email format: 3asd-45*. Skipping.
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Cache miss for domain: gmail.com. Fetching from API...
+Tenant could not be fetched for domain: gmail.com. Skipping email: Leamnucci@gmail.com
+HTTP request failed for https://truelogicsoft-my.sharepoint.com/personal/kcabrera_truelogic_io/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to truelogicsoft-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+
+
+ => Email validation completed for: email_validation:results_2a96c93dd8a55d82.txt
+Started POST "/validate" for 127.0.0.1 at 2025-03-05 17:47:40 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f99346a4aa8 @tempfile=#<Tempfile:/tmp/RackMultipart20250305-733577-62veay.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 9385)
+
+
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Tenant could not be fetched for domain: itsafeinc.com.br. Skipping email: luigi.polidorio@itsafeinc.com.br
+Cache miss for domain: 45654. Fetching from API...
+Tenant could not be fetched for domain: 45654. Skipping email: asd@45654
+Invalid email format: 3asd-45*. Skipping.
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Cache miss for domain: gmail.com. Fetching from API...
+Tenant could not be fetched for domain: gmail.com. Skipping email: Leamnucci@gmail.com
+HTTP request failed for https://truelogicsoft-my.sharepoint.com/personal/kcabrera_truelogic_io/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to truelogicsoft-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+
+
+ => Email validation completed for: email_validation:results_3371aee166696859.txt
+Started POST "/validate" for 127.0.0.1 at 2025-03-05 17:48:16 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f9934aa1ae8 @tempfile=#<Tempfile:/tmp/RackMultipart20250305-733577-ffioza.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 6965)
+
+
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Tenant could not be fetched for domain: itsafeinc.com.br. Skipping email: luigi.polidorio@itsafeinc.com.br
+Cache miss for domain: 45654. Fetching from API...
+Tenant could not be fetched for domain: 45654. Skipping email: asd@45654
+Invalid email format: 3asd-45*. Skipping.
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Cache miss for domain: gmail.com. Fetching from API...
+Tenant could not be fetched for domain: gmail.com. Skipping email: Leamnucci@gmail.com
+HTTP request failed for https://truelogicsoft-my.sharepoint.com/personal/kcabrera_truelogic_io/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to truelogicsoft-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+
+
+ => Email validation completed for: email_validation:results_7e76db3ac58bbc11.txt
+Invalid file path for deletion: /public/results_2a96c93dd8a55d82.txt
+Successfully deleted file: /home/johnermac/projects/project_app/public/results_2a96c93dd8a55d82.txt
+File not found for deletion: /home/johnermac/projects/project_app/public/results_*
+File not found for deletion: /home/johnermac/projects/project_app/public/results_2a96c93dd8a55d82.txt
+
+
+ => Deletion will happen in 1 hour: 5
+Error while trying to delete file: 5. Error: undefined method `start_with?' for 5:Integer
+
+
+ => Deletion will happen in 1 hour: /home/johnermac/projects/project_app/public/results_7e76db3ac58bbc11.txt
+Successfully deleted file: /home/johnermac/projects/project_app/public/results_7e76db3ac58bbc11.txt
+Started POST "/validate" for 127.0.0.1 at 2025-03-05 17:55:31 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f33cc696868 @tempfile=#<Tempfile:/tmp/RackMultipart20250305-734018-u1y40c.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 9615)
+
+
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Tenant could not be fetched for domain: itsafeinc.com.br. Skipping email: luigi.polidorio@itsafeinc.com.br
+Cache miss for domain: 45654. Fetching from API...
+Tenant could not be fetched for domain: 45654. Skipping email: asd@45654
+Invalid email format: 3asd-45*. Skipping.
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Cache miss for domain: gmail.com. Fetching from API...
+Tenant could not be fetched for domain: gmail.com. Skipping email: Leamnucci@gmail.com
+HTTP request failed for https://truelogicsoft-my.sharepoint.com/personal/kcabrera_truelogic_io/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to truelogicsoft-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+
+
+ => Email validation completed for: email_validation:results_ead3e2b39afdaf04.txt
+
+
+ => Deletion will happen in 1 hour: /home/johnermac/projects/project_app/public/results_ead3e2b39afdaf04.txt
+Successfully deleted file: /home/johnermac/projects/project_app/public/results_ead3e2b39afdaf04.txt
+Started POST "/validate" for 127.0.0.1 at 2025-03-05 17:57:30 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f33c09763a0 @tempfile=#<Tempfile:/tmp/RackMultipart20250305-734018-v6rjzx.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 7197)
+
+
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Tenant could not be fetched for domain: itsafeinc.com.br. Skipping email: luigi.polidorio@itsafeinc.com.br
+Cache miss for domain: 45654. Fetching from API...
+Tenant could not be fetched for domain: 45654. Skipping email: asd@45654
+Invalid email format: 3asd-45*. Skipping.
+Cache miss for domain: gmail.com. Fetching from API...
+Tenant could not be fetched for domain: gmail.com. Skipping email: Leamnucci@gmail.com
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+HTTP request failed for https://truelogicsoft-my.sharepoint.com/personal/kcabrera_truelogic_io/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to truelogicsoft-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+
+
+ => Email validation completed for: email_validation:results_7b14c71849faf81d.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/project_app/public/results_7b14c71849faf81d.txt
