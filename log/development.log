@@ -3221,3 +3221,94 @@ Email not verified: csodsoapadmin@csod.com, Response Code: 404
 
 
  => Deletion will happen in 30 Seconds: /home/johnermac/projects/project_app/public/results_7b14c71849faf81d.txt
+Successfully deleted file: /home/johnermac/projects/project_app/public/results_7b14c71849faf81d.txt
+Started GET "/download/results_7b14c71849faf81d.txt" for 127.0.0.1 at 2025-03-05 17:58:31 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_7b14c71849faf81d"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 404 Not Found in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 7842)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-05 19:05:13 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f6a6869c8d0 @tempfile=#<Tempfile:/tmp/RackMultipart20250305-737429-nun8cc.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Tenant could not be fetched for domain: itsafeinc.com.br. Skipping email: luigi.polidorio@itsafeinc.com.br
+Cache miss for domain: 45654. Fetching from API...
+Tenant could not be fetched for domain: 45654. Skipping email: asd@45654
+Invalid email format: 3asd-45*. Skipping.
+Cache miss for domain: gmail.com. Fetching from API...
+Tenant could not be fetched for domain: gmail.com. Skipping email: Leamnucci@gmail.com
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+HTTP request failed for https://truelogicsoft-my.sharepoint.com/personal/kcabrera_truelogic_io/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to truelogicsoft-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+
+
+ => Email validation completed for: email_validation:results_a349d67c141e7ff1.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/project_app/public/results_a349d67c141e7ff1.txt
+Completed 200 OK in 2009ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 9482)
+
+
+File not found for deletion: /home/johnermac/projects/project_app/public/results_490c2712741d985d.txt
+File not found for deletion: /home/johnermac/projects/project_app/public/results_5123c76da4f373f6.txt
+File not found for deletion: /home/johnermac/projects/project_app/public/results_2a96c93dd8a55d82.txt
+File not found for deletion: /home/johnermac/projects/project_app/public/results_2e6b531c2fdd450a.txt
+File not found for deletion: /home/johnermac/projects/project_app/public/results_f16ef83b2eea303d.txt
+File not found for deletion: /home/johnermac/projects/project_app/public/results_7e76db3ac58bbc11.txt
+File not found for deletion: /home/johnermac/projects/project_app/public/results_3371aee166696859.txt
+Successfully deleted file: /home/johnermac/projects/project_app/public/results_a349d67c141e7ff1.txt
+Started POST "/validate" for 127.0.0.1 at 2025-03-05 19:11:03 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f6a68b278f0 @tempfile=#<Tempfile:/tmp/RackMultipart20250305-737429-drx5re.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Tenant could not be fetched for domain: itsafeinc.com.br. Skipping email: luigi.polidorio@itsafeinc.com.br
+Cache miss for domain: 45654. Fetching from API...
+Tenant could not be fetched for domain: 45654. Skipping email: asd@45654
+Invalid email format: 3asd-45*. Skipping.
+Started POST "/validate" for 127.0.0.1 at 2025-03-05 19:11:04 -0300
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Cache miss for domain: gmail.com. Fetching from API...
+Tenant could not be fetched for domain: gmail.com. Skipping email: Leamnucci@gmail.com
+HTTP request failed for https://truelogicsoft-my.sharepoint.com/personal/kcabrera_truelogic_io/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to truelogicsoft-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+
+
+ => Email validation completed for: email_validation:results_41c851d6816ceb97.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/project_app/public/results_41c851d6816ceb97.txt
+Completed 200 OK in 2007ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 7724)
+
+
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f6a68d32730 @tempfile=#<Tempfile:/tmp/RackMultipart20250305-737429-cishzc.txt>, @content_type="text/plain", @original_filename="teste.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"teste.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Tenant could not be fetched for domain: itsafeinc.com.br. Skipping email: luigi.polidorio@itsafeinc.com.br
+Cache miss for domain: 45654. Fetching from API...
+Tenant could not be fetched for domain: 45654. Skipping email: asd@45654
+Invalid email format: 3asd-45*. Skipping.
+Cache miss for domain: gmail.com. Fetching from API...
+Tenant could not be fetched for domain: gmail.com. Skipping email: Leamnucci@gmail.com
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+HTTP request failed for https://truelogicsoft-my.sharepoint.com/personal/kcabrera_truelogic_io/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to truelogicsoft-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+
+
+ => Email validation completed for: email_validation:results_dc82eb9029a803d6.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/project_app/public/results_dc82eb9029a803d6.txt
+Completed 200 OK in 2052ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 7054)
+
+
+
+ => Successfully deleted file: /home/johnermac/projects/project_app/public/results_41c851d6816ceb97.txt
+
+ => Successfully deleted file: /home/johnermac/projects/project_app/public/results_dc82eb9029a803d6.txt

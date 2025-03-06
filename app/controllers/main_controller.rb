@@ -46,6 +46,13 @@ class MainController < ActionController::Base
         EmailWorker.perform_async(email, filepath.to_s, redis_key)        
       end
     end
+
+    # Wait for all validation
+    Sidekiq.redis do |conn|      
+      until conn.get(redis_key).to_i == 0
+        sleep(1) 
+      end
+    end
   
     render json: { 
       message: "http://127.0.0.1:3000/download/#{filename}" 

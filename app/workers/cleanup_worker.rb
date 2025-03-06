@@ -10,7 +10,7 @@ class CleanupWorker
     end
   
     File.delete(filepath)
-    Rails.logger.info "Successfully deleted file: #{filepath}"
+    Rails.logger.info "\n => Successfully deleted file: #{filepath}"
   rescue Errno::ENOENT
     Rails.logger.warn "File not found for deletion: #{filepath}"
   rescue Errno::EACCES
