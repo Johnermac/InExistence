@@ -4,6 +4,7 @@ class MainController < ActionController::Base
   require 'email_validator' 
   require 'json'
   
+  
   # Health check action
   def index
     render :index

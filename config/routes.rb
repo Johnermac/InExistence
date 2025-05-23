@@ -3,3 +3,4 @@ Rails.application.routes.draw do
   post '/validate', to: 'main#validate'
   get '/download/:filename', to: 'main#download'
 end
+

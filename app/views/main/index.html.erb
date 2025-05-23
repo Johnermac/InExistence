@@ -170,7 +170,7 @@
                 const emailList = event.target.result.split("\n");
                 
                 // Show the message about the file length first
-                document.getElementById("result").innerText = `File loaded with ${emailList.length} emails. Ready for validation.`;
+                document.getElementById("result").innerText = `File loaded with ${emailList.length} emails. ⏳ Processing...`;
 
                 // Wait for 3 seconds before proceeding with validation
                 setTimeout(() => {

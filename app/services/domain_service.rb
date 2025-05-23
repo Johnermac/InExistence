@@ -4,9 +4,11 @@ class DomainService
   include HTTParty
   base_uri 'https://aadinternals.azurewebsites.net'
 
+  
   def self.extract_domain(user)
     user.split('@').last
   end
+
 
   def self.fetch_tenant_name(domain)
     return nil if domain.nil? || domain.strip.empty?
@@ -33,8 +35,8 @@ class DomainService
         nil
       end
     end
-  end
-  
+  end  
+
 
   # Simulated API fetch method
   def self.api_fetch_tenant_name(domain)

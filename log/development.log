@@ -3312,3 +3312,941 @@ Completed 200 OK in 2052ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 7
  => Successfully deleted file: /home/johnermac/projects/project_app/public/results_41c851d6816ceb97.txt
 
  => Successfully deleted file: /home/johnermac/projects/project_app/public/results_dc82eb9029a803d6.txt
+Started GET "/" for 127.0.0.1 at 2025-03-06 09:20:28 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.6ms | Allocations: 827)
+Completed 200 OK in 22ms (Views: 18.9ms | ActiveRecord: 0.0ms | Allocations: 7633)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-06 09:20:45 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f14186fab48 @tempfile=#<Tempfile:/tmp/RackMultipart20250306-749645-ndxent.txt>, @content_type="text/plain", @original_filename="emails.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"emails.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: grupopan.com. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Invalid tenant data for domain: itsafeinc.com.br
+Tenant could not be fetched for domain: itsafeinc.com.br. Skipping email: luigi.polidorio@itsafeinc.com.br
+Cache miss for domain: 45654. Fetching from API...
+Invalid tenant data for domain: 45654
+Tenant could not be fetched for domain: 45654. Skipping email: asd@45654
+Invalid email format: 3asd-45*. Skipping.
+Cache miss for domain: csod.com. Fetching from API...
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Cache miss for domain: csod.com. Fetching from API...
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+Cache miss for domain: gmail.com. Fetching from API...
+Cache miss for domain: truelogic.io. Fetching from API...
+Cache miss for domain: appgate.com. Fetching from API...
+Invalid tenant data for domain: gmail.com
+Tenant could not be fetched for domain: gmail.com. Skipping email: Leamnucci@gmail.com
+Cache miss for domain: appgate.com. Fetching from API...
+HTTP request failed for https://truelogicsoft-my.sharepoint.com/personal/kcabrera_truelogic_io/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to truelogicsoft-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+Cache miss for domain: appgate.com. Fetching from API...
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+
+
+ => Email validation completed for: email_validation:results_56f9bf6b65f48d87.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/project_app/public/results_56f9bf6b65f48d87.txt
+Completed 200 OK in 23019ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 8511)
+
+
+
+ => Successfully deleted file: /home/johnermac/projects/project_app/public/results_56f9bf6b65f48d87.txt
+Started GET "/download/results_56f9bf6b65f48d87.txt" for 127.0.0.1 at 2025-03-06 09:21:52 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_56f9bf6b65f48d87"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 404 Not Found in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 5794)
+
+
+Started GET "/download/results_56f9bf6b65f48d87.txt" for 127.0.0.1 at 2025-03-06 09:21:54 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_56f9bf6b65f48d87"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 323)
+
+
+Started GET "/" for 127.0.0.1 at 2025-03-06 09:21:57 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.0ms | Allocations: 12)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 317)
+
+
+Started GET "/" for 127.0.0.1 at 2025-03-06 18:43:32 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.5ms | Allocations: 950)
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 7756)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-06 18:43:50 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fb854743cb8 @tempfile=#<Tempfile:/tmp/RackMultipart20250306-770653-ps4xjt.txt>, @content_type="text/plain", @original_filename="emails.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"emails.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: grupopan.com. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Invalid tenant data for domain: itsafeinc.com.br
+Tenant could not be fetched for domain: itsafeinc.com.br. Skipping email: luigi.polidorio@itsafeinc.com.br
+Cache miss for domain: 45654. Fetching from API...
+Invalid tenant data for domain: 45654
+Tenant could not be fetched for domain: 45654. Skipping email: asd@45654
+Invalid email format: 3asd-45*. Skipping.
+Cache miss for domain: csod.com. Fetching from API...
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+Cache miss for domain: csod.com. Fetching from API...
+Cache miss for domain: gmail.com. Fetching from API...
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Cache miss for domain: truelogic.io. Fetching from API...
+Cache miss for domain: appgate.com. Fetching from API...
+Invalid tenant data for domain: gmail.com
+Tenant could not be fetched for domain: gmail.com. Skipping email: Leamnucci@gmail.com
+Cache miss for domain: appgate.com. Fetching from API...
+HTTP request failed for https://truelogicsoft-my.sharepoint.com/personal/kcabrera_truelogic_io/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to truelogicsoft-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+Cache miss for domain: appgate.com. Fetching from API...
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+
+
+ => Email validation completed for: email_validation:results_a6a6b942c5d0ed2e.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/project_app/public/results_a6a6b942c5d0ed2e.txt
+Completed 200 OK in 29026ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 8890)
+
+
+Started GET "/progress/undefined" for 127.0.0.1 at 2025-03-06 18:44:19 -0300
+Processing by ProgressController#show as */*
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 458)
+
+
+Started GET "/progress/undefined" for 127.0.0.1 at 2025-03-06 18:44:20 -0300
+Processing by ProgressController#show as */*
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 219)
+
+
+Started GET "/progress/undefined" for 127.0.0.1 at 2025-03-06 18:44:21 -0300
+Processing by ProgressController#show as */*
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 219)
+
+
+Started GET "/progress/undefined" for 127.0.0.1 at 2025-03-06 18:44:22 -0300
+Processing by ProgressController#show as */*
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 219)
+
+
+Started GET "/progress/undefined" for 127.0.0.1 at 2025-03-06 18:44:23 -0300
+Processing by ProgressController#show as */*
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 219)
+
+
+Started GET "/progress/undefined" for 127.0.0.1 at 2025-03-06 18:44:24 -0300
+Processing by ProgressController#show as */*
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 219)
+
+
+Started GET "/progress/undefined" for 127.0.0.1 at 2025-03-06 18:44:25 -0300
+Processing by ProgressController#show as */*
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 219)
+
+
+Started GET "/progress/undefined" for 127.0.0.1 at 2025-03-06 18:44:26 -0300
+Processing by ProgressController#show as */*
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 219)
+
+
+Started GET "/progress/undefined" for 127.0.0.1 at 2025-03-06 18:44:27 -0300
+Processing by ProgressController#show as */*
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 219)
+
+
+Started GET "/progress/undefined" for 127.0.0.1 at 2025-03-06 18:44:28 -0300
+Processing by ProgressController#show as */*
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 219)
+
+
+Started GET "/progress/undefined" for 127.0.0.1 at 2025-03-06 18:44:29 -0300
+Processing by ProgressController#show as */*
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 219)
+
+
+Started GET "/progress/undefined" for 127.0.0.1 at 2025-03-06 18:44:30 -0300
+Processing by ProgressController#show as */*
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 219)
+
+
+Started GET "/progress/undefined" for 127.0.0.1 at 2025-03-06 18:44:31 -0300
+Processing by ProgressController#show as */*
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 219)
+
+
+Started GET "/progress/undefined" for 127.0.0.1 at 2025-03-06 18:44:32 -0300
+Processing by ProgressController#show as */*
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 219)
+
+
+Started GET "/progress/undefined" for 127.0.0.1 at 2025-03-06 18:44:33 -0300
+Processing by ProgressController#show as */*
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 219)
+
+
+Started GET "/progress/undefined" for 127.0.0.1 at 2025-03-06 18:44:34 -0300
+Processing by ProgressController#show as */*
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 219)
+
+
+Started GET "/progress/undefined" for 127.0.0.1 at 2025-03-06 18:44:35 -0300
+Processing by ProgressController#show as */*
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 219)
+
+
+Started GET "/progress/undefined" for 127.0.0.1 at 2025-03-06 18:44:36 -0300
+Processing by ProgressController#show as */*
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 219)
+
+
+Started GET "/progress/undefined" for 127.0.0.1 at 2025-03-06 18:44:37 -0300
+Processing by ProgressController#show as */*
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 219)
+
+
+Started GET "/progress/undefined" for 127.0.0.1 at 2025-03-06 18:44:38 -0300
+Processing by ProgressController#show as */*
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 219)
+
+
+Started GET "/progress/undefined" for 127.0.0.1 at 2025-03-06 18:44:40 -0300
+Processing by ProgressController#show as */*
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 219)
+
+
+
+ => Successfully deleted file: /home/johnermac/projects/project_app/public/results_a6a6b942c5d0ed2e.txt
+Started GET "/" for 127.0.0.1 at 2025-03-06 18:53:15 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.5ms | Allocations: 950)
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 7756)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-06 18:53:35 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f86c479b9e8 @tempfile=#<Tempfile:/tmp/RackMultipart20250306-771136-a5lp7i.txt>, @content_type="text/plain", @original_filename="emails.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"emails.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Tenant could not be fetched for domain: itsafeinc.com.br. Skipping email: luigi.polidorio@itsafeinc.com.br
+Cache miss for domain: 45654. Fetching from API...
+Tenant could not be fetched for domain: 45654. Skipping email: asd@45654
+Invalid email format: 3asd-45*. Skipping.
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Cache miss for domain: gmail.com. Fetching from API...
+Tenant could not be fetched for domain: gmail.com. Skipping email: Leamnucci@gmail.com
+HTTP request failed for https://truelogicsoft-my.sharepoint.com/personal/kcabrera_truelogic_io/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to truelogicsoft-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+
+
+ => Email validation completed for: email_validation:results_be74b09de942e4bb.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/project_app/public/results_be74b09de942e4bb.txt
+Completed 200 OK in 3009ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 8048)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:53:38 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 451)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:53:39 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:53:40 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:53:41 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:53:42 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:53:43 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:53:44 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:53:45 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:53:46 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:53:47 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:53:48 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:53:49 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:53:50 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:53:51 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:53:52 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:53:53 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:53:54 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:53:55 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:53:56 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:53:57 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:53:58 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:53:59 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:54:00 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:54:01 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:54:02 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:54:03 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:54:04 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:54:05 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:54:06 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:54:07 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:54:08 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:54:09 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+
+ => Successfully deleted file: /home/johnermac/projects/project_app/public/results_be74b09de942e4bb.txt
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:54:11 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:54:12 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 217)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:54:13 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:54:14 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:54:15 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:54:16 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:54:17 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:54:18 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:54:19 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:54:20 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:54:21 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_be74b09de942e4bb.txt" for 127.0.0.1 at 2025-03-06 18:54:22 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/" for 127.0.0.1 at 2025-03-06 18:59:02 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.9ms | Allocations: 947)
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 7753)
+
+
+Started GET "/" for 127.0.0.1 at 2025-03-06 19:03:42 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.5ms | Allocations: 881)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 2188)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-06 19:03:51 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007f89fcb19e68 @tempfile=#<Tempfile:/tmp/RackMultipart20250306-771445-bgz9pb.txt>, @content_type="text/plain", @original_filename="emails.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"emails.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Tenant could not be fetched for domain: itsafeinc.com.br. Skipping email: luigi.polidorio@itsafeinc.com.br
+Cache miss for domain: 45654. Fetching from API...
+Tenant could not be fetched for domain: 45654. Skipping email: asd@45654
+Invalid email format: 3asd-45*. Skipping.
+Cache miss for domain: gmail.com. Fetching from API...
+Tenant could not be fetched for domain: gmail.com. Skipping email: Leamnucci@gmail.com
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+HTTP request failed for https://truelogicsoft-my.sharepoint.com/personal/kcabrera_truelogic_io/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to truelogicsoft-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+
+
+ => Email validation completed for: email_validation:results_f300f89489e36acb.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/project_app/public/results_f300f89489e36acb.txt
+Completed 200 OK in 3010ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 8069)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:03:54 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 450)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:03:55 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:03:56 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:03:57 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:03:58 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:03:59 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:00 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:01 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:02 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:04 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:05 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:06 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:07 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 16ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:08 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 217)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:09 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:10 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:11 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:12 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:13 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:14 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:15 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:16 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:17 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:18 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:19 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:20 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:21 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:22 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:23 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 217)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:24 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+
+ => Successfully deleted file: /home/johnermac/projects/project_app/public/results_f300f89489e36acb.txt
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:25 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:26 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:27 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:28 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:29 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:30 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:31 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:32 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:33 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:34 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:35 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:36 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:37 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:38 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:39 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:40 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:41 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:42 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/progress/email_validation:results_f300f89489e36acb.txt" for 127.0.0.1 at 2025-03-06 19:04:43 -0300
+Processing by ProgressController#show as TEXT
+  Parameters: {"redis_key"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 216)
+
+
+Started GET "/" for 127.0.0.1 at 2025-03-06 19:07:47 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.5ms | Allocations: 827)
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 7633)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-06 19:08:16 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fd7c8744698 @tempfile=#<Tempfile:/tmp/RackMultipart20250306-771913-djseoc.txt>, @content_type="text/plain", @original_filename="emails.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"emails.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Tenant could not be fetched for domain: itsafeinc.com.br. Skipping email: luigi.polidorio@itsafeinc.com.br
+Cache miss for domain: 45654. Fetching from API...
+Tenant could not be fetched for domain: 45654. Skipping email: asd@45654
+Invalid email format: 3asd-45*. Skipping.
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Cache miss for domain: gmail.com. Fetching from API...
+Tenant could not be fetched for domain: gmail.com. Skipping email: Leamnucci@gmail.com
+HTTP request failed for https://truelogicsoft-my.sharepoint.com/personal/kcabrera_truelogic_io/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to truelogicsoft-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+Email not verified: jvivekanandan@csod.com, Response Code: 503
+
+
+ => Email validation completed for: email_validation:results_d590ce2d512a226e.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/project_app/public/results_d590ce2d512a226e.txt
+Completed 200 OK in 4009ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 8068)
+
+
+
+ => Successfully deleted file: /home/johnermac/projects/project_app/public/results_d590ce2d512a226e.txt
+Started GET "/" for 127.0.0.1 at 2025-03-06 19:08:57 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.0ms | Allocations: 12)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 339)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-03-06 19:09:18 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fd7c891a8f0 @tempfile=#<Tempfile:/tmp/RackMultipart20250306-771913-2nmpmz.txt>, @content_type="text/plain", @original_filename="emails.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"emails.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: itsafeinc.com.br. Fetching from API...
+Tenant could not be fetched for domain: itsafeinc.com.br. Skipping email: luigi.polidorio@itsafeinc.com.br
+Cache miss for domain: 45654. Fetching from API...
+Tenant could not be fetched for domain: 45654. Skipping email: asd@45654
+Invalid email format: 3asd-45*. Skipping.
+Email not verified: joao.asoiso@bradesco.com.br, Response Code: 404
+Cache miss for domain: gmail.com. Fetching from API...
+Tenant could not be fetched for domain: gmail.com. Skipping email: Leamnucci@gmail.com
+HTTP request failed for https://truelogicsoft-my.sharepoint.com/personal/kcabrera_truelogic_io/_layouts/15/onedrive.aspx. Error: Failed to open TCP connection to truelogicsoft-my.sharepoint.com:443 (getaddrinfo: Name or service not known)
+Email not verified: 4240.valdirene@bradesco.com.br, Response Code: 404
+Email not verified: csodsoapadmin@csod.com, Response Code: 404
+
+
+ => Email validation completed for: email_validation:results_3e7765979e69b17f.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/project_app/public/results_3e7765979e69b17f.txt
+Completed 200 OK in 3008ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 6400)
+
+
+
+ => Successfully deleted file: /home/johnermac/projects/project_app/public/results_3e7765979e69b17f.txt

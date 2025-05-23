@@ -4,6 +4,7 @@ class EmailWorker
   include Sidekiq::Worker
   sidekiq_options queue: :default, retry: 3  
 
+  
   def perform(email, filepath, redis_key) 
     
     unless email.present?
@@ -54,6 +55,7 @@ class EmailWorker
     nil
   end  
 
+
   # Construct the email verification URL
   def construct_url(tenant, email)
     user = email.gsub(/\W/, '_') # Sanitize username for the URL
@@ -62,6 +64,7 @@ class EmailWorker
     Rails.logger.error "Error constructing URL for #{email}: #{e.message}"
     nil
   end
+
 
   # Verify email and append to file if valid
   def fetch_url(url, filepath, email)
@@ -78,6 +81,7 @@ class EmailWorker
     Rails.logger.error "HTTP request failed for #{url}. Error: #{e.message}"
   end
 
+
   # Append verified email to results file
   def append_verified_email(filepath, email)
     File.open(filepath, 'a:UTF-8') do |file|
@@ -91,6 +95,7 @@ class EmailWorker
   rescue StandardError => e
     Rails.logger.error "Failed to write to file #{filepath}: #{e.message}"
   end
+
 
   def decrement_counter(redis_key, filepath)
     begin
