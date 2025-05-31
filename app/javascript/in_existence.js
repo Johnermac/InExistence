@@ -1,6 +1,9 @@
+let isBulk = false; // set by the tab
+
 function validateEmail() {
   const emailInput = document.getElementById("emailInput");
   const email = emailInput.value.trim();
+  emailInput.style.color = ""
 
   if (!email) {
     document.getElementById("result").innerText = "Please enter an email.";
@@ -10,11 +13,14 @@ function validateEmail() {
   const formData = new FormData();
   formData.append("file", new Blob([email], { type: "text/plain" }), "email.txt");
 
+  document.getElementById("result").innerText = `⏳ Validating...`;
   postEmailFile(formData);
-  emailInput.value = "";
+  //emailInput.value = "";
 }
 
 function postEmailFile(formData) {
+  const emailInput = document.getElementById("emailInput");
+
   fetch("/validate", {
     method: "POST",
     body: formData,
@@ -24,25 +30,43 @@ function postEmailFile(formData) {
       const resultEl = document.getElementById("result");
       if (data.error) {
         resultEl.innerText = "Error: " + data.error;
-      } else {
-        resultEl.innerText = "✅ Success! Downloading results...";
-
-        const downloadUrl = data.message;
-
-        // Automatically trigger the download
-        const a = document.createElement("a");
-        a.href = downloadUrl;
-        a.download = ""; // Let the server-sent filename be used
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
+        if (emailInput) emailInput.style.color = "red";
+        return;
       }
-    })
-    .catch((error) => {
-      document.getElementById("result").innerText = "Something went wrong.";
-      console.error(error);
-    });
+
+      const downloadUrl = data.message;
+
+      fetch(downloadUrl, { method: 'HEAD' })
+        .then((res) => {
+          if (res.ok) {
+            if (isBulk) {
+              resultEl.innerText = "✅ Success! Downloading results...";
+              const a = document.createElement("a");
+              a.href = downloadUrl;
+              a.download = "";
+              document.body.appendChild(a);
+              a.click();
+              document.body.removeChild(a);
+            } else {
+              resultEl.innerText = "✅ Email validated!";
+              if (emailInput) emailInput.style.color = "#1DB954"; // green
+            }
+          } else {
+            if (isBulk) {
+              resultEl.innerText = "❌ There are no valid emails in this list.";
+            } else {
+              resultEl.innerText = "❌ Email not validated.";
+              if (emailInput) emailInput.style.color = "red";
+            }
+          }
+        })
+        .catch(() => {
+          resultEl.innerText = "⚠️ Could not check validation result.";
+          if (!isBulk && emailInput) emailInput.style.color = "red";
+        });
+    }); 
 }
+
 
 // ---------- LIST FILE ----------
 
@@ -109,11 +133,13 @@ function showTab(mode) {
   const tabMultiple = document.getElementById("tabMultiple");
 
   if (mode === 'single') {
+    isBulk = false;
     single.style.display = 'flex';
     multiple.style.display = 'none';
     tabSingle.classList.add('active');
     tabMultiple.classList.remove('active');
   } else {
+    isBulk = true;
     single.style.display = 'none';
     multiple.style.display = 'block';
     tabMultiple.classList.add('active');
