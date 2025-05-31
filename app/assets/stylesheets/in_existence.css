@@ -78,9 +78,43 @@ a:hover {
   margin-top: 20px;
   font-size: 14px;
   cursor: pointer;
+  background-color: #1a1a1a;
+  transition: border-color 0.3s, color 0.3s;
 }
 
 .drop-zone.hover {
   border-color: #1DB954;
   color: #1DB954;
+}
+
+/* Tabs */
+.tab-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 5px;
+}
+
+.tab {
+  flex: 1 1 140px;
+  padding: 12px 10px;
+  background-color: #1e1e1e;
+  color: #bbb;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px 8px 0 0;
+  transition: background-color 0.3s, color 0.3s;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.tab:hover {
+  background-color: #2a2a2a;
+  color: white;
+}
+
+.tab.active {
+  background-color: #333;
+  color: #fff;
+  box-shadow: none;
 }

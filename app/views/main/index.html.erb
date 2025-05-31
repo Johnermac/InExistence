@@ -10,17 +10,25 @@
 <body>
   <h1>InExistence</h1>
 
-  <div class="input-container">
-    <input type="text" id="emailInput" placeholder="Enter email" onkeypress="checkEnter(event)">
-    <svg class="magnifying-glass" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" onclick="validateEmail()">
-      <path d="M21 19l-4.35-4.35a8.9 8.9 0 1 0-1.41 1.41L19 21l2 2 2-2-2-2zM10 15a5 5 0 1 1 5-5 5 5 0 0 1-5 5z"/>
-    </svg>
+  <div class="tab-container">
+    <button class="tab active" id="tabSingle" onclick="showTab('single')">One</button>
+    <button class="tab" id="tabMultiple" onclick="showTab('multiple')">Multiple</button>
   </div>
 
-  <div class="drop-zone" id="dropZone">
-    Drop your .txt file here
+  <div id="singleMode" class="mode-section">
+    <div class="input-container">
+      <input type="text" id="emailInput" placeholder="Enter email" onkeypress="checkEnter(event)">
+      <svg class="magnifying-glass" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" onclick="validateEmail()">
+        <path d="M21 19l-4.35-4.35a8.9 8.9 0 1 0-1.41 1.41L19 21l2 2 2-2-2-2zM10 15a5 5 0 1 1 5-5 5 5 0 0 1-5 5z"/>
+      </svg>
+    </div>
+  </div>
+
+  <div id="multipleMode" class="mode-section" style="display: none;">
+    <div class="drop-zone" id="dropZone">Drop your .txt file here</div>
   </div>
 
   <p id="result"></p>
 </body>
+
 </html>

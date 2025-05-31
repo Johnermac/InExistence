@@ -5964,3 +5964,90 @@ Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 285)
 
 
 	File not found for deletion: /home/johnermac/projects/InExistence/public/results_6d739c0980226b18.txt
+Started GET "/" for 127.0.0.1 at 2025-05-31 13:46:27 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.3ms | Allocations: 208)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 1519)
+
+
+Started GET "/" for 127.0.0.1 at 2025-05-31 13:47:54 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 316)
+
+
+Started GET "/" for 127.0.0.1 at 2025-05-31 13:48:11 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.2ms | Allocations: 280)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 7092)
+
+
+Started GET "/" for 127.0.0.1 at 2025-05-31 13:48:12 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.0ms | Allocations: 12)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 369)
+
+
+Started GET "/" for 127.0.0.1 at 2025-05-31 13:51:29 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 114.4ms | Allocations: 31068)
+Completed 200 OK in 116ms (Views: 116.1ms | ActiveRecord: 0.0ms | Allocations: 32372)
+
+
+Started GET "/" for 127.0.0.1 at 2025-05-31 13:53:10 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 12.1ms | Allocations: 4066)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 4376)
+
+
+Started GET "/" for 127.0.0.1 at 2025-05-31 13:56:12 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 7.4ms | Allocations: 4134)
+Completed 200 OK in 8ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 4424)
+
+
+Started GET "/" for 127.0.0.1 at 2025-05-31 13:56:58 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 11.3ms | Allocations: 4069)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.0ms | Allocations: 4363)
+
+
+Started GET "/" for 127.0.0.1 at 2025-05-31 13:58:05 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 6.8ms | Allocations: 4133)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 4427)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 13:58:58 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007fa92cd59c60 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-60891-h46kpv.txt>, @content_type="text/plain", @original_filename="emails.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"emails.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: appgate.com. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Email not verified: asdasd@bradesco.com.br, Response Code: 404
+
+
+	 => Email validation completed for: email_validation:results_98e29616cb6f227a.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/InExistence/public/results_98e29616cb6f227a.txt
+Completed 200 OK in 12015ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 7083)
+
+
+Started GET "/download/results_98e29616cb6f227a.txt" for 127.0.0.1 at 2025-05-31 13:59:13 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_98e29616cb6f227a"}
+Sent file /home/johnermac/projects/InExistence/public/results_98e29616cb6f227a.txt (0.6ms)
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms | Allocations: 904)
+
+

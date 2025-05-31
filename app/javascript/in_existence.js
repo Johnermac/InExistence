@@ -99,3 +99,24 @@ function sendEmailListForValidation(emailList) {
 
   postEmailFile(formData);
 }
+
+// --------- TAB ---------------
+
+function showTab(mode) {
+  const single = document.getElementById("singleMode");
+  const multiple = document.getElementById("multipleMode");
+  const tabSingle = document.getElementById("tabSingle");
+  const tabMultiple = document.getElementById("tabMultiple");
+
+  if (mode === 'single') {
+    single.style.display = 'flex';
+    multiple.style.display = 'none';
+    tabSingle.classList.add('active');
+    tabMultiple.classList.remove('active');
+  } else {
+    single.style.display = 'none';
+    multiple.style.display = 'block';
+    tabMultiple.classList.add('active');
+    tabSingle.classList.remove('active');
+  }
+}
