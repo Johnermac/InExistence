@@ -1,0 +1,86 @@
+body {
+  background-color: #121212;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.input-container {
+  position: relative;
+}
+
+input {
+  padding: 12px 40px 12px 12px;
+  font-size: 16px;
+  width: 300px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  outline: none;
+  background-color: #1e1e1e;
+  color: white;
+  text-align: center;
+}
+
+input::placeholder {
+  color: #bbb;
+  text-align: center;
+}
+
+.magnifying-glass {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  fill: #bbb;
+  width: 20px;
+  height: 20px;
+}
+
+.magnifying-glass:hover {
+  fill: white;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+a {
+  color: #1DB954;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Drop zone styles */
+.drop-zone {
+  width: 300px;
+  height: 100px;
+  border: 2px dashed #bbb;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #bbb;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.drop-zone.hover {
+  border-color: #1DB954;
+  color: #1DB954;
+}

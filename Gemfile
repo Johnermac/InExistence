@@ -69,6 +69,7 @@ end
 gem "redis", ">= 4.0.1"
 gem 'sidekiq'
 gem 'rack-attack'
-gem 'httparty'
+gem 'httpx'
 gem 'email_validator'
 gem 'resolv'
+gem 'httparty'

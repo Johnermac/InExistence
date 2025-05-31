@@ -5,7 +5,7 @@ class Rack::Attack
     req.ip
   end
 
-  self.throttled_response = lambda do |_env|
+  self.throttled_responder = lambda do |_env|
     [429, { 'Content-Type' => 'application/json' }, [{ error: 'Rate limit exceeded' }.to_json]]
   end
 end

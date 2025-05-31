@@ -1,4 +1,4 @@
-require 'httparty'
+require 'httpx'
 
 class EmailWorker
   include Sidekiq::Worker
@@ -8,35 +8,39 @@ class EmailWorker
   def perform(email, filepath, redis_key) 
     
     unless email.present?
-      Rails.logger.info "Email not present: #{email}. Skipping."
+      Rails.logger.info "\n\n\tEmail not present: #{email}. Skipping."
       decrement_counter(redis_key, filepath) # Ensure counter is decremented even if email is invalid
       return
     end
 
     unless EmailValidator.valid?(email)
-      Rails.logger.info "Invalid email format: #{email}. Skipping."
+      Rails.logger.info "\n\n\tInvalid email format: #{email}. Skipping."
       decrement_counter(redis_key, filepath) # Ensure counter is decremented even if email is invalid
       return
     end
 
-    puts "\n\n => EMAIL: #{email}"
+    puts "\n\n\t => EMAIL: #{email}"
 
     # Extract and validate domain
     domain = extract_domain(email)   
-    puts "\n => DOMAIN: #{domain}" 
+    puts "\n\t => DOMAIN: #{domain}" 
 
     # Fetch tenant from cache or API
     tenant = DomainService.fetch_tenant_name(domain)
     if tenant.nil?
-      Rails.logger.error "Tenant could not be fetched for domain: #{domain}. Skipping email: #{email}"
+      Rails.logger.error "\n\n\t Tenant could not be fetched for domain: #{domain}. Skipping email: #{email}"
       decrement_counter(redis_key, filepath) # Decrement even if we skip the email
       return
     end
 
-    puts "\n => TENANT: #{tenant}"
+    puts "\n\t => TENANT: #{tenant}"
 
     # Construct verification URL and verify email
     url = construct_url(tenant, email)
+
+    puts "\n\t => URL: #{url}"
+
+
     fetch_url(url, filepath, email) if url.present?    
 
     # Decrement counter in Redis
@@ -68,18 +72,21 @@ class EmailWorker
 
   # Verify email and append to file if valid
   def fetch_url(url, filepath, email)
-    response = HTTParty.get(url, headers: {
+    response = HTTPX.with_headers(
       'User-Agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0'
-    })
+    ).get(url)
 
-    if response.code == 200 || response.code == 302
-      append_verified_email(filepath, email)
+    if response.status == 200 || response.status == 302
+      puts "\n\t => VERIFIED: #{email}"
+      append_verified_email(filepath, email)      
     else
-      Rails.logger.info "Email not verified: #{email}, Response Code: #{response.code}"
+      puts "\n\t => NOT VERIFIED: #{email}"
+      Rails.logger.info "Email not verified: #{email}, Response Code: #{response.status}"
     end
-  rescue HTTParty::Error, StandardError => e
-    Rails.logger.error "HTTP request failed for #{url}. Error: #{e.message}"
+  rescue HTTPX::Error => e
+    Rails.logger.error "HTTPX request failed for #{url}. Error: #{e.message}"
   end
+
 
 
   # Append verified email to results file
@@ -93,6 +100,7 @@ class EmailWorker
       end
     end
   rescue StandardError => e
+    puts "\n\n\t ERROR WRITING TO FILE"
     Rails.logger.error "Failed to write to file #{filepath}: #{e.message}"
   end
 
@@ -103,7 +111,7 @@ class EmailWorker
       remaining = redis.decr(redis_key).to_i
   
       if remaining <= 0
-        Rails.logger.info "\n\n => Email validation completed for: #{redis_key}"
+        Rails.logger.info "\n\n\t => Email validation completed for: #{redis_key}"
         redis.del(redis_key) # Limpa a chave no Redis
         CleanupWorker.schedule_cleanup(filepath, 30)
       end

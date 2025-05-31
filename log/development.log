@@ -4250,3 +4250,1717 @@ Completed 200 OK in 3008ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 64
 
 
  => Successfully deleted file: /home/johnermac/projects/project_app/public/results_3e7765979e69b17f.txt
+Started GET "/" for 127.0.0.1 at 2025-05-31 08:31:29 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.5ms | Allocations: 827)
+Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 7713)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 08:31:46 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007525c006a9e0 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-5540-pctqf4.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 08:37:58 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007525b802dd40 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-5540-lamlfd.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Started GET "/" for 127.0.0.1 at 2025-05-31 08:41:19 -0300
+Started GET "/" for 127.0.0.1 at 2025-05-31 08:48:48 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.7ms | Allocations: 827)
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 7633)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 08:48:52 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000073a9cc5459b8 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-9484-9zba5x.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 08:51:57 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000073a9d083abd8 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-9484-5l94mu.txt>, @content_type="text/plain", @original_filename="emails.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"emails.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: appgate.com. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Started GET "/" for 127.0.0.1 at 2025-05-31 08:55:00 -0300
+Started GET "/" for 127.0.0.1 at 2025-05-31 08:55:17 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.5ms | Allocations: 827)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 7632)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 08:55:29 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00005e90bd1f6538 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-10628-aa0hda.txt>, @content_type="text/plain", @original_filename="emails.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"emails.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: appgate.com. Fetching from API...
+Cache miss for domain: appgate.com. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Started GET "/" for 127.0.0.1 at 2025-05-31 09:03:47 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.7ms | Allocations: 827)
+Completed 200 OK in 17ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 7632)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 09:03:53 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00005d029a06e358 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-11911-wi2697.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: appgate.com. Fetching from API...
+Cache miss for domain: appgate.com. Fetching from API...
+Started GET "/" for 127.0.0.1 at 2025-05-31 09:09:44 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.5ms | Allocations: 827)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 7632)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 09:09:49 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00005f906f8a2000 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-12538-az3na4.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Email not verified: teste@bradesco.com.br, Response Code: 404
+Error decrementing counter: undefined method `current' for Redis:Class
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 09:10:12 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007b81e8334060 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-12538-cj5ukw.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Started GET "/" for 127.0.0.1 at 2025-05-31 09:14:05 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.9ms | Allocations: 830)
+Completed 200 OK in 11ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 7639)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 09:14:20 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007265987b2350 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-13975-rx06k2.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 09:15:42 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000726598967a60 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-13975-9zdpko.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Started GET "/" for 127.0.0.1 at 2025-05-31 09:15:44 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.0ms | Allocations: 12)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 359)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 09:15:55 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000726598a4cf20 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-13975-4pgnkf.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Started GET "/" for 127.0.0.1 at 2025-05-31 09:16:36 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 1.7ms | Allocations: 830)
+Completed 200 OK in 18ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 7640)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 09:16:38 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007593d4786e68 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-14451-i8ttnl.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Error decrementing counter: undefined method `current' for Redis:Class
+Error decrementing counter: undefined method `current' for Redis:Class
+Error decrementing counter: undefined method `current' for Redis:Class
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 09:17:04 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007593d4920cb0 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-14451-jmmcnv.txt>, @content_type="text/plain", @original_filename="emails.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"emails.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: appgate.com. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Error decrementing counter: undefined method `current' for Redis:Class
+Email not verified: asdasd@bradesco.com.br, Response Code: 404
+Error decrementing counter: undefined method `current' for Redis:Class
+Error decrementing counter: undefined method `current' for Redis:Class
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 09:21:23 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007593d4ae7850 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-14451-hdf71o.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Error decrementing counter: undefined method `current' for Redis:Class
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 09:22:48 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007593d8848258 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-14451-eu8biy.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Error decrementing counter: undefined method `current' for Redis:Class
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 09:23:02 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00005f25a42a4e90 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-14451-7x0t01.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Error decrementing counter: undefined method `current' for Redis:Class
+Started GET "/" for 127.0.0.1 at 2025-05-31 09:25:40 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.6ms | Allocations: 830)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.0ms | Allocations: 7642)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 09:25:51 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000073e550386b08 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-16129-i2p1n8.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Error decrementing counter: undefined method `current' for Redis:Class
+Started GET "/" for 127.0.0.1 at 2025-05-31 09:26:07 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.0ms | Allocations: 12)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 366)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 09:26:10 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000073e55058a2b0 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-16129-x7b6jf.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Error decrementing counter: undefined method `current' for Redis:Class
+Started GET "/" for 127.0.0.1 at 2025-05-31 09:26:21 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 0.3ms | Allocations: 7)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 295)
+
+
+Started GET "/" for 127.0.0.1 at 2025-05-31 10:48:10 -0300
+Started GET "/" for 127.0.0.1 at 2025-05-31 10:49:17 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 457.3ms | Allocations: 84572)
+Completed 200 OK in 463ms (Views: 461.6ms | ActiveRecord: 0.0ms | Allocations: 91377)
+
+
+Started GET "/" for 127.0.0.1 at 2025-05-31 10:49:58 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 3.0ms | Allocations: 2601)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 3913)
+
+
+Started GET "/" for 127.0.0.1 at 2025-05-31 11:12:52 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 12.7ms | Allocations: 3547)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms | Allocations: 3859)
+
+
+Started GET "/" for 127.0.0.1 at 2025-05-31 11:16:24 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 2.1ms | Allocations: 2156)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 2450)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 11:17:15 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007c784caba8d8 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-29475-c5fq3c.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Error extracting domain for teste@bradesco.com.br: undefined method `base_uri' for DomainService:Class
+Error extracting domain for teste@bradesco.com.br: undefined method `base_uri' for DomainService:Class
+Error extracting domain for teste@bradesco.com.br: undefined method `base_uri' for DomainService:Class
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Email not verified: teste@bradesco.com.br, Response Code: 404
+Error decrementing counter: undefined method `current' for Redis:Class
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 11:20:36 -0300
+Started GET "/" for 127.0.0.1 at 2025-05-31 11:20:57 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 45.6ms | Allocations: 25885)
+Completed 200 OK in 52ms (Views: 50.5ms | ActiveRecord: 0.0ms | Allocations: 32690)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 11:21:13 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000789c70dffe28 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-34993-h9dx61.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Invalid email format: trestst. Skipping.
+Error decrementing counter: undefined method `current' for Redis:Class
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 11:21:24 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000789c6c8d8a70 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-34993-ivsmyl.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Email not verified: teste@bradesco.com.br, Response Code: 404
+Error decrementing counter: undefined method `current' for Redis:Class
+Started GET "/" for 127.0.0.1 at 2025-05-31 11:23:30 -0300
+Started GET "/" for 127.0.0.1 at 2025-05-31 11:23:55 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 32.0ms | Allocations: 20805)
+Completed 200 OK in 52ms (Views: 50.3ms | ActiveRecord: 0.0ms | Allocations: 27612)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 11:24:00 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x00007751e07caea8 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-35550-7m6ool.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: appgate.com. Fetching from API...
+Email not verified: teste@appgate.com, Response Code: 404
+Error decrementing counter: undefined method `current' for Redis:Class
+Started GET "/" for 127.0.0.1 at 2025-05-31 11:25:02 -0300
+Started GET "/" for 127.0.0.1 at 2025-05-31 11:25:15 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 25.0ms | Allocations: 20580)
+Completed 200 OK in 31ms (Views: 29.3ms | ActiveRecord: 0.0ms | Allocations: 27386)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 11:25:25 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000059ed7b0f70e0 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-35827-fb1jfe.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: bradesco.com.br. Fetching from API...
+
+
+ => Email validation completed for: email_validation:results_b04f55bd2b7af8ed.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/InExistence/public/results_b04f55bd2b7af8ed.txt
+Completed 200 OK in 9018ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 7075)
+
+
+
+ => Successfully deleted file: /home/johnermac/projects/InExistence/public/results_b04f55bd2b7af8ed.txt
+Started GET "/download/results_b04f55bd2b7af8ed.txt" for 127.0.0.1 at 2025-05-31 11:26:21 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_b04f55bd2b7af8ed"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 404 Not Found in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 5820)
+
+
+Started GET "/download/results_b04f55bd2b7af8ed.txt" for 127.0.0.1 at 2025-05-31 11:26:28 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_b04f55bd2b7af8ed"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 326)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 11:26:52 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000075addc6ffc98 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-35827-6k2u4i.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: appgate.com.br. Fetching from API...
+Invalid tenant data for domain: appgate.com.br
+Tenant could not be fetched for domain: appgate.com.br. Skipping email: joao.silveira@appgate.com.br
+
+
+ => Email validation completed for: email_validation:results_b4b3a5fa23276a59.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/InExistence/public/results_b4b3a5fa23276a59.txt
+Completed 200 OK in 2009ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 5090)
+
+
+Started GET "/download/results_b4b3a5fa23276a59.txt" for 127.0.0.1 at 2025-05-31 11:27:02 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_b4b3a5fa23276a59"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started GET "/download/results_b4b3a5fa23276a59.txt" for 127.0.0.1 at 2025-05-31 11:27:04 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_b4b3a5fa23276a59"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 4ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started GET "/download/results_b4b3a5fa23276a59.txt" for 127.0.0.1 at 2025-05-31 11:27:05 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_b4b3a5fa23276a59"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+File not found for deletion: /home/johnermac/projects/InExistence/public/results_b4b3a5fa23276a59.txt
+Started GET "/" for 127.0.0.1 at 2025-05-31 11:28:36 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 2.8ms | Allocations: 2296)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 2601)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 11:28:38 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000075adcc776ad8 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-35827-i31tf6.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: bradesco.com.br. Fetching from API...
+
+
+ => Email validation completed for: email_validation:results_eaff997f36569e91.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/InExistence/public/results_eaff997f36569e91.txt
+Completed 200 OK in 8013ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 5110)
+
+
+Started GET "/download/results_eaff997f36569e91.txt" for 127.0.0.1 at 2025-05-31 11:28:54 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_eaff997f36569e91"}
+Completed 200 OK in 9ms (ActiveRecord: 0.0ms | Allocations: 5241)
+
+
+
+ => Successfully deleted file: /home/johnermac/projects/InExistence/public/results_eaff997f36569e91.txt
+File not found for deletion: /home/johnermac/projects/InExistence/public/results_eaff997f36569e91.txt
+Started GET "/" for 127.0.0.1 at 2025-05-31 11:30:55 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 2.0ms | Allocations: 2599)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 3911)
+
+
+Started GET "/" for 127.0.0.1 at 2025-05-31 11:34:04 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 13.2ms | Allocations: 5125)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.0ms | Allocations: 6431)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 11:34:14 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000075add00e4ba8 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-35827-smawph.txt>, @content_type="text/plain", @original_filename="emails.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"emails.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: appgate.com. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Email not verified: asdasd@bradesco.com.br, Response Code: 404
+
+
+	 => Email validation completed for: email_validation:results_152ea3518383cc66.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/InExistence/public/results_152ea3518383cc66.txt
+Completed 200 OK in 18021ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 6861)
+
+
+Started GET "/download/results_152ea3518383cc66.txt" for 127.0.0.1 at 2025-05-31 11:34:38 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_152ea3518383cc66"}
+Completed 200 OK in 11ms (ActiveRecord: 0.0ms | Allocations: 5249)
+
+
+
+
+	 => Successfully deleted file: /home/johnermac/projects/InExistence/public/results_152ea3518383cc66.txt
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_152ea3518383cc66.txt
+Started GET "/" for 127.0.0.1 at 2025-05-31 11:49:54 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 2.8ms | Allocations: 2279)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 2632)
+
+
+Started GET "/" for 127.0.0.1 at 2025-05-31 11:52:20 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 2.4ms | Allocations: 2156)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 2447)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 11:52:26 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000075add80b82a8 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-35827-ow9k1m.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: domain.com. Fetching from API...
+Email not verified: teste@domain.com, Response Code: 404
+
+
+	 => Email validation completed for: email_validation:results_497105f852413289.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/InExistence/public/results_497105f852413289.txt
+Completed 200 OK in 10014ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 5232)
+
+
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_497105f852413289.txt
+Started GET "/" for 127.0.0.1 at 2025-05-31 11:55:47 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 1.8ms | Allocations: 2156)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 2447)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 11:55:54 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000075adc8218e78 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-35827-qtre6m.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: appgate.com. Fetching from API...
+
+
+	 => Email validation completed for: email_validation:results_e0acda2b62b4f0be.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/InExistence/public/results_e0acda2b62b4f0be.txt
+Completed 200 OK in 8007ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 5110)
+
+
+
+
+	 => Successfully deleted file: /home/johnermac/projects/InExistence/public/results_e0acda2b62b4f0be.txt
+Started GET "/" for 127.0.0.1 at 2025-05-31 12:07:23 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 6.8ms | Allocations: 3983)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 5286)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 12:07:34 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000075adccec9c90 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-35827-uat2b9.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: bradesco.com.br. Fetching from API...
+
+
+	 => Email validation completed for: email_validation:results_ffddad84aeff66d1.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/InExistence/public/results_ffddad84aeff66d1.txt
+Completed 200 OK in 8009ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 6110)
+
+
+Started GET "/download/results_ffddad84aeff66d1.txt" for 127.0.0.1 at 2025-05-31 12:07:42 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_ffddad84aeff66d1"}
+Sent file /home/johnermac/projects/InExistence/public/results_ffddad84aeff66d1.txt (0.7ms)
+Completed 200 OK in 5ms (ActiveRecord: 0.0ms | Allocations: 899)
+
+
+Started GET "/download/results_ffddad84aeff66d1.txt" for 127.0.0.1 at 2025-05-31 12:07:42 -0300
+
+
+	 => Successfully deleted file: /home/johnermac/projects/InExistence/public/results_ffddad84aeff66d1.txt
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_ffddad84aeff66d1"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 1)
+Completed 404 Not Found in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 348)
+
+
+Started GET "/download/results_ffddad84aeff66d1.txt" for 127.0.0.1 at 2025-05-31 12:07:47 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_ffddad84aeff66d1"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started GET "/download/results_ffddad84aeff66d1.txt" for 127.0.0.1 at 2025-05-31 12:07:51 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_ffddad84aeff66d1"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 1)
+Completed 404 Not Found in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_ffddad84aeff66d1.txt
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 12:08:18 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000075add818b4c8 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-35827-oc1hh4.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: appgate.com. Fetching from API...
+
+
+	 => Email validation completed for: email_validation:results_13c56cd849926e87.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/InExistence/public/results_13c56cd849926e87.txt
+Completed 200 OK in 9008ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 5190)
+
+
+Started GET "/download/results_13c56cd849926e87.txt" for 127.0.0.1 at 2025-05-31 12:08:27 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_13c56cd849926e87"}
+Sent file /home/johnermac/projects/InExistence/public/results_13c56cd849926e87.txt (0.1ms)
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 314)
+
+
+
+
+	 => Successfully deleted file: /home/johnermac/projects/InExistence/public/results_13c56cd849926e87.txt
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_13c56cd849926e87.txt
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 12:09:16 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000075adccfb3f20 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-35827-75ykmq.txt>, @content_type="text/plain", @original_filename="emails.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"emails.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: appgate.com. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Email not verified: asdasd@bradesco.com.br, Response Code: 404
+
+
+	 => Email validation completed for: email_validation:results_211b69e6b1d6a91a.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/InExistence/public/results_211b69e6b1d6a91a.txt
+Completed 200 OK in 10012ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 5328)
+
+
+Started GET "/download/results_211b69e6b1d6a91a.txt" for 127.0.0.1 at 2025-05-31 12:09:26 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_211b69e6b1d6a91a"}
+Sent file /home/johnermac/projects/InExistence/public/results_211b69e6b1d6a91a.txt (0.7ms)
+Completed 200 OK in 4ms (ActiveRecord: 0.0ms | Allocations: 301)
+
+
+
+
+	 => Successfully deleted file: /home/johnermac/projects/InExistence/public/results_211b69e6b1d6a91a.txt
+Started GET "/download/results_211b69e6b1d6a91a.txt" for 127.0.0.1 at 2025-05-31 12:09:26 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_211b69e6b1d6a91a"}
+  Rendering text template
+  Rendered text template (Duration: 2.7ms | Allocations: 1)
+Completed 404 Not Found in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started GET "/download/results_211b69e6b1d6a91a.txt" for 127.0.0.1 at 2025-05-31 12:09:38 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_211b69e6b1d6a91a"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started GET "/" for 127.0.0.1 at 2025-05-31 12:10:09 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 35.4ms | Allocations: 26207)
+Completed 200 OK in 54ms (Views: 51.7ms | ActiveRecord: 0.0ms | Allocations: 33013)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 12:10:17 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000756ddc817238 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-43983-o8u5e7.txt>, @content_type="text/plain", @original_filename="emails.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"emails.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: appgate.com. Fetching from API...
+Email not verified: asdasd@bradesco.com.br, Response Code: 404
+
+
+	 => Email validation completed for: email_validation:results_a6d0ae90bc1f473b.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/InExistence/public/results_a6d0ae90bc1f473b.txt
+Completed 200 OK in 9017ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 7003)
+
+
+Started GET "/download/results_a6d0ae90bc1f473b.txt" for 127.0.0.1 at 2025-05-31 12:10:29 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_a6d0ae90bc1f473b"}
+Sent file /home/johnermac/projects/InExistence/public/results_a6d0ae90bc1f473b.txt (0.4ms)
+Completed 200 OK in 11ms (ActiveRecord: 0.0ms | Allocations: 5496)
+
+
+
+
+	 => Successfully deleted file: /home/johnermac/projects/InExistence/public/results_a6d0ae90bc1f473b.txt
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 12:10:52 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000756dd88686f0 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-43983-l5bddl.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: appgate.com. Fetching from API...
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_a6d0ae90bc1f473b.txt
+
+
+	 => Email validation completed for: email_validation:results_9897111460e97518.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/InExistence/public/results_9897111460e97518.txt
+Completed 200 OK in 7008ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 5187)
+
+
+Started GET "/download/results_9897111460e97518.txt" for 127.0.0.1 at 2025-05-31 12:11:02 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_9897111460e97518"}
+Sent file /home/johnermac/projects/InExistence/public/results_9897111460e97518.txt (0.1ms)
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms | Allocations: 316)
+
+
+
+
+	 => Successfully deleted file: /home/johnermac/projects/InExistence/public/results_9897111460e97518.txt
+Started GET "/download/results_9897111460e97518.txt" for 127.0.0.1 at 2025-05-31 12:11:02 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_9897111460e97518"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 404 Not Found in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 5780)
+
+
+Started GET "/download/results_9897111460e97518.txt" for 127.0.0.1 at 2025-05-31 12:11:07 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_9897111460e97518"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 326)
+
+
+Started GET "/download/results_9897111460e97518.txt" for 127.0.0.1 at 2025-05-31 12:11:09 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_9897111460e97518"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_9897111460e97518.txt
+Started GET "/" for 127.0.0.1 at 2025-05-31 12:11:56 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 4.7ms | Allocations: 2275)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 2582)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 12:12:06 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000756dd8cda440 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-43983-1dsmjj.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: bradesco.com.br. Fetching from API...
+
+
+	 => Email validation completed for: email_validation:results_414bd68e0d7a1ee6.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/InExistence/public/results_414bd68e0d7a1ee6.txt
+Completed 200 OK in 7009ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 5203)
+
+
+Started GET "/download/results_414bd68e0d7a1ee6.txt" for 127.0.0.1 at 2025-05-31 12:12:16 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_414bd68e0d7a1ee6"}
+Sent file /home/johnermac/projects/InExistence/public/results_414bd68e0d7a1ee6.txt (0.6ms)
+Completed 200 OK in 5ms (ActiveRecord: 0.0ms | Allocations: 315)
+
+
+
+
+	 => Successfully deleted file: /home/johnermac/projects/InExistence/public/results_414bd68e0d7a1ee6.txt
+Started GET "/" for 127.0.0.1 at 2025-05-31 12:12:23 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 2.2ms | Allocations: 2156)
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 2447)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 12:12:30 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000756dd8dcb4d0 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-43983-4jqkic.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: appgate.com. Fetching from API...
+
+
+	 => Email validation completed for: email_validation:results_382291764aa88ded.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/InExistence/public/results_382291764aa88ded.txt
+Completed 200 OK in 7007ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 5085)
+
+
+Started GET "/download/results_382291764aa88ded.txt" for 127.0.0.1 at 2025-05-31 12:12:37 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_382291764aa88ded"}
+Sent file /home/johnermac/projects/InExistence/public/results_382291764aa88ded.txt (0.1ms)
+Completed 200 OK in 4ms (ActiveRecord: 0.0ms | Allocations: 301)
+
+
+
+
+	 => Successfully deleted file: /home/johnermac/projects/InExistence/public/results_382291764aa88ded.txt
+Started GET "/download/results_382291764aa88ded.txt" for 127.0.0.1 at 2025-05-31 12:12:37 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_382291764aa88ded"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 1)
+Completed 404 Not Found in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_414bd68e0d7a1ee6.txt
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 12:12:54 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000756dd8e8cab8 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-43983-9ak3ed.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: appgate.com. Fetching from API...
+
+
+	 => Email validation completed for: email_validation:results_b888f1857ccc4b7c.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/InExistence/public/results_b888f1857ccc4b7c.txt
+Completed 200 OK in 8051ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 5110)
+
+
+Started GET "/download/results_b888f1857ccc4b7c.txt" for 127.0.0.1 at 2025-05-31 12:13:02 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_b888f1857ccc4b7c"}
+Sent file /home/johnermac/projects/InExistence/public/results_b888f1857ccc4b7c.txt (0.1ms)
+Completed 200 OK in 7ms (ActiveRecord: 0.0ms | Allocations: 301)
+
+
+
+
+	 => Successfully deleted file: /home/johnermac/projects/InExistence/public/results_b888f1857ccc4b7c.txt
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_382291764aa88ded.txt
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_b888f1857ccc4b7c.txt
+Started GET "/" for 127.0.0.1 at 2025-05-31 12:15:35 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 2.3ms | Allocations: 2599)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 3907)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 12:15:50 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000756ddc747df8 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-43983-9bxg2f.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: appgate.com. Fetching from API...
+
+
+	 => Email validation completed for: email_validation:results_a80ae7a608f8ee96.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/InExistence/public/results_a80ae7a608f8ee96.txt
+Completed 200 OK in 8012ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 6112)
+
+
+Started GET "/download/results_a80ae7a608f8ee96.txt" for 127.0.0.1 at 2025-05-31 12:15:58 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_a80ae7a608f8ee96"}
+Sent file /home/johnermac/projects/InExistence/public/results_a80ae7a608f8ee96.txt (0.6ms)
+
+
+	 => Successfully deleted file: /home/johnermac/projects/InExistence/public/results_a80ae7a608f8ee96.txt
+Completed 200 OK in 3005ms (ActiveRecord: 0.0ms | Allocations: 755)
+
+
+Started GET "/download/results_a80ae7a608f8ee96.txt" for 127.0.0.1 at 2025-05-31 12:16:01 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_a80ae7a608f8ee96"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 348)
+
+
+Started GET "/download/results_a80ae7a608f8ee96.txt" for 127.0.0.1 at 2025-05-31 12:16:05 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_a80ae7a608f8ee96"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 285)
+
+
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_a80ae7a608f8ee96.txt
+Started GET "/" for 127.0.0.1 at 2025-05-31 12:58:42 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 11.4ms | Allocations: 4419)
+Completed 200 OK in 12ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 4726)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 12:58:49 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000756ddcbb8018 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-43983-7l19bg.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: appgate.com. Fetching from API...
+
+
+	 => Email validation completed for: email_validation:results_b5b21e1b4c7b309c.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/InExistence/public/results_b5b21e1b4c7b309c.txt
+Completed 200 OK in 9009ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 5190)
+
+
+Started HEAD "/download/results_b5b21e1b4c7b309c.txt" for 127.0.0.1 at 2025-05-31 12:58:58 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_b5b21e1b4c7b309c"}
+Sent file /home/johnermac/projects/InExistence/public/results_b5b21e1b4c7b309c.txt (0.1ms)
+Completed 200 OK in 3003ms (ActiveRecord: 0.0ms | Allocations: 321)
+
+
+
+
+	 => Successfully deleted file: /home/johnermac/projects/InExistence/public/results_b5b21e1b4c7b309c.txt
+Started HEAD "/download/results_b5b21e1b4c7b309c.txt" for 127.0.0.1 at 2025-05-31 12:59:05 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_b5b21e1b4c7b309c"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_b5b21e1b4c7b309c.txt" for 127.0.0.1 at 2025-05-31 12:59:05 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_b5b21e1b4c7b309c"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_b5b21e1b4c7b309c.txt" for 127.0.0.1 at 2025-05-31 12:59:06 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_b5b21e1b4c7b309c"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_b5b21e1b4c7b309c.txt" for 127.0.0.1 at 2025-05-31 12:59:07 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_b5b21e1b4c7b309c"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_b5b21e1b4c7b309c.txt" for 127.0.0.1 at 2025-05-31 12:59:08 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_b5b21e1b4c7b309c"}
+  Rendering text template
+  Rendered text template (Duration: 0.3ms | Allocations: 1)
+Completed 404 Not Found in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_b5b21e1b4c7b309c.txt" for 127.0.0.1 at 2025-05-31 12:59:09 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_b5b21e1b4c7b309c"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 1)
+Completed 404 Not Found in 3ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_b5b21e1b4c7b309c.txt" for 127.0.0.1 at 2025-05-31 12:59:10 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_b5b21e1b4c7b309c"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 3ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_b5b21e1b4c7b309c.txt" for 127.0.0.1 at 2025-05-31 12:59:11 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_b5b21e1b4c7b309c"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_b5b21e1b4c7b309c.txt" for 127.0.0.1 at 2025-05-31 12:59:12 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_b5b21e1b4c7b309c"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 1)
+Completed 404 Not Found in 3ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_b5b21e1b4c7b309c.txt" for 127.0.0.1 at 2025-05-31 12:59:13 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_b5b21e1b4c7b309c"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 1)
+Completed 404 Not Found in 2ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_b5b21e1b4c7b309c.txt
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 13:00:09 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000756ddceddae0 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-43983-8cg8vf.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: appgate.com.br. Fetching from API...
+Invalid tenant data for domain: appgate.com.br
+
+
+	 Tenant could not be fetched for domain: appgate.com.br. Skipping email: joao.silveira@appgate.com.br
+
+
+	 => Email validation completed for: email_validation:results_841459146859e642.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/InExistence/public/results_841459146859e642.txt
+Completed 200 OK in 2004ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 4969)
+
+
+Started HEAD "/download/results_841459146859e642.txt" for 127.0.0.1 at 2025-05-31 13:00:11 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_841459146859e642"}
+  Rendering text template
+  Rendered text template (Duration: 0.3ms | Allocations: 1)
+Completed 404 Not Found in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_841459146859e642.txt" for 127.0.0.1 at 2025-05-31 13:00:15 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_841459146859e642"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 3ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 285)
+
+
+Started HEAD "/download/results_841459146859e642.txt" for 127.0.0.1 at 2025-05-31 13:00:16 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_841459146859e642"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_841459146859e642.txt" for 127.0.0.1 at 2025-05-31 13:00:17 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_841459146859e642"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 11ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 285)
+
+
+Started HEAD "/download/results_841459146859e642.txt" for 127.0.0.1 at 2025-05-31 13:00:18 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_841459146859e642"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_841459146859e642.txt" for 127.0.0.1 at 2025-05-31 13:00:19 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_841459146859e642"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_841459146859e642.txt" for 127.0.0.1 at 2025-05-31 13:00:20 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_841459146859e642"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 2ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_841459146859e642.txt" for 127.0.0.1 at 2025-05-31 13:00:21 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_841459146859e642"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 1)
+Completed 404 Not Found in 3ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_841459146859e642.txt" for 127.0.0.1 at 2025-05-31 13:00:21 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_841459146859e642"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 1)
+Completed 404 Not Found in 8ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_841459146859e642.txt" for 127.0.0.1 at 2025-05-31 13:00:22 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_841459146859e642"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_841459146859e642.txt" for 127.0.0.1 at 2025-05-31 13:00:23 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_841459146859e642"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 13:00:36 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000756dd8962f88 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-43983-iqexwo.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: appgate.com. Fetching from API...
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_841459146859e642.txt
+
+
+	 => Email validation completed for: email_validation:results_dbf2407edcdce577.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/InExistence/public/results_dbf2407edcdce577.txt
+Completed 200 OK in 7014ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 5086)
+
+
+Started HEAD "/download/results_dbf2407edcdce577.txt" for 127.0.0.1 at 2025-05-31 13:00:44 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_dbf2407edcdce577"}
+Sent file /home/johnermac/projects/InExistence/public/results_dbf2407edcdce577.txt (0.2ms)
+Completed 200 OK in 3005ms (ActiveRecord: 0.0ms | Allocations: 311)
+
+
+
+
+	 => Successfully deleted file: /home/johnermac/projects/InExistence/public/results_dbf2407edcdce577.txt
+Started HEAD "/download/results_dbf2407edcdce577.txt" for 127.0.0.1 at 2025-05-31 13:00:51 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_dbf2407edcdce577"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 1)
+Completed 404 Not Found in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_dbf2407edcdce577.txt" for 127.0.0.1 at 2025-05-31 13:00:52 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_dbf2407edcdce577"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 1)
+Completed 404 Not Found in 3ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_dbf2407edcdce577.txt" for 127.0.0.1 at 2025-05-31 13:00:53 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_dbf2407edcdce577"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_dbf2407edcdce577.txt" for 127.0.0.1 at 2025-05-31 13:00:53 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_dbf2407edcdce577"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_dbf2407edcdce577.txt" for 127.0.0.1 at 2025-05-31 13:00:54 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_dbf2407edcdce577"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_dbf2407edcdce577.txt" for 127.0.0.1 at 2025-05-31 13:00:55 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_dbf2407edcdce577"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 1)
+Completed 404 Not Found in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_dbf2407edcdce577.txt" for 127.0.0.1 at 2025-05-31 13:00:56 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_dbf2407edcdce577"}
+  Rendering text template
+  Rendered text template (Duration: 0.2ms | Allocations: 1)
+Completed 404 Not Found in 3ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_dbf2407edcdce577.txt" for 127.0.0.1 at 2025-05-31 13:00:57 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_dbf2407edcdce577"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_dbf2407edcdce577.txt" for 127.0.0.1 at 2025-05-31 13:00:58 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_dbf2407edcdce577"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_dbf2407edcdce577.txt" for 127.0.0.1 at 2025-05-31 13:00:59 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_dbf2407edcdce577"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_dbf2407edcdce577.txt
+Started GET "/" for 127.0.0.1 at 2025-05-31 13:11:25 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 4.4ms | Allocations: 2599)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 3905)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 13:11:37 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000756ddcad0358 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-43983-17cr3u.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: appgate.com. Fetching from API...
+
+
+	 => Email validation completed for: email_validation:results_4e66f87cb994813a.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/InExistence/public/results_4e66f87cb994813a.txt
+Completed 200 OK in 7012ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 6343)
+
+
+Started HEAD "/download/results_4e66f87cb994813a.txt" for 127.0.0.1 at 2025-05-31 13:11:44 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_4e66f87cb994813a"}
+Sent file /home/johnermac/projects/InExistence/public/results_4e66f87cb994813a.txt (0.1ms)
+
+
+	 => Successfully deleted file: /home/johnermac/projects/InExistence/public/results_4e66f87cb994813a.txt
+Completed 200 OK in 3006ms (ActiveRecord: 0.0ms | Allocations: 752)
+
+
+Started HEAD "/download/results_4e66f87cb994813a.txt" for 127.0.0.1 at 2025-05-31 13:11:49 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_4e66f87cb994813a"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 348)
+
+
+Started HEAD "/download/results_4e66f87cb994813a.txt" for 127.0.0.1 at 2025-05-31 13:11:50 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_4e66f87cb994813a"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 1)
+Completed 404 Not Found in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_4e66f87cb994813a.txt" for 127.0.0.1 at 2025-05-31 13:11:51 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_4e66f87cb994813a"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_4e66f87cb994813a.txt" for 127.0.0.1 at 2025-05-31 13:11:52 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_4e66f87cb994813a"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_4e66f87cb994813a.txt" for 127.0.0.1 at 2025-05-31 13:11:53 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_4e66f87cb994813a"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_4e66f87cb994813a.txt" for 127.0.0.1 at 2025-05-31 13:11:54 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_4e66f87cb994813a"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_4e66f87cb994813a.txt" for 127.0.0.1 at 2025-05-31 13:11:55 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_4e66f87cb994813a"}
+  Rendering text template
+  Rendered text template (Duration: 0.3ms | Allocations: 1)
+Completed 404 Not Found in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_4e66f87cb994813a.txt" for 127.0.0.1 at 2025-05-31 13:11:58 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_4e66f87cb994813a"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_4e66f87cb994813a.txt" for 127.0.0.1 at 2025-05-31 13:11:59 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_4e66f87cb994813a"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_4e66f87cb994813a.txt" for 127.0.0.1 at 2025-05-31 13:12:00 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_4e66f87cb994813a"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_4e66f87cb994813a.txt
+Started GET "/" for 127.0.0.1 at 2025-05-31 13:13:50 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 2.1ms | Allocations: 2574)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 3875)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 13:13:59 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000756dc4016178 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-43983-i7fv2m.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: bradesco.com.br. Fetching from API...
+
+
+	 => Email validation completed for: email_validation:results_2485c1e1df547e78.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/InExistence/public/results_2485c1e1df547e78.txt
+Completed 200 OK in 10010ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 6159)
+
+
+Started HEAD "/download/results_2485c1e1df547e78.txt" for 127.0.0.1 at 2025-05-31 13:14:09 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_2485c1e1df547e78"}
+Sent file /home/johnermac/projects/InExistence/public/results_2485c1e1df547e78.txt (0.1ms)
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms | Allocations: 736)
+
+
+Started HEAD "/download/results_2485c1e1df547e78.txt" for 127.0.0.1 at 2025-05-31 13:14:10 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_2485c1e1df547e78"}
+Sent file /home/johnermac/projects/InExistence/public/results_2485c1e1df547e78.txt (1.1ms)
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms | Allocations: 327)
+
+
+Started HEAD "/download/results_2485c1e1df547e78.txt" for 127.0.0.1 at 2025-05-31 13:14:11 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_2485c1e1df547e78"}
+Sent file /home/johnermac/projects/InExistence/public/results_2485c1e1df547e78.txt (0.1ms)
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 285)
+
+
+Started HEAD "/download/results_2485c1e1df547e78.txt" for 127.0.0.1 at 2025-05-31 13:14:12 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_2485c1e1df547e78"}
+Sent file /home/johnermac/projects/InExistence/public/results_2485c1e1df547e78.txt (0.3ms)
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms | Allocations: 288)
+
+
+Started HEAD "/download/results_2485c1e1df547e78.txt" for 127.0.0.1 at 2025-05-31 13:14:13 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_2485c1e1df547e78"}
+Sent file /home/johnermac/projects/InExistence/public/results_2485c1e1df547e78.txt (0.5ms)
+Completed 200 OK in 4ms (ActiveRecord: 0.0ms | Allocations: 285)
+
+
+Started HEAD "/download/results_2485c1e1df547e78.txt" for 127.0.0.1 at 2025-05-31 13:14:14 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_2485c1e1df547e78"}
+Sent file /home/johnermac/projects/InExistence/public/results_2485c1e1df547e78.txt (0.1ms)
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 285)
+
+
+Started HEAD "/download/results_2485c1e1df547e78.txt" for 127.0.0.1 at 2025-05-31 13:14:15 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_2485c1e1df547e78"}
+Sent file /home/johnermac/projects/InExistence/public/results_2485c1e1df547e78.txt (0.1ms)
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 285)
+
+
+Started HEAD "/download/results_2485c1e1df547e78.txt" for 127.0.0.1 at 2025-05-31 13:14:19 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_2485c1e1df547e78"}
+Sent file /home/johnermac/projects/InExistence/public/results_2485c1e1df547e78.txt (0.1ms)
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 285)
+
+
+Started HEAD "/download/results_2485c1e1df547e78.txt" for 127.0.0.1 at 2025-05-31 13:14:20 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_2485c1e1df547e78"}
+Sent file /home/johnermac/projects/InExistence/public/results_2485c1e1df547e78.txt (0.1ms)
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 285)
+
+
+Started HEAD "/download/results_2485c1e1df547e78.txt" for 127.0.0.1 at 2025-05-31 13:14:21 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_2485c1e1df547e78"}
+Sent file /home/johnermac/projects/InExistence/public/results_2485c1e1df547e78.txt (0.4ms)
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms | Allocations: 285)
+
+
+Started HEAD "/download/results_2485c1e1df547e78.txt" for 127.0.0.1 at 2025-05-31 13:14:22 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_2485c1e1df547e78"}
+Sent file /home/johnermac/projects/InExistence/public/results_2485c1e1df547e78.txt (0.2ms)
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms | Allocations: 285)
+
+
+
+
+	 => Successfully deleted file: /home/johnermac/projects/InExistence/public/results_2485c1e1df547e78.txt
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_2485c1e1df547e78.txt
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_2485c1e1df547e78.txt
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_2485c1e1df547e78.txt
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_2485c1e1df547e78.txt
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_2485c1e1df547e78.txt
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_2485c1e1df547e78.txt
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_2485c1e1df547e78.txt
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_2485c1e1df547e78.txt
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_2485c1e1df547e78.txt
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_2485c1e1df547e78.txt
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_2485c1e1df547e78.txt
+Started GET "/" for 127.0.0.1 at 2025-05-31 13:15:16 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 8.4ms | Allocations: 3699)
+Completed 200 OK in 9ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 4038)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 13:15:31 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000756dc8176b68 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-43983-mpk0l3.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: bradesco.com.br. Fetching from API...
+
+
+	 => Email validation completed for: email_validation:results_e44b03ed1d5da195.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/InExistence/public/results_e44b03ed1d5da195.txt
+Completed 200 OK in 8012ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 5179)
+
+
+Started HEAD "/download/results_e44b03ed1d5da195.txt" for 127.0.0.1 at 2025-05-31 13:15:39 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_e44b03ed1d5da195"}
+Sent file /home/johnermac/projects/InExistence/public/results_e44b03ed1d5da195.txt (0.1ms)
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 285)
+
+
+Started HEAD "/download/results_e44b03ed1d5da195.txt" for 127.0.0.1 at 2025-05-31 13:15:48 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_e44b03ed1d5da195"}
+Sent file /home/johnermac/projects/InExistence/public/results_e44b03ed1d5da195.txt (0.1ms)
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 285)
+
+
+Started HEAD "/download/results_e44b03ed1d5da195.txt" for 127.0.0.1 at 2025-05-31 13:15:57 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_e44b03ed1d5da195"}
+Sent file /home/johnermac/projects/InExistence/public/results_e44b03ed1d5da195.txt (0.1ms)
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 285)
+
+
+Started HEAD "/download/results_e44b03ed1d5da195.txt" for 127.0.0.1 at 2025-05-31 13:16:09 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_e44b03ed1d5da195"}
+Sent file /home/johnermac/projects/InExistence/public/results_e44b03ed1d5da195.txt (0.1ms)
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 285)
+
+
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_e44b03ed1d5da195.txt
+
+
+	 => Successfully deleted file: /home/johnermac/projects/InExistence/public/results_e44b03ed1d5da195.txt
+Started HEAD "/download/results_e44b03ed1d5da195.txt" for 127.0.0.1 at 2025-05-31 13:16:19 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_e44b03ed1d5da195"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 1)
+Completed 404 Not Found in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 287)
+
+
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_e44b03ed1d5da195.txt
+Started HEAD "/download/results_e44b03ed1d5da195.txt" for 127.0.0.1 at 2025-05-31 13:16:28 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_e44b03ed1d5da195"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_e44b03ed1d5da195.txt
+Started HEAD "/download/results_e44b03ed1d5da195.txt" for 127.0.0.1 at 2025-05-31 13:16:40 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_e44b03ed1d5da195"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_e44b03ed1d5da195.txt
+Started HEAD "/download/results_e44b03ed1d5da195.txt" for 127.0.0.1 at 2025-05-31 13:16:49 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_e44b03ed1d5da195"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_e44b03ed1d5da195.txt" for 127.0.0.1 at 2025-05-31 13:16:59 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_e44b03ed1d5da195"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_e44b03ed1d5da195.txt" for 127.0.0.1 at 2025-05-31 13:17:08 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_e44b03ed1d5da195"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 899)
+
+
+Started GET "/" for 127.0.0.1 at 2025-05-31 13:17:11 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 4.5ms | Allocations: 2563)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 3287)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 13:17:22 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000756dc028bcb8 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-43983-vhrtr1.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: appgate.com. Fetching from API...
+
+
+	 => Email validation completed for: email_validation:results_9f282c7267d4367f.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/InExistence/public/results_9f282c7267d4367f.txt
+Completed 200 OK in 8014ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 6106)
+
+
+Started HEAD "/download/results_9f282c7267d4367f.txt" for 127.0.0.1 at 2025-05-31 13:17:30 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_9f282c7267d4367f"}
+Sent file /home/johnermac/projects/InExistence/public/results_9f282c7267d4367f.txt (1.0ms)
+Completed 200 OK in 4ms (ActiveRecord: 0.0ms | Allocations: 729)
+
+
+Started HEAD "/download/results_9f282c7267d4367f.txt" for 127.0.0.1 at 2025-05-31 13:17:40 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_9f282c7267d4367f"}
+Sent file /home/johnermac/projects/InExistence/public/results_9f282c7267d4367f.txt (0.1ms)
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 327)
+
+
+Started HEAD "/download/results_9f282c7267d4367f.txt" for 127.0.0.1 at 2025-05-31 13:17:52 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_9f282c7267d4367f"}
+Sent file /home/johnermac/projects/InExistence/public/results_9f282c7267d4367f.txt (0.1ms)
+Completed 200 OK in 3ms (ActiveRecord: 0.0ms | Allocations: 285)
+
+
+Started HEAD "/download/results_9f282c7267d4367f.txt" for 127.0.0.1 at 2025-05-31 13:18:01 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_9f282c7267d4367f"}
+Sent file /home/johnermac/projects/InExistence/public/results_9f282c7267d4367f.txt (0.1ms)
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 285)
+
+
+
+
+	 => Successfully deleted file: /home/johnermac/projects/InExistence/public/results_9f282c7267d4367f.txt
+Started HEAD "/download/results_9f282c7267d4367f.txt" for 127.0.0.1 at 2025-05-31 13:18:11 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_9f282c7267d4367f"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 322)
+
+
+Started HEAD "/download/results_9f282c7267d4367f.txt" for 127.0.0.1 at 2025-05-31 13:18:20 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_9f282c7267d4367f"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_9f282c7267d4367f.txt" for 127.0.0.1 at 2025-05-31 13:18:32 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_9f282c7267d4367f"}
+  Rendering text template
+  Rendered text template (Duration: 0.3ms | Allocations: 1)
+Completed 404 Not Found in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_9f282c7267d4367f.txt" for 127.0.0.1 at 2025-05-31 13:18:42 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_9f282c7267d4367f"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 1)
+Completed 404 Not Found in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_9f282c7267d4367f.txt" for 127.0.0.1 at 2025-05-31 13:18:51 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_9f282c7267d4367f"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 1)
+Completed 404 Not Found in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_9f282c7267d4367f.txt" for 127.0.0.1 at 2025-05-31 13:19:03 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_9f282c7267d4367f"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started HEAD "/download/results_9f282c7267d4367f.txt" for 127.0.0.1 at 2025-05-31 13:19:12 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_9f282c7267d4367f"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 404 Not Found in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started GET "/" for 127.0.0.1 at 2025-05-31 13:19:19 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 4.0ms | Allocations: 2330)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 2634)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 13:19:23 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000756dc42649c0 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-43983-gbwmwj.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: appgate.com. Fetching from API...
+
+
+	 => Email validation completed for: email_validation:results_a9132bfcc97c9fc5.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/InExistence/public/results_a9132bfcc97c9fc5.txt
+Completed 200 OK in 7006ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 5143)
+
+
+Started GET "/download/results_a9132bfcc97c9fc5.txt" for 127.0.0.1 at 2025-05-31 13:19:30 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_a9132bfcc97c9fc5"}
+Sent file /home/johnermac/projects/InExistence/public/results_a9132bfcc97c9fc5.txt (0.1ms)
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 285)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 13:19:40 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000756dc0394330 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-43983-8a87kk.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: appgate.com. Fetching from API...
+
+
+	 => Email validation completed for: email_validation:results_617d885e17a968ad.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/InExistence/public/results_617d885e17a968ad.txt
+Completed 200 OK in 8008ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 5186)
+
+
+Started GET "/download/results_617d885e17a968ad.txt" for 127.0.0.1 at 2025-05-31 13:19:48 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_617d885e17a968ad"}
+Sent file /home/johnermac/projects/InExistence/public/results_617d885e17a968ad.txt (0.2ms)
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 285)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 13:19:57 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000756dc831f5f0 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-43983-vmp5h0.txt>, @content_type="text/plain", @original_filename="emails.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"emails.txt\"\r\nContent-Type: text/plain\r\n">}
+Cache miss for domain: appgate.com. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+Cache miss for domain: bradesco.com.br. Fetching from API...
+
+
+	 => Successfully deleted file: /home/johnermac/projects/InExistence/public/results_a9132bfcc97c9fc5.txt
+Email not verified: asdasd@bradesco.com.br, Response Code: 404
+
+
+	 => Email validation completed for: email_validation:results_6d739c0980226b18.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/InExistence/public/results_6d739c0980226b18.txt
+Completed 200 OK in 9015ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 5317)
+
+
+Started GET "/download/results_6d739c0980226b18.txt" for 127.0.0.1 at 2025-05-31 13:20:06 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_6d739c0980226b18"}
+Sent file /home/johnermac/projects/InExistence/public/results_6d739c0980226b18.txt (0.1ms)
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 285)
+
+
+
+
+	 => Successfully deleted file: /home/johnermac/projects/InExistence/public/results_617d885e17a968ad.txt
+
+
+	 => Successfully deleted file: /home/johnermac/projects/InExistence/public/results_6d739c0980226b18.txt
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_9f282c7267d4367f.txt
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_9f282c7267d4367f.txt
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_9f282c7267d4367f.txt
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_9f282c7267d4367f.txt
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_a9132bfcc97c9fc5.txt
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_617d885e17a968ad.txt
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_6d739c0980226b18.txt
