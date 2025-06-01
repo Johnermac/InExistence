@@ -60,7 +60,7 @@ class CheckUploadedFileService
   def validate_file_size
     if @uploaded_file.size > MAX_FILE_SIZE
       puts "\n => VALIDATION 3 FAILED: #{@uploaded_file.size} bytes"
-      return { valid: false, error: "File exceeds the maximum allowed size of #{MAX_FILE_SIZE / 1.megabyte} MB." }
+      return { valid: false, error: "File exceeds the maximum allowed size of #{MAX_FILE_SIZE / 50.megabyte} MB." }
     end
     { valid: true }
   end

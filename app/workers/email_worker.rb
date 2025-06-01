@@ -19,11 +19,11 @@ class EmailWorker
       return
     end
 
-    puts "\n\n\t => EMAIL: #{email}"
+    # puts "\n\n\t => EMAIL: #{email}"
 
     # Extract and validate domain
     domain = extract_domain(email)   
-    puts "\n\t => DOMAIN: #{domain}" 
+    # puts "\n\t => DOMAIN: #{domain}" 
 
     # Fetch tenant from cache or API
     tenant = DomainService.fetch_tenant_name(domain)
@@ -33,12 +33,12 @@ class EmailWorker
       return
     end
 
-    puts "\n\t => TENANT: #{tenant}"
+    # puts "\n\t => TENANT: #{tenant}"
 
     # Construct verification URL and verify email
     url = construct_url(tenant, email)
 
-    puts "\n\t => URL: #{url}"
+    # puts "\n\t => URL: #{url}"
 
 
     fetch_url(url, filepath, email) if url.present?    
@@ -77,10 +77,10 @@ class EmailWorker
     ).get(url)
 
     if response.status == 200 || response.status == 302
-      puts "\n\t => VERIFIED: #{email}"
+      puts "\n\t EMAIL: #{email} => ✅ VALIDATED!"
       append_verified_email(filepath, email)      
     else
-      puts "\n\t => NOT VERIFIED: #{email}"
+      puts "\n\t EMAIL: #{email} => ❌ NOT VALIDATED."
       Rails.logger.info "Email not verified: #{email}, Response Code: #{response.status}"
     end
   rescue HTTPX::Error => e

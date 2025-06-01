@@ -12,13 +12,13 @@ class DomainService
 
     Rails.cache.fetch("tenant_name:#{domain}", expires_in: 2.hours) do
       Rails.logger.info "Cache miss for domain: #{domain}. Fetching from API..."
-      puts "\n\t => Cache miss for domain: #{domain}. Fetching from API..."
+      # puts "\n\t => Cache miss for domain: #{domain}. Fetching from API..."
 
       response = api_fetch_tenant_name(domain)
       if response
         tenant_name = response["tenantName"]&.split('.onmicrosoft.com')&.first
         if tenant_name.present?
-          puts "\n\t => Fetched and caching tenant for domain: #{domain}: #{tenant_name}"
+          # puts "\n\t => Fetched and caching tenant for domain: #{domain}: #{tenant_name}"
           tenant_name
         else
           Rails.logger.error "Invalid tenant data for domain: #{domain}"

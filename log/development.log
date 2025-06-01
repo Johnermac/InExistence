@@ -6517,3 +6517,138 @@ Sent file /home/johnermac/projects/InExistence/public/results_6bc2dc0b146ebf8f.t
 Completed 200 OK in 2ms (ActiveRecord: 0.0ms | Allocations: 285)
 
 
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 22:01:43 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#validate as */*
+  Parameters: {"email"=>"joao.silveira@bradesco.com.br"}
+Completed 400 Bad Request in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2079)
+
+
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_6bc2dc0b146ebf8f.txt
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_4e7ce1fa07748948.txt
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_6bc2dc0b146ebf8f.txt
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_869483584b02a03e.txt
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_6bc2dc0b146ebf8f.txt
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 22:02:09 -0300
+Processing by MainController#validate as */*
+  Parameters: {"email"=>"joao.silveira@bradesco.com.br"}
+Completed 400 Bad Request in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 206)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 22:02:54 -0300
+Processing by MainController#validate as */*
+  Parameters: {"email"=>"example@domain.com", "main"=>{"email"=>"example@domain.com"}}
+Completed 400 Bad Request in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 146)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 22:04:13 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000788cd08fc278 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-141941-u0n9oa.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+
+
+	 => Email validation completed for: email_validation:results_6de481f95cd7369a.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/InExistence/public/results_6de481f95cd7369a.txt
+Completed 200 OK in 1012ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 11339)
+
+
+Started HEAD "/download/results_6de481f95cd7369a.txt" for 127.0.0.1 at 2025-05-31 22:04:14 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_6de481f95cd7369a"}
+Sent file /home/johnermac/projects/InExistence/public/results_6de481f95cd7369a.txt (2.4ms)
+Completed 200 OK in 7ms (ActiveRecord: 0.0ms | Allocations: 1621)
+
+
+
+
+	 => Successfully deleted file: /home/johnermac/projects/InExistence/public/results_6de481f95cd7369a.txt
+Started GET "/" for 127.0.0.1 at 2025-05-31 22:05:46 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb
+  Rendered main/index.html.erb (Duration: 34.7ms | Allocations: 20640)
+Completed 200 OK in 47ms (Views: 46.3ms | ActiveRecord: 0.0ms | Allocations: 30060)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 22:06:11 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000788cd0a4fe90 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-141941-y58kj.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+
+
+	 => Email validation completed for: email_validation:results_cd145df30956ad0c.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/InExistence/public/results_cd145df30956ad0c.txt
+Completed 200 OK in 1032ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 5103)
+
+
+Started HEAD "/download/results_cd145df30956ad0c.txt" for 127.0.0.1 at 2025-05-31 22:06:12 -0300
+Processing by MainController#download as TEXT
+  Parameters: {"filename"=>"results_cd145df30956ad0c"}
+Sent file /home/johnermac/projects/InExistence/public/results_cd145df30956ad0c.txt (0.1ms)
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 305)
+
+
+
+
+	 => Successfully deleted file: /home/johnermac/projects/InExistence/public/results_cd145df30956ad0c.txt
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_6de481f95cd7369a.txt
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 22:10:44 -0300
+Processing by MainController#validate as HTML
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000560e1c536850 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-141941-65po9o.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+
+
+	 => Email validation completed for: email_validation:results_6d9b03e7a97c833e.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/InExistence/public/results_6d9b03e7a97c833e.txt
+Completed 200 OK in 1005ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 4943)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 22:11:00 -0300
+Processing by MainController#validate as HTML
+  Parameters: {"------WebKitFormBoundaryQ2eRtU1pc7PRWDTb\r\nContent-Disposition: form-data; name"=>"\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n\r\njoao.silveira@bradesco.com.br\r\n------WebKitFormBoundaryQ2eRtU1pc7PRWDTb--\r\n"}
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 147)
+
+
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_cd145df30956ad0c.txt
+
+
+	 => Successfully deleted file: /home/johnermac/projects/InExistence/public/results_6d9b03e7a97c833e.txt
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 22:12:45 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>"joao.silveira@bradesco.com.br"}
+Error detecting MIME type: undefined method `tempfile' for "joao.silveira@bradesco.com.br":String
+Completed 422 Unprocessable Content in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1696)
+
+
+Started POST "/validate" for 127.0.0.1 at 2025-05-31 22:13:56 -0300
+Processing by MainController#validate as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000788cd0682ce0 @tempfile=#<Tempfile:/tmp/RackMultipart20250531-141941-cczcid.txt>, @content_type="text/plain", @original_filename="email.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"email.txt\"\r\nContent-Type: text/plain\r\n">}
+Email not verified: teste@bradesco.com.br, Response Code: 404
+
+
+	 => Email validation completed for: email_validation:results_022c725e6b4cf92b.txt
+
+
+ => Deletion will happen in 30 Seconds: /home/johnermac/projects/InExistence/public/results_022c725e6b4cf92b.txt
+Completed 200 OK in 1004ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 4946)
+
+
+
+
+	File not found for deletion: /home/johnermac/projects/InExistence/public/results_022c725e6b4cf92b.txt
