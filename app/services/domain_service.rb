@@ -69,7 +69,7 @@ class DomainService
     XML
 
     begin
-      puts "\n\t => Fetching tenant for domain: #{domain} (SOAP autodiscover)"
+      # puts "\n\t => Fetching tenant for domain: #{domain} (SOAP autodiscover)"
       response = HTTPX.post(url, body: soap_body, headers: headers)
 
       if response.status != 200
@@ -85,7 +85,7 @@ class DomainService
 
       if tenant_domain
         tenant_name = tenant_domain.split('.').first
-        puts "\n\t => Tenant identified: #{tenant_name} from domain #{tenant_domain}"
+        # puts "\n\t => Tenant identified: #{tenant_name} from domain #{tenant_domain}"
         return { "tenantName" => tenant_name }
       else
         Rails.logger.info "No tenant domain found for #{domain}. Got: #{domains.inspect}"
