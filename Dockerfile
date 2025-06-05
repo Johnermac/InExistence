@@ -47,4 +47,4 @@ USER appuser
 EXPOSE 3000
 
 # Start both Sidekiq and Rails
-CMD ["sh", "-c", "bundle exec sidekiq & bundle exec puma"]
+CMD ["sh", "-c", "bundle exec sidekiq & bundle exec rails s -b 0.0.0.0"]
