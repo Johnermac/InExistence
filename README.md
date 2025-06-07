@@ -1,5 +1,7 @@
 **InExistence** — it's a Ruby on Rails tool that checks whether Microsoft 365 emails exist by leveraging two little-known behaviors:
 
+> You can watch the demo video on youtube [![Demo Video on Youtube](https://img.shields.io/badge/YouTube-Video-red?logo=youtube)](https://youtu.be/pGblC1MgJFM)
+
 🔹 Tenant Discovery via SOAP
 It uses a lightweight SOAP request to autodiscover-s.outlook.com to extract the M365 tenant name, allowing full automation without third-party dependencies.
 
